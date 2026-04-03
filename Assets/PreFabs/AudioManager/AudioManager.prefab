@@ -1,0 +1,199 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1799093743091424}
+  m_IsPrefabParent: 1
+--- !u!1 &1799093743091424
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4067710271358718}
+  - component: {fileID: 114845714515672506}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4067710271358718
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1799093743091424}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114845714515672506
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1799093743091424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 023e9168f8959be4a84704a4a018c30b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mixerGroup: {fileID: 0}
+  sounds:
+  - name: JumpSfx
+    clip: {fileID: 8300000, guid: 0ac042827dbcc254cb6cd93610de4a97, type: 3}
+    volume: 0.9
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: JumpSfx2
+    clip: {fileID: 8300000, guid: fe84ea0349eab4f4f89b01ec76e39cfb, type: 3}
+    volume: 0.9
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: LockOnSFX
+    clip: {fileID: 8300000, guid: 962c98035533b624987565cf4334a768, type: 3}
+    volume: 0.9
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: RingCollect
+    clip: {fileID: 8300000, guid: e56eac7db64b81e449998bb33aa0d22a, type: 3}
+    volume: 0.9
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: TenRingCollect
+    clip: {fileID: 8300000, guid: aa86298d22cfea04db588a001740e409, type: 3}
+    volume: 0.9
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: RedRingCollect
+    clip: {fileID: 8300000, guid: 3346be8b3dc9e834b8d132c1f7964231, type: 3}
+    volume: 0.9
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: MonitorBreak
+    clip: {fileID: 8300000, guid: 0ca47dd5591ce304ab415f1f048f03f4, type: 3}
+    volume: 0.9
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: OneUp
+    clip: {fileID: 8300000, guid: 6b815d462cfd72f43bacd5fa31483883, type: 3}
+    volume: 0.9
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: BalloonSFX
+    clip: {fileID: 8300000, guid: 007cb3034e462c64bb5f8e5c1a7682f7, type: 3}
+    volume: 0.9
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: SpringSFX
+    clip: {fileID: 8300000, guid: 77fc08e0b1d92c04d8077fab0e31dfaf, type: 3}
+    volume: 0.9
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: DeathSfx
+    clip: {fileID: 8300000, guid: 90da666e8a29369459cb95ec26b3a867, type: 3}
+    volume: 0.9
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: CheckPointSfx
+    clip: {fileID: 8300000, guid: 7b92cf0f90d7a3a47b15d14081890ba1, type: 3}
+    volume: 0.9
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: BarrelBreakSFX
+    clip: {fileID: 8300000, guid: 836b6276b40086f4db5c05d6a052efb5, type: 3}
+    volume: 0.9
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: DashSFX
+    clip: {fileID: 8300000, guid: 7e616f6ff78066e4983f2e7202b643bb, type: 3}
+    volume: 0.506
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Boost1SFX
+    clip: {fileID: 8300000, guid: b66ed675b1fc3bc4c8ebf7eb9782ecd8, type: 3}
+    volume: 0.506
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Boost2SFX
+    clip: {fileID: 8300000, guid: ffa5744e2b916a240bdb8958b48cf9b6, type: 3}
+    volume: 0.506
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}

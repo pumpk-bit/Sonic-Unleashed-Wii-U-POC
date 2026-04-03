@@ -1,0 +1,3269 @@
+fileFormatVersion: 2
+guid: 6487b6e05c00f8c4fbb5024b272706b5
+timeCreated: 1763227918
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_0
+    21300002: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_1
+    21300004: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_2
+    21300006: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_3
+    21300008: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_4
+    21300010: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_5
+    21300012: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_6
+    21300014: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_7
+    21300016: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_8
+    21300018: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_9
+    21300020: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_10
+    21300022: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_11
+    21300024: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_12
+    21300026: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_13
+    21300028: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_14
+    21300030: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_15
+    21300032: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_16
+    21300034: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_17
+    21300036: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_18
+    21300038: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_19
+    21300040: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_20
+    21300042: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_21
+    21300044: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_22
+    21300046: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_23
+    21300048: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_24
+    21300050: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_25
+    21300052: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_26
+    21300054: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_27
+    21300056: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_28
+    21300058: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_29
+    21300060: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_30
+    21300062: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_31
+    21300064: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_32
+    21300066: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_33
+    21300068: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_34
+    21300070: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_35
+    21300072: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_36
+    21300074: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_37
+    21300076: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_38
+    21300078: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_39
+    21300080: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_40
+    21300082: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_41
+    21300084: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_42
+    21300086: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_43
+    21300088: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_44
+    21300090: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_45
+    21300092: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_46
+    21300094: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_47
+    21300096: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_48
+    21300098: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_49
+    21300100: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_50
+    21300102: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_51
+    21300104: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_52
+    21300106: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_53
+    21300108: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_54
+    21300110: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_55
+    21300112: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_56
+    21300114: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_57
+    21300116: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_58
+    21300118: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_59
+    21300120: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_60
+    21300122: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_61
+    21300124: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_62
+    21300126: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_63
+    21300128: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_64
+    21300130: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_65
+    21300132: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_66
+    21300134: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_67
+    21300136: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_68
+    21300138: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_69
+    21300140: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_70
+    21300142: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_71
+    21300144: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_72
+    21300146: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_73
+    21300148: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_74
+    21300150: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_75
+    21300152: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_76
+    21300154: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_77
+    21300156: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_78
+    21300158: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_79
+    21300160: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_80
+    21300162: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_81
+    21300164: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_82
+    21300166: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_83
+    21300168: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_84
+    21300170: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_85
+    21300172: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_86
+    21300174: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_87
+    21300176: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_88
+    21300178: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_89
+    21300180: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_90
+    21300182: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_91
+    21300184: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_92
+    21300186: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_93
+    21300188: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_94
+    21300190: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_95
+    21300192: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_96
+    21300194: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_97
+    21300196: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_98
+    21300198: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_99
+    21300200: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_100
+    21300202: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_101
+    21300204: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_102
+    21300206: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_103
+    21300208: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_104
+    21300210: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_105
+    21300212: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_106
+    21300214: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_107
+    21300216: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_108
+    21300218: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_109
+    21300220: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_110
+    21300222: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_111
+    21300224: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_112
+    21300226: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_113
+    21300228: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_114
+    21300230: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_115
+    21300232: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_116
+    21300234: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_117
+    21300236: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_118
+    21300238: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_119
+    21300240: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_120
+    21300242: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_121
+    21300244: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_122
+    21300246: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_123
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WiiU
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 574
+        width: 58
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_1
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 572
+        width: 58
+        height: 60
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_2
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 574
+        width: 55
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_3
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 574
+        width: 49
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_4
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 574
+        width: 45
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_5
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 574
+        width: 33
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_6
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 574
+        width: 23
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_7
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 574
+        width: 12
+        height: 59
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_8
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 510
+        width: 120
+        height: 120
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_9
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 508
+        width: 120
+        height: 121
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_10
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 514
+        width: 13
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_11
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 514
+        width: 23
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_12
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 514
+        width: 33
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_13
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 515
+        width: 44
+        height: 57
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_14
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 515
+        width: 50
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_15
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 515
+        width: 53
+        height: 57
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_16
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 513
+        width: 55
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_17
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 515
+        width: 58
+        height: 56
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_18
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 455
+        width: 56
+        height: 56
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_19
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 394
+        width: 56
+        height: 117
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_20
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 455
+        width: 55
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_21
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 455
+        width: 48
+        height: 56
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_22
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 392
+        width: 54
+        height: 120
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_23
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 454
+        width: 33
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_24
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 454
+        width: 23
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_25
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 454
+        width: 12
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_26
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 414
+        width: 34
+        height: 49
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_27
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 394
+        width: 13
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_28
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 394
+        width: 34
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_29
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 394
+        width: 42
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_30
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 394
+        width: 55
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_31
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 394
+        width: 59
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_32
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 394
+        width: 58
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_33
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 318
+        width: 58
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_34
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 318
+        width: 58
+        height: 57
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_35
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 318
+        width: 56
+        height: 57
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_36
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 318
+        width: 54
+        height: 57
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_37
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 318
+        width: 53
+        height: 57
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_38
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 318
+        width: 50
+        height: 57
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_39
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 318
+        width: 47
+        height: 57
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_40
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 318
+        width: 45
+        height: 57
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_41
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 318
+        width: 41
+        height: 57
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_42
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 318
+        width: 38
+        height: 57
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_43
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 318
+        width: 34
+        height: 57
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_44
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 318
+        width: 29
+        height: 57
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_45
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 318
+        width: 25
+        height: 57
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_46
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 318
+        width: 20
+        height: 57
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_47
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 318
+        width: 14
+        height: 57
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_48
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 318
+        width: 10
+        height: 57
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_49
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 258
+        width: 15
+        height: 57
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_50
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 258
+        width: 19
+        height: 57
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_51
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 258
+        width: 25
+        height: 57
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_52
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 258
+        width: 29
+        height: 57
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_53
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 258
+        width: 34
+        height: 57
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_54
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 258
+        width: 38
+        height: 57
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_55
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 258
+        width: 41
+        height: 57
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_56
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 258
+        width: 45
+        height: 57
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_57
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 258
+        width: 47
+        height: 57
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_58
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 258
+        width: 49
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_59
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 258
+        width: 53
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_60
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 258
+        width: 55
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_61
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 258
+        width: 57
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_62
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 258
+        width: 57
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_63
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 190
+        width: 58
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_64
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 190
+        width: 58
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_65
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 190
+        width: 58
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_66
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 190
+        width: 57
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_67
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 190
+        width: 55
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_68
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 190
+        width: 53
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_69
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 190
+        width: 50
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_70
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 190
+        width: 47
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_71
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 190
+        width: 43
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_72
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 190
+        width: 39
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_73
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 190
+        width: 34
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_74
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 190
+        width: 29
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_75
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 190
+        width: 24
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_76
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 190
+        width: 18
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_77
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 190
+        width: 13
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_78
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 190
+        width: 9
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_79
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 130
+        width: 13
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_80
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 130
+        width: 19
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_81
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 130
+        width: 24
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_82
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 130
+        width: 29
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_83
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 130
+        width: 34
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_84
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 130
+        width: 39
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_85
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 130
+        width: 43
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_86
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 130
+        width: 46
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_87
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 130
+        width: 50
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_88
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 130
+        width: 53
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_89
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 130
+        width: 55
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_90
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 130
+        width: 57
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_91
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 130
+        width: 58
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_92
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 130
+        width: 58
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_93
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 63
+        width: 57
+        height: 56
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_94
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 63
+        width: 57
+        height: 56
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_95
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 63
+        width: 57
+        height: 56
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_96
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 63
+        width: 55
+        height: 56
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_97
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 63
+        width: 53
+        height: 56
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_98
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 63
+        width: 51
+        height: 56
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_99
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 63
+        width: 48
+        height: 56
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_100
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 63
+        width: 45
+        height: 56
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_101
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 63
+        width: 41
+        height: 56
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_102
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 63
+        width: 37
+        height: 56
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_103
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 63
+        width: 33
+        height: 56
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_104
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 63
+        width: 28
+        height: 56
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_105
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 63
+        width: 23
+        height: 56
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_106
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 63
+        width: 17
+        height: 56
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_107
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 63
+        width: 13
+        height: 56
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_108
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 63
+        width: 9
+        height: 56
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_109
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 3
+        width: 12
+        height: 56
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_110
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 3
+        width: 18
+        height: 56
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_111
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 3
+        width: 23
+        height: 56
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_112
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 3
+        width: 28
+        height: 56
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_113
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 3
+        width: 33
+        height: 56
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_114
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 3
+        width: 37
+        height: 56
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_115
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 3
+        width: 41
+        height: 56
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_116
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 3
+        width: 45
+        height: 56
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_117
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 3
+        width: 48
+        height: 56
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_118
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 3
+        width: 51
+        height: 56
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_119
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 3
+        width: 53
+        height: 56
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_120
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 3
+        width: 53
+        height: 56
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_121
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 3
+        width: 55
+        height: 56
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_122
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 3
+        width: 56
+        height: 56
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Xbox 360 - Sonic Unleashed - Miscellaneous - Collectibles_123
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 3
+        width: 56
+        height: 56
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape:
+    - - {x: -446, y: -257}
+      - {x: -446, y: -317}
+      - {x: -431, y: -317}
+      - {x: -430, y: -313}
+      - {x: -430, y: -258}
+      - {x: -435, y: -257}
+    - - {x: -368, y: -264}
+      - {x: -374, y: -257}
+      - {x: -383, y: -257}
+      - {x: -389, y: -263}
+      - {x: -389, y: -312}
+      - {x: -383, y: -317}
+      - {x: -374, y: -317}
+      - {x: -368, y: -309}
+      - {x: -367, y: -305}
+      - {x: -367, y: -274}
+    - - {x: -327, y: -257}
+      - {x: -331, y: -263}
+      - {x: -331, y: -310}
+      - {x: -326, y: -317}
+      - {x: -314, y: -317}
+      - {x: -307, y: -315}
+      - {x: -304, y: -308}
+      - {x: -304, y: -261}
+      - {x: -313, y: -257}
+    - - {x: -249, y: -257}
+      - {x: -265, y: -257}
+      - {x: -271, y: -259}
+      - {x: -274, y: -270}
+      - {x: -274, y: -303}
+      - {x: -266, y: -316}
+      - {x: -265, y: -317}
+      - {x: -249, y: -317}
+      - {x: -242, y: -305}
+      - {x: -242, y: -272}
+      - {x: -243, y: -268}
+    - - {x: -182, y: -259}
+      - {x: -189, y: -257}
+      - {x: -209, y: -257}
+      - {x: -216, y: -266}
+      - {x: -216, y: -302}
+      - {x: -211, y: -317}
+      - {x: -190, y: -317}
+      - {x: -184, y: -312}
+      - {x: -179, y: -298}
+      - {x: -179, y: -280}
+    - - {x: -117, y: -275}
+      - {x: -124, y: -257}
+      - {x: -149, y: -257}
+      - {x: -158, y: -259}
+      - {x: -158, y: -312}
+      - {x: -148, y: -317}
+      - {x: -124, y: -317}
+      - {x: -119, y: -305}
+      - {x: -117, y: -297}
+    - - {x: -97, y: -257}
+      - {x: -100, y: -266}
+      - {x: -100, y: -308}
+      - {x: -91, y: -317}
+      - {x: -67, y: -317}
+      - {x: -55, y: -305}
+      - {x: -55, y: -271}
+      - {x: -67, y: -257}
+    - - {x: 2, y: -265}
+      - {x: -8, y: -257}
+      - {x: -24, y: -257}
+      - {x: -33, y: -259}
+      - {x: -42, y: -272}
+      - {x: -42, y: -305}
+      - {x: -30, y: -317}
+      - {x: -8, y: -317}
+      - {x: -5, y: -316}
+      - {x: 5, y: -303}
+      - {x: 7, y: -294}
+      - {x: 7, y: -278}
+    - - {x: 23, y: -257}
+      - {x: 16, y: -271}
+      - {x: 16, y: -298}
+      - {x: 20, y: -311}
+      - {x: 31, y: -317}
+      - {x: 54, y: -317}
+      - {x: 57, y: -316}
+      - {x: 68, y: -300}
+      - {x: 68, y: -274}
+      - {x: 59, y: -257}
+    - - {x: 128, y: -269}
+      - {x: 112, y: -257}
+      - {x: 89, y: -257}
+      - {x: 75, y: -272}
+      - {x: 75, y: -297}
+      - {x: 80, y: -308}
+      - {x: 91, y: -317}
+      - {x: 110, y: -317}
+      - {x: 119, y: -315}
+      - {x: 128, y: -304}
+      - {x: 130, y: -292}
+      - {x: 130, y: -275}
+    - - {x: 180, y: -257}
+      - {x: 146, y: -257}
+      - {x: 134, y: -274}
+      - {x: 134, y: -298}
+      - {x: 135, y: -307}
+      - {x: 152, y: -317}
+      - {x: 173, y: -317}
+      - {x: 185, y: -308}
+      - {x: 191, y: -297}
+      - {x: 191, y: -272}
+    - - {x: 240, y: -257}
+      - {x: 206, y: -257}
+      - {x: 194, y: -274}
+      - {x: 194, y: -298}
+      - {x: 195, y: -307}
+      - {x: 212, y: -317}
+      - {x: 233, y: -317}
+      - {x: 245, y: -308}
+      - {x: 251, y: -297}
+      - {x: 251, y: -272}
+    - - {x: 300, y: -257}
+      - {x: 264, y: -257}
+      - {x: 254, y: -265}
+      - {x: 253, y: -272}
+      - {x: 253, y: -304}
+      - {x: 264, y: -315}
+      - {x: 271, y: -317}
+      - {x: 295, y: -317}
+      - {x: 309, y: -308}
+      - {x: 312, y: -302}
+      - {x: 312, y: -260}
+    - - {x: 356, y: -257}
+      - {x: 328, y: -257}
+      - {x: 316, y: -269}
+      - {x: 312, y: -277}
+      - {x: 312, y: -308}
+      - {x: 327, y: -317}
+      - {x: 364, y: -317}
+      - {x: 372, y: -306}
+      - {x: 372, y: -276}
+      - {x: 371, y: -274}
+    - - {x: 415, y: -257}
+      - {x: 386, y: -257}
+      - {x: 372, y: -272}
+      - {x: 372, y: -303}
+      - {x: 388, y: -317}
+      - {x: 419, y: -317}
+      - {x: 432, y: -301}
+      - {x: 432, y: -275}
+      - {x: 429, y: -268}
+    - - {x: -372, y: -257}
+      - {x: -361, y: -254}
+      - {x: -348, y: -240}
+      - {x: -348, y: -217}
+      - {x: -352, y: -207}
+      - {x: -367, y: -197}
+      - {x: -389, y: -197}
+      - {x: -402, y: -206}
+      - {x: -420, y: -201}
+      - {x: -430, y: -197}
+      - {x: -449, y: -197}
+      - {x: -463, y: -205}
+      - {x: -469, y: -219}
+      - {x: -469, y: -239}
+      - {x: -456, y: -255}
+      - {x: -450, y: -257}
+      - {x: -432, y: -257}
+      - {x: -425, y: -256}
+      - {x: -412, y: -245}
+      - {x: -395, y: -254}
+      - {x: -387, y: -257}
+    - - {x: -330, y: -197}
+      - {x: -336, y: -199}
+      - {x: -348, y: -214}
+      - {x: -348, y: -245}
+      - {x: -332, y: -257}
+      - {x: -310, y: -257}
+      - {x: -305, y: -256}
+      - {x: -288, y: -245}
+      - {x: -288, y: -213}
+      - {x: -305, y: -197}
+    - - {x: -231, y: -209}
+      - {x: -247, y: -197}
+      - {x: -269, y: -197}
+      - {x: -276, y: -199}
+      - {x: -288, y: -213}
+      - {x: -288, y: -236}
+      - {x: -282, y: -254}
+      - {x: -271, y: -257}
+      - {x: -244, y: -257}
+      - {x: -229, y: -247}
+      - {x: -229, y: -212}
+    - - {x: -171, y: -203}
+      - {x: -188, y: -197}
+      - {x: -215, y: -197}
+      - {x: -225, y: -206}
+      - {x: -227, y: -217}
+      - {x: -227, y: -241}
+      - {x: -217, y: -257}
+      - {x: -184, y: -257}
+      - {x: -171, y: -246}
+      - {x: -170, y: -239}
+      - {x: -170, y: -208}
+    - - {x: -114, y: -205}
+      - {x: -129, y: -197}
+      - {x: -154, y: -197}
+      - {x: -166, y: -210}
+      - {x: -166, y: -243}
+      - {x: -165, y: -246}
+      - {x: -150, y: -257}
+      - {x: -128, y: -257}
+      - {x: -116, y: -248}
+      - {x: -111, y: -239}
+      - {x: -111, y: -216}
+    - - {x: -54, y: -210}
+      - {x: -64, y: -198}
+      - {x: -71, y: -197}
+      - {x: -90, y: -197}
+      - {x: -105, y: -207}
+      - {x: -105, y: -244}
+      - {x: -95, y: -255}
+      - {x: -85, y: -257}
+      - {x: -68, y: -257}
+      - {x: -57, y: -247}
+      - {x: -53, y: -239}
+      - {x: -53, y: -219}
+    - - {x: -43, y: -197}
+      - {x: -43, y: -251}
+      - {x: -42, y: -253}
+      - {x: -29, y: -257}
+      - {x: -1, y: -257}
+      - {x: 6, y: -253}
+      - {x: 6, y: -204}
+      - {x: 0, y: -197}
+    - - {x: 32, y: -197}
+      - {x: 19, y: -203}
+      - {x: 19, y: -241}
+      - {x: 28, y: -256}
+      - {x: 30, y: -257}
+      - {x: 52, y: -257}
+      - {x: 64, y: -244}
+      - {x: 64, y: -211}
+      - {x: 55, y: -197}
+    - - {x: 116, y: -204}
+      - {x: 110, y: -197}
+      - {x: 89, y: -197}
+      - {x: 81, y: -215}
+      - {x: 81, y: -244}
+      - {x: 90, y: -257}
+      - {x: 113, y: -257}
+      - {x: 122, y: -241}
+      - {x: 122, y: -215}
+    - - {x: 147, y: -197}
+      - {x: 143, y: -206}
+      - {x: 143, y: -245}
+      - {x: 145, y: -252}
+      - {x: 153, y: -257}
+      - {x: 172, y: -257}
+      - {x: 180, y: -241}
+      - {x: 180, y: -203}
+      - {x: 170, y: -197}
+    - - {x: 205, y: -197}
+      - {x: 205, y: -250}
+      - {x: 207, y: -257}
+      - {x: 229, y: -257}
+      - {x: 237, y: -247}
+      - {x: 237, y: -206}
+      - {x: 233, y: -197}
+    - - {x: 275, y: -197}
+      - {x: 268, y: -200}
+      - {x: 268, y: -244}
+      - {x: 271, y: -256}
+      - {x: 276, y: -257}
+      - {x: 289, y: -257}
+      - {x: 295, y: -250}
+      - {x: 295, y: -202}
+      - {x: 291, y: -197}
+    - - {x: 331, y: -197}
+      - {x: 331, y: -256}
+      - {x: 333, y: -257}
+      - {x: 352, y: -257}
+      - {x: 352, y: -200}
+      - {x: 350, y: -197}
+    - - {x: 396, y: -197}
+      - {x: 393, y: -202}
+      - {x: 393, y: -254}
+      - {x: 399, y: -257}
+      - {x: 408, y: -257}
+      - {x: 410, y: -252}
+      - {x: 410, y: -199}
+      - {x: 405, y: -197}
+    - - {x: 457, y: -197}
+      - {x: 455, y: -199}
+      - {x: 455, y: -257}
+      - {x: 468, y: -257}
+      - {x: 468, y: -198}
+      - {x: 466, y: -197}
+    - - {x: -406, y: -116}
+      - {x: -400, y: -122}
+      - {x: -392, y: -127}
+      - {x: -388, y: -136}
+      - {x: -390, y: -152}
+      - {x: -389, y: -176}
+      - {x: -387, y: -188}
+      - {x: -382, y: -190}
+      - {x: -371, y: -190}
+      - {x: -365, y: -177}
+      - {x: -366, y: -137}
+      - {x: -350, y: -116}
+      - {x: -328, y: -133}
+      - {x: -333, y: -146}
+      - {x: -330, y: -181}
+      - {x: -324, y: -190}
+      - {x: -312, y: -190}
+      - {x: -308, y: -187}
+      - {x: -303, y: -178}
+      - {x: -303, y: -144}
+      - {x: -306, y: -130}
+      - {x: -291, y: -117}
+      - {x: -285, y: -117}
+      - {x: -271, y: -129}
+      - {x: -273, y: -138}
+      - {x: -275, y: -166}
+      - {x: -272, y: -180}
+      - {x: -263, y: -190}
+      - {x: -252, y: -190}
+      - {x: -243, y: -181}
+      - {x: -241, y: -168}
+      - {x: -241, y: -143}
+      - {x: -245, y: -134}
+      - {x: -228, y: -111}
+      - {x: -228, y: -89}
+      - {x: -232, y: -78}
+      - {x: -245, y: -69}
+      - {x: -250, y: -68}
+      - {x: -269, y: -68}
+      - {x: -285, y: -80}
+      - {x: -291, y: -81}
+      - {x: -301, y: -72}
+      - {x: -310, y: -68}
+      - {x: -328, y: -68}
+      - {x: -337, y: -72}
+      - {x: -347, y: -86}
+      - {x: -357, y: -74}
+      - {x: -369, y: -68}
+      - {x: -389, y: -68}
+      - {x: -406, y: -81}
+      - {x: -421, y: -71}
+      - {x: -430, y: -68}
+      - {x: -446, y: -68}
+      - {x: -457, y: -71}
+      - {x: -468, y: -86}
+      - {x: -469, y: -94}
+      - {x: -469, y: -107}
+      - {x: -466, y: -114}
+      - {x: -461, y: -123}
+      - {x: -446, y: -132}
+      - {x: -447, y: -142}
+      - {x: -446, y: -175}
+      - {x: -444, y: -188}
+      - {x: -441, y: -190}
+      - {x: -433, y: -190}
+      - {x: -428, y: -182}
+      - {x: -429, y: -135}
+      - {x: -421, y: -127}
+    - - {x: -178, y: -146}
+      - {x: -185, y: -128}
+      - {x: -173, y: -118}
+      - {x: -169, y: -109}
+      - {x: -169, y: -92}
+      - {x: -170, y: -85}
+      - {x: -182, y: -71}
+      - {x: -185, y: -68}
+      - {x: -207, y: -68}
+      - {x: -219, y: -71}
+      - {x: -228, y: -83}
+      - {x: -228, y: -109}
+      - {x: -226, y: -117}
+      - {x: -215, y: -126}
+      - {x: -216, y: -139}
+      - {x: -218, y: -173}
+      - {x: -212, y: -181}
+      - {x: -205, y: -190}
+      - {x: -190, y: -190}
+      - {x: -185, y: -185}
+      - {x: -181, y: -177}
+      - {x: -177, y: -165}
+    - - {x: -121, y: -137}
+      - {x: -110, y: -111}
+      - {x: -110, y: -91}
+      - {x: -112, y: -78}
+      - {x: -126, y: -68}
+      - {x: -148, y: -68}
+      - {x: -162, y: -79}
+      - {x: -167, y: -88}
+      - {x: -167, y: -108}
+      - {x: -164, y: -119}
+      - {x: -153, y: -126}
+      - {x: -160, y: -149}
+      - {x: -157, y: -176}
+      - {x: -153, y: -183}
+      - {x: -144, y: -190}
+      - {x: -132, y: -190}
+      - {x: -126, y: -188}
+      - {x: -115, y: -172}
+      - {x: -115, y: -151}
+    - - {x: -52, y: -151}
+      - {x: -54, y: -122}
+      - {x: -52, y: -110}
+      - {x: -52, y: -84}
+      - {x: -61, y: -71}
+      - {x: -69, y: -68}
+      - {x: -86, y: -68}
+      - {x: -93, y: -69}
+      - {x: -104, y: -82}
+      - {x: -105, y: -87}
+      - {x: -105, y: -112}
+      - {x: -95, y: -128}
+      - {x: -101, y: -149}
+      - {x: -100, y: -167}
+      - {x: -99, y: -175}
+      - {x: -89, y: -190}
+      - {x: -70, y: -190}
+      - {x: -65, y: -187}
+      - {x: -55, y: -177}
+      - {x: -52, y: -153}
+    - - {x: 4, y: -136}
+      - {x: 1, y: -124}
+      - {x: 8, y: -105}
+      - {x: 8, y: -93}
+      - {x: 6, y: -83}
+      - {x: -7, y: -68}
+      - {x: -27, y: -68}
+      - {x: -40, y: -78}
+      - {x: -44, y: -90}
+      - {x: -44, y: -109}
+      - {x: -38, y: -123}
+      - {x: -39, y: -138}
+      - {x: -44, y: -154}
+      - {x: -44, y: -173}
+      - {x: -31, y: -190}
+      - {x: -10, y: -190}
+      - {x: -3, y: -189}
+      - {x: 3, y: -181}
+      - {x: 8, y: -168}
+      - {x: 8, y: -151}
+    - - {x: 58, y: -131}
+      - {x: 59, y: -124}
+      - {x: 68, y: -104}
+      - {x: 63, y: -82}
+      - {x: 56, y: -70}
+      - {x: 50, y: -68}
+      - {x: 32, y: -68}
+      - {x: 18, y: -81}
+      - {x: 17, y: -104}
+      - {x: 20, y: -116}
+      - {x: 28, y: -127}
+      - {x: 20, y: -139}
+      - {x: 16, y: -146}
+      - {x: 16, y: -170}
+      - {x: 18, y: -181}
+      - {x: 30, y: -190}
+      - {x: 52, y: -190}
+      - {x: 59, y: -188}
+      - {x: 69, y: -172}
+      - {x: 70, y: -168}
+      - {x: 70, y: -145}
+    - - {x: 131, y: -148}
+      - {x: 129, y: -143}
+      - {x: 115, y: -129}
+      - {x: 122, y: -113}
+      - {x: 124, y: -103}
+      - {x: 125, y: -87}
+      - {x: 112, y: -68}
+      - {x: 95, y: -68}
+      - {x: 85, y: -76}
+      - {x: 80, y: -87}
+      - {x: 80, y: -111}
+      - {x: 87, y: -131}
+      - {x: 74, y: -145}
+      - {x: 74, y: -174}
+      - {x: 79, y: -180}
+      - {x: 92, y: -190}
+      - {x: 111, y: -190}
+      - {x: 118, y: -189}
+      - {x: 127, y: -177}
+      - {x: 131, y: -168}
+    - - {x: 179, y: -126}
+      - {x: 186, y: -98}
+      - {x: 182, y: -80}
+      - {x: 169, y: -68}
+      - {x: 152, y: -68}
+      - {x: 139, y: -88}
+      - {x: 141, y: -110}
+      - {x: 148, y: -128}
+      - {x: 138, y: -139}
+      - {x: 133, y: -147}
+      - {x: 133, y: -168}
+      - {x: 135, y: -177}
+      - {x: 146, y: -187}
+      - {x: 150, y: -190}
+      - {x: 171, y: -190}
+      - {x: 180, y: -188}
+      - {x: 189, y: -177}
+      - {x: 192, y: -168}
+      - {x: 192, y: -145}
+    - - {x: 289, y: -190}
+      - {x: 295, y: -189}
+      - {x: 303, y: -186}
+      - {x: 312, y: -169}
+      - {x: 316, y: -177}
+      - {x: 325, y: -186}
+      - {x: 334, y: -190}
+      - {x: 353, y: -190}
+      - {x: 367, y: -179}
+      - {x: 373, y: -166}
+      - {x: 373, y: -148}
+      - {x: 363, y: -134}
+      - {x: 353, y: -122}
+      - {x: 356, y: -79}
+      - {x: 350, y: -68}
+      - {x: 338, y: -68}
+      - {x: 329, y: -73}
+      - {x: 331, y: -114}
+      - {x: 333, y: -123}
+      - {x: 315, y: -141}
+      - {x: 304, y: -133}
+      - {x: 293, y: -123}
+      - {x: 297, y: -102}
+      - {x: 296, y: -94}
+      - {x: 294, y: -76}
+      - {x: 288, y: -68}
+      - {x: 277, y: -68}
+      - {x: 271, y: -73}
+      - {x: 267, y: -87}
+      - {x: 268, y: -111}
+      - {x: 269, y: -121}
+      - {x: 263, y: -131}
+      - {x: 251, y: -145}
+      - {x: 245, y: -134}
+      - {x: 233, y: -127}
+      - {x: 239, y: -114}
+      - {x: 238, y: -90}
+      - {x: 237, y: -80}
+      - {x: 231, y: -68}
+      - {x: 215, y: -68}
+      - {x: 206, y: -71}
+      - {x: 203, y: -113}
+      - {x: 206, y: -132}
+      - {x: 194, y: -141}
+      - {x: 192, y: -150}
+      - {x: 192, y: -176}
+      - {x: 193, y: -178}
+      - {x: 211, y: -190}
+      - {x: 234, y: -190}
+      - {x: 251, y: -177}
+      - {x: 265, y: -185}
+      - {x: 273, y: -190}
+    - - {x: 396, y: -68}
+      - {x: 394, y: -74}
+      - {x: 394, y: -128}
+      - {x: 398, y: -130}
+      - {x: 409, y: -130}
+      - {x: 410, y: -128}
+      - {x: 410, y: -70}
+      - {x: 406, y: -68}
+    - - {x: 459, y: -68}
+      - {x: 456, y: -69}
+      - {x: 456, y: -129}
+      - {x: 458, y: -130}
+      - {x: 467, y: -130}
+      - {x: 469, y: -128}
+      - {x: 469, y: -70}
+      - {x: 467, y: -68}
+    - - {x: -409, y: 11}
+      - {x: -398, y: 2}
+      - {x: -386, y: -3}
+      - {x: -390, y: -10}
+      - {x: -389, y: -55}
+      - {x: -383, y: -61}
+      - {x: -379, y: -62}
+      - {x: -375, y: -62}
+      - {x: -368, y: -57}
+      - {x: -365, y: -44}
+      - {x: -366, y: -2}
+      - {x: -358, y: 2}
+      - {x: -347, y: 15}
+      - {x: -339, y: 6}
+      - {x: -334, y: 2}
+      - {x: -326, y: -2}
+      - {x: -333, y: -15}
+      - {x: -332, y: -47}
+      - {x: -329, y: -54}
+      - {x: -322, y: -62}
+      - {x: -315, y: -62}
+      - {x: -308, y: -59}
+      - {x: -302, y: -39}
+      - {x: -303, y: -16}
+      - {x: -307, y: -7}
+      - {x: -306, y: -1}
+      - {x: -294, y: 8}
+      - {x: -289, y: 20}
+      - {x: -288, y: 22}
+      - {x: -288, y: 38}
+      - {x: -293, y: 48}
+      - {x: -302, y: 58}
+      - {x: -320, y: 60}
+      - {x: -331, y: 60}
+      - {x: -344, y: 47}
+      - {x: -352, y: 46}
+      - {x: -361, y: 56}
+      - {x: -371, y: 60}
+      - {x: -385, y: 59}
+      - {x: -395, y: 55}
+      - {x: -405, y: 46}
+      - {x: -410, y: 45}
+      - {x: -422, y: 57}
+      - {x: -431, y: 59}
+      - {x: -438, y: 60}
+      - {x: -448, y: 59}
+      - {x: -462, y: 50}
+      - {x: -468, y: 40}
+      - {x: -469, y: 34}
+      - {x: -469, y: 18}
+      - {x: -457, y: 3}
+      - {x: -446, y: -4}
+      - {x: -449, y: -14}
+      - {x: -446, y: -58}
+      - {x: -440, y: -62}
+      - {x: -433, y: -62}
+      - {x: -427, y: -53}
+      - {x: -427, y: -24}
+      - {x: -430, y: -5}
+    - - {x: -233, y: 8}
+      - {x: -229, y: 19}
+      - {x: -229, y: 34}
+      - {x: -230, y: 42}
+      - {x: -236, y: 52}
+      - {x: -247, y: 59}
+      - {x: -267, y: 59}
+      - {x: -274, y: 58}
+      - {x: -286, y: 47}
+      - {x: -287, y: 37}
+      - {x: -287, y: 15}
+      - {x: -284, y: 9}
+      - {x: -277, y: -21}
+      - {x: -274, y: -50}
+      - {x: -262, y: -62}
+      - {x: -249, y: -62}
+      - {x: -238, y: -41}
+      - {x: -241, y: -13}
+      - {x: -246, y: -3}
+    - - {x: -187, y: -6}
+      - {x: -170, y: 16}
+      - {x: -170, y: 40}
+      - {x: -178, y: 53}
+      - {x: -188, y: 59}
+      - {x: -205, y: 59}
+      - {x: -213, y: 57}
+      - {x: -225, y: 46}
+      - {x: -226, y: 42}
+      - {x: -226, y: 11}
+      - {x: -214, y: -6}
+      - {x: -216, y: -14}
+      - {x: -220, y: -42}
+      - {x: -205, y: -62}
+      - {x: -190, y: -62}
+      - {x: -178, y: -46}
+      - {x: -178, y: -21}
+      - {x: -181, y: -15}
+    - - {x: -115, y: 9}
+      - {x: -111, y: 18}
+      - {x: -111, y: 40}
+      - {x: -122, y: 56}
+      - {x: -129, y: 59}
+      - {x: -148, y: 59}
+      - {x: -161, y: 48}
+      - {x: -165, y: 38}
+      - {x: -165, y: 18}
+      - {x: -164, y: 9}
+      - {x: -150, y: -3}
+      - {x: -157, y: -15}
+      - {x: -159, y: -23}
+      - {x: -159, y: -47}
+      - {x: -146, y: -62}
+      - {x: -136, y: -62}
+      - {x: -126, y: -60}
+      - {x: -115, y: -45}
+      - {x: -115, y: -17}
+      - {x: -128, y: -2}
+    - - {x: -56, y: -9}
+      - {x: -59, y: 8}
+      - {x: -53, y: 17}
+      - {x: -53, y: 40}
+      - {x: -54, y: 46}
+      - {x: -59, y: 50}
+      - {x: -65, y: 59}
+      - {x: -89, y: 59}
+      - {x: -104, y: 52}
+      - {x: -104, y: 17}
+      - {x: -94, y: -1}
+      - {x: -102, y: -23}
+      - {x: -102, y: -40}
+      - {x: -90, y: -60}
+      - {x: -85, y: -62}
+      - {x: -70, y: -62}
+      - {x: -57, y: -51}
+      - {x: -53, y: -43}
+      - {x: -53, y: -30}
+    - - {x: 4, y: 10}
+      - {x: 7, y: 27}
+      - {x: 7, y: 38}
+      - {x: 5, y: 43}
+      - {x: -5, y: 55}
+      - {x: -10, y: 59}
+      - {x: -24, y: 59}
+      - {x: -31, y: 58}
+      - {x: -41, y: 44}
+      - {x: -43, y: 35}
+      - {x: -43, y: 15}
+      - {x: -31, y: -3}
+      - {x: -43, y: -21}
+      - {x: -42, y: -36}
+      - {x: -41, y: -45}
+      - {x: -30, y: -59}
+      - {x: -25, y: -62}
+      - {x: -8, y: -62}
+      - {x: -3, y: -61}
+      - {x: 7, y: -41}
+      - {x: 7, y: -19}
+      - {x: -4, y: 1}
+    - - {x: 61, y: 8}
+      - {x: 67, y: 20}
+      - {x: 63, y: 50}
+      - {x: 49, y: 59}
+      - {x: 37, y: 59}
+      - {x: 32, y: 58}
+      - {x: 19, y: 43}
+      - {x: 17, y: 17}
+      - {x: 31, y: 0}
+      - {x: 19, y: -11}
+      - {x: 17, y: -22}
+      - {x: 17, y: -44}
+      - {x: 22, y: -53}
+      - {x: 34, y: -62}
+      - {x: 49, y: -62}
+      - {x: 57, y: -60}
+      - {x: 66, y: -47}
+      - {x: 68, y: -41}
+      - {x: 68, y: -12}
+    - - {x: 117, y: -2}
+      - {x: 118, y: 7}
+      - {x: 124, y: 18}
+      - {x: 125, y: 39}
+      - {x: 113, y: 56}
+      - {x: 108, y: 59}
+      - {x: 91, y: 59}
+      - {x: 78, y: 37}
+      - {x: 81, y: 13}
+      - {x: 91, y: 2}
+      - {x: 76, y: -17}
+      - {x: 76, y: -45}
+      - {x: 79, y: -54}
+      - {x: 93, y: -62}
+      - {x: 110, y: -62}
+      - {x: 118, y: -60}
+      - {x: 129, y: -42}
+      - {x: 129, y: -17}
+    - - {x: 191, y: -19}
+      - {x: 177, y: -3}
+      - {x: 170, y: 0}
+      - {x: 180, y: 11}
+      - {x: 182, y: 30}
+      - {x: 179, y: 47}
+      - {x: 171, y: 58}
+      - {x: 168, y: 59}
+      - {x: 154, y: 59}
+      - {x: 142, y: 43}
+      - {x: 142, y: 37}
+      - {x: 143, y: 12}
+      - {x: 151, y: 2}
+      - {x: 136, y: -16}
+      - {x: 134, y: -25}
+      - {x: 134, y: -38}
+      - {x: 139, y: -51}
+      - {x: 150, y: -62}
+      - {x: 172, y: -62}
+      - {x: 180, y: -56}
+      - {x: 188, y: -48}
+      - {x: 191, y: -34}
+    - - {x: 229, y: 0}
+      - {x: 235, y: 6}
+      - {x: 239, y: 17}
+      - {x: 238, y: 40}
+      - {x: 235, y: 52}
+      - {x: 226, y: 59}
+      - {x: 215, y: 59}
+      - {x: 204, y: 47}
+      - {x: 204, y: 14}
+      - {x: 213, y: 0}
+      - {x: 197, y: -11}
+      - {x: 193, y: -20}
+      - {x: 193, y: -45}
+      - {x: 204, y: -57}
+      - {x: 215, y: -62}
+      - {x: 235, y: -62}
+      - {x: 252, y: -45}
+      - {x: 252, y: -19}
+      - {x: 240, y: -5}
+    - - {x: 312, y: -18}
+      - {x: 299, y: -4}
+      - {x: 295, y: 6}
+      - {x: 299, y: 40}
+      - {x: 290, y: 57}
+      - {x: 284, y: 59}
+      - {x: 277, y: 59}
+      - {x: 270, y: 52}
+      - {x: 267, y: 42}
+      - {x: 267, y: 24}
+      - {x: 269, y: 11}
+      - {x: 271, y: 6}
+      - {x: 267, y: -3}
+      - {x: 255, y: -15}
+      - {x: 252, y: -26}
+      - {x: 252, y: -43}
+      - {x: 266, y: -59}
+      - {x: 275, y: -62}
+      - {x: 295, y: -62}
+      - {x: 310, y: -47}
+      - {x: 312, y: -42}
+    - - {x: 372, y: -19}
+      - {x: 365, y: -10}
+      - {x: 358, y: -3}
+      - {x: 351, y: 5}
+      - {x: 354, y: 11}
+      - {x: 354, y: 37}
+      - {x: 355, y: 47}
+      - {x: 348, y: 59}
+      - {x: 337, y: 59}
+      - {x: 330, y: 55}
+      - {x: 329, y: 40}
+      - {x: 330, y: 6}
+      - {x: 313, y: -16}
+      - {x: 312, y: -23}
+      - {x: 312, y: -42}
+      - {x: 314, y: -47}
+      - {x: 326, y: -59}
+      - {x: 335, y: -62}
+      - {x: 345, y: -62}
+      - {x: 354, y: -61}
+      - {x: 362, y: -57}
+      - {x: 373, y: -42}
+      - {x: 373, y: -25}
+    - - {x: -199, y: -19}
+      - {x: -197, y: -17}
+      - {x: -198, y: -17}
+      - {x: -197, y: -18}
+      - {x: -197, y: -20}
+    - - {x: -142, y: -34}
+      - {x: -139, y: -17}
+      - {x: -134, y: -36}
+      - {x: -139, y: -45}
+    - - {x: -84, y: -24}
+      - {x: -74, y: -19}
+      - {x: -72, y: -36}
+      - {x: -76, y: -44}
+    - - {x: -25, y: -38}
+      - {x: -24, y: -23}
+      - {x: -10, y: -25}
+      - {x: -14, y: -45}
+    - - {x: 32, y: -36}
+      - {x: 39, y: -17}
+      - {x: 52, y: -27}
+      - {x: 50, y: -41}
+      - {x: 38, y: -44}
+    - - {x: 92, y: -37}
+      - {x: 92, y: -23}
+      - {x: 112, y: -24}
+      - {x: 106, y: -45}
+    - - {x: 150, y: -36}
+      - {x: 159, y: -17}
+      - {x: 172, y: -40}
+      - {x: 158, y: -44}
+    - - {x: 211, y: -39}
+      - {x: 215, y: -19}
+      - {x: 234, y: -39}
+      - {x: 227, y: -45}
+    - - {x: 272, y: -41}
+      - {x: 268, y: -33}
+      - {x: 278, y: -17}
+      - {x: 296, y: -27}
+      - {x: 287, y: -45}
+    - - {x: 328, y: -35}
+      - {x: 338, y: -17}
+      - {x: 356, y: -27}
+      - {x: 347, y: -45}
+      - {x: 337, y: -44}
+    - - {x: -258, y: -41}
+      - {x: -258, y: -19}
+      - {x: -258, y: -43}
+      - {x: -257, y: -43}
+    - - {x: 393, y: 1}
+      - {x: 397, y: -2}
+      - {x: 406, y: -2}
+      - {x: 411, y: 0}
+      - {x: 411, y: 59}
+      - {x: 393, y: 59}
+    - - {x: 467, y: 59}
+      - {x: 460, y: 59}
+      - {x: 455, y: 57}
+      - {x: 455, y: 1}
+      - {x: 459, y: -2}
+      - {x: 466, y: -2}
+      - {x: 469, y: 2}
+      - {x: 469, y: 56}
+    - - {x: -82, y: 15}
+      - {x: -87, y: 35}
+      - {x: -70, y: 38}
+      - {x: -69, y: 24}
+    - - {x: -24, y: 18}
+      - {x: -24, y: 38}
+      - {x: -13, y: 41}
+      - {x: -10, y: 22}
+      - {x: -14, y: 16}
+    - - {x: 36, y: 22}
+      - {x: 36, y: 33}
+      - {x: 41, y: 42}
+      - {x: 48, y: 27}
+      - {x: 44, y: 15}
+    - - {x: -450, y: 21}
+      - {x: -451, y: 33}
+      - {x: -427, y: 38}
+      - {x: -433, y: 15}
+    - - {x: -386, y: 17}
+      - {x: -392, y: 25}
+      - {x: -382, y: 43}
+      - {x: -364, y: 33}
+      - {x: -373, y: 15}
+    - - {x: -328, y: 19}
+      - {x: -330, y: 37}
+      - {x: -308, y: 39}
+      - {x: -313, y: 15}
+    - - {x: -270, y: 23}
+      - {x: -265, y: 41}
+      - {x: -247, y: 38}
+      - {x: -253, y: 15}
+    - - {x: -210, y: 27}
+      - {x: -201, y: 42}
+      - {x: -187, y: 37}
+      - {x: -188, y: 20}
+      - {x: -204, y: 16}
+    - - {x: -146, y: 18}
+      - {x: -147, y: 38}
+      - {x: -129, y: 38}
+      - {x: -128, y: 21}
+    - - {x: 97, y: 24}
+      - {x: 98, y: 35}
+      - {x: 103, y: 43}
+      - {x: 104, y: 18}
+    - - {x: 161, y: 17}
+      - {x: 160, y: 34}
+      - {x: 163, y: 40}
+      - {x: 164, y: 24}
+    - - {x: 222, y: 22}
+      - {x: 222, y: 39}
+      - {x: 223, y: 40}
+      - {x: 222, y: 42}
+      - {x: 221, y: 40}
+      - {x: 222, y: 39}
+      - {x: 222, y: 16}
+      - {x: 223, y: 16}
+    - - {x: -435, y: 135}
+      - {x: -443, y: 135}
+      - {x: -445, y: 130}
+      - {x: -445, y: 78}
+      - {x: -440, y: 75}
+      - {x: -433, y: 75}
+      - {x: -431, y: 79}
+      - {x: -430, y: 93}
+      - {x: -430, y: 132}
+    - - {x: -390, y: 135}
+      - {x: -390, y: 78}
+      - {x: -384, y: 75}
+      - {x: -369, y: 75}
+      - {x: -365, y: 80}
+      - {x: -365, y: 124}
+      - {x: -368, y: 135}
+    - - {x: -327, y: 135}
+      - {x: -335, y: 122}
+      - {x: -335, y: 93}
+      - {x: -331, y: 82}
+      - {x: -325, y: 75}
+      - {x: -312, y: 75}
+      - {x: -302, y: 80}
+      - {x: -299, y: 83}
+      - {x: -299, y: 121}
+      - {x: -303, y: 135}
+    - - {x: -246, y: 135}
+      - {x: -267, y: 135}
+      - {x: -279, y: 125}
+      - {x: -279, y: 88}
+      - {x: -268, y: 75}
+      - {x: -249, y: 75}
+      - {x: -240, y: 79}
+      - {x: -235, y: 92}
+      - {x: -235, y: 119}
+    - - {x: -210, y: 135}
+      - {x: -212, y: 134}
+      - {x: -223, y: 120}
+      - {x: -223, y: 92}
+      - {x: -217, y: 82}
+      - {x: -206, y: 75}
+      - {x: -185, y: 75}
+      - {x: -172, y: 90}
+      - {x: -172, y: 123}
+      - {x: -186, y: 135}
+    - - {x: -112, y: 125}
+      - {x: -125, y: 134}
+      - {x: -127, y: 135}
+      - {x: -150, y: 135}
+      - {x: -166, y: 121}
+      - {x: -166, y: 92}
+      - {x: -152, y: 75}
+      - {x: -129, y: 75}
+      - {x: -121, y: 77}
+      - {x: -109, y: 93}
+      - {x: -109, y: 116}
+    - - {x: -58, y: 134}
+      - {x: -62, y: 135}
+      - {x: -93, y: 135}
+      - {x: -107, y: 122}
+      - {x: -107, y: 95}
+      - {x: -99, y: 80}
+      - {x: -89, y: 75}
+      - {x: -72, y: 75}
+      - {x: -59, y: 78}
+      - {x: -50, y: 88}
+      - {x: -48, y: 96}
+      - {x: -48, y: 117}
+    - - {x: 0, y: 133}
+      - {x: -4, y: 135}
+      - {x: -29, y: 135}
+      - {x: -37, y: 133}
+      - {x: -48, y: 119}
+      - {x: -48, y: 89}
+      - {x: -31, y: 75}
+      - {x: -6, y: 75}
+      - {x: 11, y: 87}
+      - {x: 12, y: 95}
+      - {x: 12, y: 117}
+    - - {x: 73, y: 144}
+      - {x: 59, y: 125}
+      - {x: 59, y: 115}
+      - {x: 69, y: 98}
+      - {x: 73, y: 98}
+      - {x: 92, y: 116}
+      - {x: 92, y: 118}
+      - {x: 80, y: 144}
+    - - {x: -126, y: 189}
+      - {x: -133, y: 195}
+      - {x: -143, y: 195}
+      - {x: -150, y: 193}
+      - {x: -156, y: 178}
+      - {x: -156, y: 148}
+      - {x: -147, y: 135}
+      - {x: -129, y: 135}
+      - {x: -121, y: 152}
+      - {x: -121, y: 178}
+    - - {x: -87, y: 195}
+      - {x: -91, y: 194}
+      - {x: -91, y: 140}
+      - {x: -87, y: 135}
+      - {x: -74, y: 135}
+      - {x: -66, y: 140}
+      - {x: -66, y: 188}
+      - {x: -71, y: 195}
+    - - {x: -25, y: 195}
+      - {x: -25, y: 136}
+      - {x: -22, y: 135}
+      - {x: -15, y: 135}
+      - {x: -11, y: 140}
+      - {x: -11, y: 194}
+      - {x: -12, y: 195}
+    - - {x: -425, y: 195}
+      - {x: -428, y: 193}
+      - {x: -437, y: 195}
+      - {x: -443, y: 195}
+      - {x: -450, y: 194}
+      - {x: -462, y: 186}
+      - {x: -468, y: 176}
+      - {x: -468, y: 141}
+      - {x: -451, y: 136}
+      - {x: -409, y: 136}
+      - {x: -409, y: 192}
+      - {x: -410, y: 195}
+    - - {x: -367, y: 195}
+      - {x: -391, y: 195}
+      - {x: -402, y: 187}
+      - {x: -408, y: 177}
+      - {x: -408, y: 158}
+      - {x: -406, y: 146}
+      - {x: -391, y: 136}
+      - {x: -367, y: 136}
+      - {x: -354, y: 148}
+      - {x: -349, y: 159}
+      - {x: -349, y: 184}
+    - - {x: -334, y: 194}
+      - {x: -344, y: 184}
+      - {x: -347, y: 179}
+      - {x: -347, y: 150}
+      - {x: -335, y: 136}
+      - {x: -304, y: 136}
+      - {x: -291, y: 151}
+      - {x: -291, y: 189}
+      - {x: -307, y: 194}
+    - - {x: -237, y: 189}
+      - {x: -250, y: 194}
+      - {x: -276, y: 194}
+      - {x: -284, y: 188}
+      - {x: -284, y: 139}
+      - {x: -273, y: 136}
+      - {x: -242, y: 136}
+      - {x: -235, y: 145}
+      - {x: -234, y: 153}
+      - {x: -234, y: 183}
+    - - {x: -213, y: 194}
+      - {x: -221, y: 172}
+      - {x: -221, y: 157}
+      - {x: -217, y: 146}
+      - {x: -209, y: 136}
+      - {x: -192, y: 136}
+      - {x: -180, y: 139}
+      - {x: -177, y: 150}
+      - {x: -177, y: 181}
+      - {x: -185, y: 194}
+    - - {x: 267, y: 238}
+      - {x: 267, y: 264}
+      - {x: 264, y: 274}
+      - {x: 259, y: 284}
+      - {x: 244, y: 301}
+      - {x: 221, y: 312}
+      - {x: 192, y: 312}
+      - {x: 172, y: 303}
+      - {x: 158, y: 290}
+      - {x: 146, y: 270}
+      - {x: 146, y: 235}
+      - {x: 154, y: 216}
+      - {x: 171, y: 198}
+      - {x: 194, y: 190}
+      - {x: 217, y: 190}
+      - {x: 223, y: 191}
+      - {x: 241, y: 200}
+      - {x: 257, y: 216}
+      - {x: 263, y: 229}
+    - - {x: 139, y: 236}
+      - {x: 140, y: 245}
+      - {x: 140, y: 254}
+      - {x: 139, y: 268}
+      - {x: 131, y: 286}
+      - {x: 114, y: 304}
+      - {x: 95, y: 313}
+      - {x: 67, y: 313}
+      - {x: 48, y: 305}
+      - {x: 41, y: 300}
+      - {x: 27, y: 286}
+      - {x: 19, y: 267}
+      - {x: 19, y: 241}
+      - {x: 20, y: 233}
+      - {x: 23, y: 227}
+      - {x: 31, y: 214}
+      - {x: 44, y: 200}
+      - {x: 66, y: 191}
+      - {x: 91, y: 191}
+      - {x: 102, y: 194}
+      - {x: 116, y: 202}
+      - {x: 131, y: 218}
+    - - {x: -443, y: 255}
+      - {x: -445, y: 250}
+      - {x: -445, y: 198}
+      - {x: -441, y: 195}
+      - {x: -433, y: 195}
+      - {x: -430, y: 203}
+      - {x: -430, y: 252}
+      - {x: -435, y: 255}
+    - - {x: -385, y: 255}
+      - {x: -389, y: 253}
+      - {x: -390, y: 241}
+      - {x: -390, y: 209}
+      - {x: -388, y: 199}
+      - {x: -380, y: 195}
+      - {x: -369, y: 195}
+      - {x: -365, y: 201}
+      - {x: -365, y: 243}
+      - {x: -369, y: 255}
+    - - {x: -327, y: 255}
+      - {x: -335, y: 239}
+      - {x: -335, y: 205}
+      - {x: -327, y: 195}
+      - {x: -307, y: 195}
+      - {x: -302, y: 198}
+      - {x: -300, y: 214}
+      - {x: -300, y: 245}
+      - {x: -309, y: 255}
+    - - {x: -266, y: 255}
+      - {x: -279, y: 240}
+      - {x: -279, y: 208}
+      - {x: -271, y: 196}
+      - {x: -247, y: 196}
+      - {x: -236, y: 201}
+      - {x: -236, y: 242}
+      - {x: -248, y: 255}
+    - - {x: -181, y: 254}
+      - {x: -213, y: 254}
+      - {x: -223, y: 244}
+      - {x: -223, y: 198}
+      - {x: -215, y: 196}
+      - {x: -185, y: 196}
+      - {x: -183, y: 198}
+      - {x: -172, y: 212}
+      - {x: -172, y: 240}
+    - - {x: -148, y: 254}
+      - {x: -165, y: 246}
+      - {x: -165, y: 209}
+      - {x: -153, y: 196}
+      - {x: -127, y: 196}
+      - {x: -113, y: 202}
+      - {x: -110, y: 211}
+      - {x: -110, y: 245}
+      - {x: -125, y: 254}
+    - - {x: -67, y: 254}
+      - {x: -71, y: 255}
+      - {x: -84, y: 255}
+      - {x: -97, y: 251}
+      - {x: -104, y: 241}
+      - {x: -107, y: 228}
+      - {x: -107, y: 217}
+      - {x: -106, y: 214}
+      - {x: -95, y: 196}
+      - {x: -63, y: 196}
+      - {x: -49, y: 214}
+      - {x: -49, y: 237}
+      - {x: -52, y: 246}
+    - - {x: 10, y: 246}
+      - {x: -8, y: 255}
+      - {x: -33, y: 255}
+      - {x: -43, y: 249}
+      - {x: -48, y: 232}
+      - {x: -48, y: 211}
+      - {x: -37, y: 199}
+      - {x: -27, y: 196}
+      - {x: 3, y: 196}
+      - {x: 11, y: 209}
+      - {x: 11, y: 245}
+    - - {x: -419, y: 315}
+      - {x: -453, y: 315}
+      - {x: -468, y: 304}
+      - {x: -468, y: 268}
+      - {x: -460, y: 255}
+      - {x: -420, y: 255}
+      - {x: -410, y: 267}
+      - {x: -408, y: 276}
+      - {x: -408, y: 300}
+    - - {x: -352, y: 315}
+      - {x: -403, y: 315}
+      - {x: -406, y: 298}
+      - {x: -408, y: 294}
+      - {x: -408, y: 273}
+      - {x: -399, y: 255}
+      - {x: -361, y: 255}
+      - {x: -352, y: 262}
+      - {x: -348, y: 278}
+      - {x: -348, y: 306}
+    - - {x: -311, y: 315}
+      - {x: -330, y: 315}
+      - {x: -346, y: 303}
+      - {x: -347, y: 299}
+      - {x: -347, y: 275}
+      - {x: -336, y: 257}
+      - {x: -333, y: 255}
+      - {x: -307, y: 255}
+      - {x: -290, y: 262}
+      - {x: -290, y: 297}
+      - {x: -300, y: 312}
+    - - {x: -268, y: 315}
+      - {x: -282, y: 305}
+      - {x: -284, y: 294}
+      - {x: -284, y: 271}
+      - {x: -282, y: 266}
+      - {x: -266, y: 255}
+      - {x: -250, y: 255}
+      - {x: -233, y: 267}
+      - {x: -233, y: 303}
+      - {x: -246, y: 315}
+    - - {x: -210, y: 315}
+      - {x: -221, y: 300}
+      - {x: -221, y: 257}
+      - {x: -212, y: 255}
+      - {x: -181, y: 255}
+      - {x: -177, y: 267}
+      - {x: -177, y: 302}
+      - {x: -188, y: 315}
+    - - {x: -134, y: 315}
+      - {x: -148, y: 315}
+      - {x: -156, y: 300}
+      - {x: -156, y: 267}
+      - {x: -152, y: 255}
+      - {x: -125, y: 255}
+      - {x: -121, y: 256}
+      - {x: -121, y: 302}
+      - {x: -126, y: 308}
+    - - {x: -86, y: 315}
+      - {x: -91, y: 310}
+      - {x: -91, y: 265}
+      - {x: -88, y: 255}
+      - {x: -72, y: 255}
+      - {x: -66, y: 260}
+      - {x: -66, y: 308}
+      - {x: -67, y: 315}
+    - - {x: -25, y: 315}
+      - {x: -25, y: 255}
+      - {x: -11, y: 255}
+      - {x: -11, y: 315}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

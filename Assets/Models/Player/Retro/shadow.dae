@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 4.0.1 commit date:2023-11-16, commit time:16:40, hash:d0dd92834a08</authoring_tool>
+    </contributor>
+    <created>2024-11-01T16:12:13</created>
+    <modified>2024-11-01T16:12:13</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="Shadow-effect">
+      <profile_COMMON>
+        <newparam sid="shadow_png-surface">
+          <surface type="2D">
+            <init_from>shadow_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="shadow_png-sampler">
+          <sampler2D>
+            <source>shadow_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="shadow_png-sampler" texcoord="UVSet0"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images>
+    <image id="shadow_png" name="shadow_png">
+      <init_from>shadow.png</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="Shadow-material" name="Shadow">
+      <instance_effect url="#Shadow-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Scene-mesh" name="Scene">
+      <mesh>
+        <source id="Scene-mesh-positions">
+          <float_array id="Scene-mesh-positions-array" count="21">-639.9994 -0.3997803 -1108.499 639.9994 -0.3997803 -1108.499 0 -0.3997803 0 -1279.999 -0.3997803 0 639.9994 -0.3997803 1108.499 -639.9994 -0.3997803 1108.499 1279.999 -0.3997803 0</float_array>
+          <technique_common>
+            <accessor source="#Scene-mesh-positions-array" count="7" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene-mesh-normals">
+          <float_array id="Scene-mesh-normals-array" count="3">0 -1 0</float_array>
+          <technique_common>
+            <accessor source="#Scene-mesh-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene-mesh-map-0">
+          <float_array id="Scene-mesh-map-0-array" count="24">1 1 0 1 0 0 1 0 0 0 1 0 1 1 0 1 1 1 0 1 0 0 1 0</float_array>
+          <technique_common>
+            <accessor source="#Scene-mesh-map-0-array" count="12" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene-mesh-colors-VertexColors" name="VertexColors">
+          <float_array id="Scene-mesh-colors-VertexColors-array" count="48">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#Scene-mesh-colors-VertexColors-array" count="12" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Scene-mesh-vertices">
+          <input semantic="POSITION" source="#Scene-mesh-positions"/>
+        </vertices>
+        <polylist material="Shadow-material" count="3">
+          <input semantic="VERTEX" source="#Scene-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Scene-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Scene-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Scene-mesh-colors-VertexColors" offset="3" set="0"/>
+          <vcount>4 4 4 </vcount>
+          <p>6 0 0 0 4 0 1 1 2 0 2 2 1 0 3 3 0 0 4 4 1 0 5 5 2 0 6 6 3 0 7 7 5 0 8 8 3 0 9 9 2 0 10 10 4 0 11 11</p>
+        </polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="root" name="root" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 -4.37114e-8 1 0 0 -1 -4.37114e-8 0 0 0 0 1</matrix>
+        <node id="pivot81" name="pivot81" type="NODE">
+          <matrix sid="transform">-0.001 0 0 0 0 -0.001 0 0 0 0 -0.001 0 0 0 0 1</matrix>
+          <node id="part81" name="part81" type="NODE">
+            <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+          </node>
+          <node id="part_trans_81" name="part_trans_81" type="NODE">
+            <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+            <instance_geometry url="#Scene-mesh" name="part_trans_81">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Shadow-material" target="#Shadow-material">
+                    <bind_vertex_input semantic="UVSet0" input_semantic="TEXCOORD" input_set="0"/>
+                  </instance_material>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+          </node>
+        </node>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

@@ -1,0 +1,1731 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 4.0.1 commit date:2023-11-16, commit time:16:40, hash:d0dd92834a08</authoring_tool>
+    </contributor>
+    <created>2024-12-08T04:49:21</created>
+    <modified>2024-12-08T04:49:21</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="Orange-effect">
+      <profile_COMMON>
+        <newparam sid="fur_png-surface">
+          <surface type="2D">
+            <init_from>fur_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="fur_png-sampler">
+          <sampler2D>
+            <source>fur_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="fur_png-sampler" texcoord="UVSet0"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="White-effect">
+      <profile_COMMON>
+        <newparam sid="white_png-surface">
+          <surface type="2D">
+            <init_from>white_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="white_png-sampler">
+          <sampler2D>
+            <source>white_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="white_png-sampler" texcoord="UVSet0"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Tail-effect">
+      <profile_COMMON>
+        <newparam sid="tail_png-surface">
+          <surface type="2D">
+            <init_from>tail_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="tail_png-sampler">
+          <sampler2D>
+            <source>tail_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="tail_png-sampler" texcoord="UVSet0"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Strap-effect">
+      <profile_COMMON>
+        <newparam sid="strap_png-surface">
+          <surface type="2D">
+            <init_from>strap_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="strap_png-sampler">
+          <sampler2D>
+            <source>strap_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="strap_png-sampler" texcoord="UVSet0"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Buckle-effect">
+      <profile_COMMON>
+        <newparam sid="buckle_png-surface">
+          <surface type="2D">
+            <init_from>buckle_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="buckle_png-sampler">
+          <sampler2D>
+            <source>buckle_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="buckle_png-sampler" texcoord="UVSet0"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Red-effect">
+      <profile_COMMON>
+        <newparam sid="red_png-surface">
+          <surface type="2D">
+            <init_from>red_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="red_png-sampler">
+          <sampler2D>
+            <source>red_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="red_png-sampler" texcoord="UVSet0"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Redsole-effect">
+      <profile_COMMON>
+        <newparam sid="solered_png-surface">
+          <surface type="2D">
+            <init_from>solered_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="solered_png-sampler">
+          <sampler2D>
+            <source>solered_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="solered_png-sampler" texcoord="UVSet0"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Greysole-effect">
+      <profile_COMMON>
+        <newparam sid="solegrey_png-surface">
+          <surface type="2D">
+            <init_from>solegrey_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="solegrey_png-sampler">
+          <sampler2D>
+            <source>solegrey_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="solegrey_png-sampler" texcoord="UVSet0"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Black-effect">
+      <profile_COMMON>
+        <newparam sid="black_png-surface">
+          <surface type="2D">
+            <init_from>black_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="black_png-sampler">
+          <sampler2D>
+            <source>black_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="black_png-sampler" texcoord="UVSet0"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Eye1-effect">
+      <profile_COMMON>
+        <newparam sid="eye1_png-surface">
+          <surface type="2D">
+            <init_from>eye1_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="eye1_png-sampler">
+          <sampler2D>
+            <source>eye1_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="eye1_png-sampler" texcoord="UVSet0"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Eye2-effect">
+      <profile_COMMON>
+        <newparam sid="eye2_png-surface">
+          <surface type="2D">
+            <init_from>eye2_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="eye2_png-sampler">
+          <sampler2D>
+            <source>eye2_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="eye2_png-sampler" texcoord="UVSet0"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Tummy-effect">
+      <profile_COMMON>
+        <newparam sid="tummy_png-surface">
+          <surface type="2D">
+            <init_from>tummy_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="tummy_png-sampler">
+          <sampler2D>
+            <source>tummy_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="tummy_png-sampler" texcoord="UVSet0"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images>
+    <image id="black_png" name="black_png">
+      <init_from>black.png</init_from>
+    </image>
+    <image id="buckle_png" name="buckle_png">
+      <init_from>buckle.png</init_from>
+    </image>
+    <image id="eye1_png" name="eye1_png">
+      <init_from>eye1.png</init_from>
+    </image>
+    <image id="eye2_png" name="eye2_png">
+      <init_from>eye2.png</init_from>
+    </image>
+    <image id="fur_png" name="fur_png">
+      <init_from>fur.png</init_from>
+    </image>
+    <image id="red_png" name="red_png">
+      <init_from>red.png</init_from>
+    </image>
+    <image id="solegrey_png" name="solegrey_png">
+      <init_from>solegrey.png</init_from>
+    </image>
+    <image id="solered_png" name="solered_png">
+      <init_from>solered.png</init_from>
+    </image>
+    <image id="strap_png" name="strap_png">
+      <init_from>strap.png</init_from>
+    </image>
+    <image id="tail_png" name="tail_png">
+      <init_from>tail.png</init_from>
+    </image>
+    <image id="tummy_png" name="tummy_png">
+      <init_from>tummy.png</init_from>
+    </image>
+    <image id="white_png" name="white_png">
+      <init_from>white.png</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="Orange-material" name="Orange">
+      <instance_effect url="#Orange-effect"/>
+    </material>
+    <material id="White-material" name="White">
+      <instance_effect url="#White-effect"/>
+    </material>
+    <material id="Tail-material" name="Tail">
+      <instance_effect url="#Tail-effect"/>
+    </material>
+    <material id="Strap-material" name="Strap">
+      <instance_effect url="#Strap-effect"/>
+    </material>
+    <material id="Buckle-material" name="Buckle">
+      <instance_effect url="#Buckle-effect"/>
+    </material>
+    <material id="Red-material" name="Red">
+      <instance_effect url="#Red-effect"/>
+    </material>
+    <material id="Redsole-material" name="Redsole">
+      <instance_effect url="#Redsole-effect"/>
+    </material>
+    <material id="Greysole-material" name="Greysole">
+      <instance_effect url="#Greysole-effect"/>
+    </material>
+    <material id="Black-material" name="Black">
+      <instance_effect url="#Black-effect"/>
+    </material>
+    <material id="Eye1-material" name="Eye1">
+      <instance_effect url="#Eye1-effect"/>
+    </material>
+    <material id="Eye2-material" name="Eye2">
+      <instance_effect url="#Eye2-effect"/>
+    </material>
+    <material id="Tummy-material" name="Tummy">
+      <instance_effect url="#Tummy-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Scene_014-mesh" name="Scene.014">
+      <mesh>
+        <source id="Scene_014-mesh-positions">
+          <float_array id="Scene_014-mesh-positions-array" count="132">-3702.13 2015.076 0 -3231.697 2272.791 -649.5606 -3482.602 4124.022 0 -3160.039 865.77 0.001525878 -2691.176 1329.526 -898.3017 -1897.313 633.9172 -627.2812 -2091.829 221.7636 0.001525878 -964.6118 297.4136 -338.7039 -1069.64 74.86878 0.001525878 -75.11292 -0.6851196 0.001525878 -2763.277 2648.618 -401.4496 -2201.024 1886.377 -555.1804 -1582.584 1300.795 -387.6801 -794.6701 657.4997 -209.3292 -2763.277 2648.618 401.4526 -2201.024 1886.377 555.1819 -1582.584 1300.795 387.6831 -794.6701 657.4997 209.3323 -3231.697 2272.791 649.5636 -2691.176 1329.526 898.3048 -1897.313 633.9172 627.2827 -964.6118 297.4136 338.707 -3702.753 -1976.439 0.001525878 -3483.885 -4085.452 0.001525878 -3232.402 -2234.302 -649.5606 -2691.585 -1291.206 -898.3017 -3160.304 -827.3026 0.001525878 -1897.507 -595.845 -627.2797 -2091.892 -183.6319 0.001525878 -964.6973 -259.6359 -338.7039 -1069.658 -37.05749 0.001525878 -75.10681 38.18664 0.001525878 -2764.101 -2610.277 -401.4496 -2201.608 -1848.209 -555.1788 -1582.985 -1262.822 -387.6801 -794.87 -619.7739 -209.3292 -2764.101 -2610.277 401.4526 -2201.608 -1848.209 555.1834 -1582.985 -1262.822 387.6831 -794.87 -619.7739 209.3338 -3232.402 -2234.302 649.5636 -2691.585 -1291.206 898.3048 -1897.507 -595.845 627.2843 -964.6973 -259.6359 338.707</float_array>
+          <technique_common>
+            <accessor source="#Scene_014-mesh-positions-array" count="44" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene_014-mesh-normals">
+          <float_array id="Scene_014-mesh-normals-array" count="132">-0.9835745 -0.1805034 -9.01201e-7 -0.2127848 0.9770992 3.18227e-7 -0.4058057 0.1137318 -0.9068555 0.6319143 0.5449811 -0.5510715 0.01894932 -0.4156321 -0.9093354 -0.2009508 -0.1916322 -0.9606747 0.6052679 0.5247845 -0.5985416 -0.20089 0.1916947 -0.960675 -0.7492674 0.6622676 -1.38643e-7 -0.3404343 0.9402683 -2.94197e-7 0.01907867 0.415627 -0.909335 0.01907861 0.4156271 0.909335 0.6317431 -0.5451796 0.5510716 0.6177785 -0.5555522 0.5565173 0.166285 0.4018904 0.9004629 0.166159 -0.4019432 -0.9004625 0.9043464 -0.4267995 0 -0.1130641 -0.9935878 1.74887e-7 0.6235531 0.5274963 -0.5770002 0.6052684 0.5247846 0.598541 0.6235527 0.5274966 0.5770004 -0.4058062 0.1137322 0.9068553 -0.2009506 -0.1916322 0.9606747 -0.2008904 0.1916947 0.960675 0.6051038 -0.5249737 0.5985417 0.6179524 0.5553592 0.556517 0.6179526 0.5553593 -0.5565166 0.6319141 0.544981 0.551072 -0.7494744 -0.6620334 1.38642e-7 0.6051043 -0.5249738 -0.5985411 0.6317431 -0.5451794 -0.551072 -0.1127531 0.9936231 -2.44842e-7 -0.4058421 -0.1136052 0.9068551 0.6233881 -0.5276913 0.5770003 0.1661586 -0.4019432 0.9004627 -0.4058419 -0.1136052 -0.9068552 -0.9835179 0.1808112 0 -0.3407293 -0.9401615 2.30241e-7 -0.2130892 -0.9770328 0 0.01894909 -0.4156321 0.9093354 0.1662852 0.4018895 -0.9004634 0.9044795 0.4265174 0 0.6233882 -0.5276911 -0.5770003 0.6177785 -0.555553 -0.5565164</float_array>
+          <technique_common>
+            <accessor source="#Scene_014-mesh-normals-array" count="44" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene_014-mesh-map-0">
+          <float_array id="Scene_014-mesh-map-0-array" count="360">0 0 0 1 1 0.5 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 0.5 0 0 0 1 1 0.5 0 1 0 0 1 0 1 1 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 0.5 0 0 0 1 1 0.5 0 1 0 0 1 0 1 1 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 0.5 0 0 0 1 1 0.5 0 1 0 0 1 0 1 1 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 0.5 0 0 0 1 1 0.5 0 1 0 0 1 0 1 1 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 0.5 0 0 0 1 1 0.5 0 1 0 0 1 0 1 1 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 0.5 0 0 0 1 1 0.5 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 0.5 0 0 0 1 1 0.5 0 1 0 0 1 0 1 1 0 1 0 0 1 0 1 1 0 0 0 1 1 1 1 0 0 0 0 1 1 0.5 0 0 0 1 1 0.5 0 1 0 0 1 0 1 1 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 0.5 0 0 0 1 1 0.5 0 1 0 0 1 0 1 1 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 0.5 0 1 0 0 1 0 1 1</float_array>
+          <technique_common>
+            <accessor source="#Scene_014-mesh-map-0-array" count="180" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene_014-mesh-colors-VertexColors" name="VertexColors">
+          <float_array id="Scene_014-mesh-colors-VertexColors-array" count="720">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#Scene_014-mesh-colors-VertexColors-array" count="180" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Scene_014-mesh-vertices">
+          <input semantic="POSITION" source="#Scene_014-mesh-positions"/>
+        </vertices>
+        <polylist material="Orange-material" count="30">
+          <input semantic="VERTEX" source="#Scene_014-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Scene_014-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Scene_014-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Scene_014-mesh-colors-VertexColors" offset="3" set="0"/>
+          <vcount>4 4 4 3 4 4 3 4 4 3 4 4 3 4 4 3 4 4 3 4 4 3 4 3 4 4 3 4 4 3 </vcount>
+          <p>12 3 3 3 5 4 4 4 4 5 5 5 11 6 6 6 25 7 7 7 26 8 8 8 28 9 9 9 27 10 10 10 42 11 11 11 38 12 12 12 39 13 13 13 43 14 14 14 7 15 15 15 9 16 16 16 8 17 17 17 41 23 25 25 37 24 26 26 38 12 27 27 42 11 28 28 17 25 29 29 13 26 30 30 12 3 31 31 16 27 32 32 13 26 33 33 9 16 34 34 7 15 35 35 37 24 43 43 33 29 44 44 34 30 45 45 38 12 46 46 28 9 47 47 42 11 48 48 43 14 49 49 30 31 50 50 17 25 51 51 9 16 52 52 13 26 53 53 33 29 61 61 25 7 62 62 27 10 63 63 34 30 64 64 13 26 65 65 7 15 66 66 5 4 67 67 12 3 68 68 21 34 69 69 9 16 70 70 17 25 71 71 16 27 79 79 12 3 80 80 11 6 81 81 15 19 82 82 7 15 83 83 8 17 84 84 6 37 85 85 5 4 86 86 8 17 87 87 9 16 88 88 21 34 89 89 6 37 97 97 20 39 98 98 19 22 99 99 3 28 100 100 21 34 101 101 17 25 102 102 16 27 103 103 20 39 104 104 29 40 105 105 30 31 106 106 31 41 107 107 38 12 111 111 34 30 112 112 35 43 113 113 39 13 114 114 26 8 115 115 41 23 116 116 42 11 117 117 28 9 118 118 35 43 119 119 29 40 120 120 31 41 121 121 27 10 133 133 28 9 134 134 30 31 135 135 29 40 136 136 39 13 137 137 35 43 138 138 31 41 139 139 20 39 147 147 16 27 148 148 15 19 149 149 19 22 150 150 34 30 151 151 27 10 152 152 29 40 153 153 35 43 154 154 43 14 155 155 39 13 156 156 31 41 157 157 5 4 165 165 6 37 166 166 3 28 167 167 4 5 168 168 8 17 169 169 21 34 170 170 20 39 171 171 6 37 172 172 30 31 173 173 43 14 174 174 31 41 175 175</p>
+        </polylist>
+        <triangles material="White-material" count="10">
+          <input semantic="VERTEX" source="#Scene_014-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Scene_014-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Scene_014-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Scene_014-mesh-colors-VertexColors" offset="3" set="0"/>
+          <p>0 0 0 0 2 1 1 1 1 2 2 2 1 2 18 18 2 1 19 19 10 18 20 20 10 18 36 36 2 1 37 37 14 20 38 38 14 20 54 54 2 1 55 55 18 21 56 56 18 21 72 72 2 1 73 73 0 0 74 74 22 36 90 90 24 35 91 91 23 38 92 92 24 35 108 108 32 42 109 109 23 38 110 110 32 42 122 122 36 33 123 123 23 38 124 124 36 33 140 140 40 32 141 141 23 38 142 142 40 32 158 158 22 36 159 159 23 38 160 160</p>
+        </triangles>
+        <polylist material="Tail-material" count="10">
+          <input semantic="VERTEX" source="#Scene_014-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Scene_014-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Scene_014-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Scene_014-mesh-colors-VertexColors" offset="3" set="0"/>
+          <vcount>4 4 4 4 4 4 4 4 4 4 </vcount>
+          <p>15 19 21 21 14 20 22 22 18 21 23 23 19 22 24 24 19 22 39 39 18 21 40 40 0 0 41 41 3 28 42 42 41 23 57 57 40 32 58 58 36 33 59 59 37 24 60 60 25 7 75 75 24 35 76 76 22 36 77 77 26 8 78 78 26 8 93 93 22 36 94 94 40 32 95 95 41 23 96 96 11 6 125 125 10 18 126 126 14 20 127 127 15 19 128 128 4 5 129 129 1 2 130 130 10 18 131 131 11 6 132 132 33 29 143 143 32 42 144 144 24 35 145 145 25 7 146 146 3 28 161 161 0 0 162 162 1 2 163 163 4 5 164 164 37 24 176 176 36 33 177 177 32 42 178 178 33 29 179 179</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Scene_013-mesh" name="Scene.013">
+      <mesh>
+        <source id="Scene_013-mesh-positions">
+          <float_array id="Scene_013-mesh-positions-array" count="36">-348.8587 -377.9389 -207.8766 112.2025 -278.9139 -207.8247 112.439 285.8566 -207.8247 -348.5397 385.2661 -207.8751 -348.8968 -377.9389 146.759 112.2849 -278.9154 146.8094 -348.5779 385.2661 146.7606 112.5198 285.8566 146.8109 -686.4899 -217.5247 -132.6431 -686.4685 -217.5247 -318.895 -686.2839 225.1343 -318.895 -686.3037 225.1343 -132.6416</float_array>
+          <technique_common>
+            <accessor source="#Scene_013-mesh-positions-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene_013-mesh-normals">
+          <float_array id="Scene_013-mesh-normals-array" count="36">-0.2482277 -0.6959712 0.6738006 -0.2476459 0.6961767 0.6738024 -0.832796 0.4450237 0.3292487 -0.8331683 -0.4443274 0.3292472 0.6283123 -0.5078904 0.5892971 0.6287357 0.5073634 0.5892996 -0.02713572 -0.7952693 -0.6056488 -0.02647167 0.7952932 -0.6056467 0.6286742 0.5073863 -0.5893453 0.6282501 -0.5079106 -0.5893462 -0.5589283 0.4326653 -0.7073896 -0.5592896 -0.432198 -0.7073896</float_array>
+          <technique_common>
+            <accessor source="#Scene_013-mesh-normals-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene_013-mesh-map-0">
+          <float_array id="Scene_013-mesh-map-0-array" count="80">0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#Scene_013-mesh-map-0-array" count="40" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene_013-mesh-colors-VertexColors" name="VertexColors">
+          <float_array id="Scene_013-mesh-colors-VertexColors-array" count="160">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#Scene_013-mesh-colors-VertexColors-array" count="40" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Scene_013-mesh-vertices">
+          <input semantic="POSITION" source="#Scene_013-mesh-positions"/>
+        </vertices>
+        <polylist material="White-material" count="10">
+          <input semantic="VERTEX" source="#Scene_013-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Scene_013-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Scene_013-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Scene_013-mesh-colors-VertexColors" offset="3" set="0"/>
+          <vcount>4 4 4 4 4 4 4 4 4 4 </vcount>
+          <p>4 0 0 0 6 1 1 1 11 2 2 2 8 3 3 3 6 1 4 4 4 0 5 5 5 4 6 6 7 5 7 7 0 6 8 8 3 7 9 9 2 8 10 10 1 9 11 11 4 0 12 12 0 6 13 13 1 9 14 14 5 4 15 15 3 7 16 16 6 1 17 17 7 5 18 18 2 8 19 19 8 3 20 20 11 2 21 21 10 10 22 22 9 11 23 23 0 6 24 24 4 0 25 25 8 3 26 26 9 11 27 27 6 1 28 28 3 7 29 29 10 10 30 30 11 2 31 31 3 7 32 32 0 6 33 33 9 11 34 34 10 10 35 35 1 9 36 36 2 8 37 37 7 5 38 38 5 4 39 39</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Scene_012-mesh" name="Scene.012">
+      <mesh>
+        <source id="Scene_012-mesh-positions">
+          <float_array id="Scene_012-mesh-positions-array" count="48">-271.1075 -90.56855 -33.07953 95.27283 -87.03308 -33.21686 94.54804 9.069825 -128.2333 -271.8338 5.532837 -128.096 -271.8613 5.532837 61.9339 94.52057 9.069825 61.79657 -272.5861 101.6388 -33.07953 93.79578 105.1727 -33.21686 -636.1435 5.085754 -277.6016 -634.2667 -243.6249 -31.70776 -269.7235 -241.5375 -31.46362 -271.6019 7.171631 -277.356 -636.1908 1.812744 210.9482 -271.6477 3.898621 211.1938 -638.0676 250.5249 -34.94263 -273.5245 252.6108 -34.69849</float_array>
+          <technique_common>
+            <accessor source="#Scene_012-mesh-positions-array" count="16" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene_012-mesh-normals">
+          <float_array id="Scene_012-mesh-normals-array" count="48">-0.577625 -0.00372529 -0.8162938 0.578255 0.003727018 -0.8158476 0.5822938 -0.8129783 2.78328e-4 -0.5711844 -0.8208219 -2.77862e-4 -0.5822917 0.8129801 -2.76415e-4 0.5711857 0.8208208 2.79718e-4 -0.5782569 -0.003730833 0.8158463 0.5776266 0.003721475 0.8162928 0.009651362 -0.9999535 2.43627e-4 -3.65225e-4 -8.87276e-4 -0.9999996 0.5778538 0.00515443 -0.816124 0.5837374 -0.8119425 -1.01695e-4 -0.009649097 0.9999535 2.4266e-4 3.84359e-4 -8.79829e-4 0.9999996 0.5780051 0.005156755 0.8160168 0.5697274 0.8218339 -1.02552e-4</float_array>
+          <technique_common>
+            <accessor source="#Scene_012-mesh-normals-array" count="16" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene_012-mesh-map-0">
+          <float_array id="Scene_012-mesh-map-0-array" count="88">0 1 0 0 1 0 1 1 0 1 0 0 1 0 1 1 1 1 1 0 0 0 0 1 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 1 0 0 1 0 1 1 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#Scene_012-mesh-map-0-array" count="44" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene_012-mesh-colors-VertexColors" name="VertexColors">
+          <float_array id="Scene_012-mesh-colors-VertexColors-array" count="176">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#Scene_012-mesh-colors-VertexColors-array" count="44" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Scene_012-mesh-vertices">
+          <input semantic="POSITION" source="#Scene_012-mesh-positions"/>
+        </vertices>
+        <polylist material="Orange-material" count="5">
+          <input semantic="VERTEX" source="#Scene_012-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Scene_012-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Scene_012-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Scene_012-mesh-colors-VertexColors" offset="3" set="0"/>
+          <vcount>4 4 4 4 4 </vcount>
+          <p>0 8 12 12 3 9 13 13 2 10 14 14 1 11 15 15 6 12 20 20 4 13 21 21 5 14 22 22 7 15 23 23 3 9 24 24 6 12 25 25 7 15 26 26 2 10 27 27 1 11 28 28 2 10 29 29 7 15 30 30 5 14 31 31 4 13 40 40 0 8 41 41 1 11 42 42 5 14 43 43</p>
+        </polylist>
+        <polylist material="White-material" count="2">
+          <input semantic="VERTEX" source="#Scene_012-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Scene_012-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Scene_012-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Scene_012-mesh-colors-VertexColors" offset="3" set="0"/>
+          <vcount>4 4 </vcount>
+          <p>10 2 16 16 11 1 17 17 15 5 18 18 13 7 19 19 12 6 36 36 14 4 37 37 8 0 38 38 9 3 39 39</p>
+        </polylist>
+        <polylist material="Strap-material" count="2">
+          <input semantic="VERTEX" source="#Scene_012-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Scene_012-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Scene_012-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Scene_012-mesh-colors-VertexColors" offset="3" set="0"/>
+          <vcount>4 4 </vcount>
+          <p>8 0 0 0 11 1 1 1 10 2 2 2 9 3 3 3 14 4 4 4 15 5 5 5 11 1 6 6 8 0 7 7</p>
+        </polylist>
+        <polylist material="Buckle-material" count="2">
+          <input semantic="VERTEX" source="#Scene_012-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Scene_012-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Scene_012-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Scene_012-mesh-colors-VertexColors" offset="3" set="0"/>
+          <vcount>4 4 </vcount>
+          <p>12 6 8 8 13 7 9 9 15 5 10 10 14 4 11 11 9 3 32 32 10 2 33 33 13 7 34 34 12 6 35 35</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Scene_011-mesh" name="Scene.011">
+      <mesh>
+        <source id="Scene_011-mesh-positions">
+          <float_array id="Scene_011-mesh-positions-array" count="24">-549.0616 -87.66632 -33.27331 34.68628 -97.89276 -33.16955 131.6208 -3.469849 -128.1677 -547.3618 8.425904 -128.2883 -547.3969 8.425904 61.74164 -65.76691 -0.01220703 61.82556 -545.6955 104.5166 -33.27179 38.05389 94.29016 -33.16955</float_array>
+          <technique_common>
+            <accessor source="#Scene_011-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene_011-mesh-normals">
+          <float_array id="Scene_011-mesh-normals-array" count="24">-0.577717 0.0101248 -0.8161745 -0.5623562 0.8268952 -9.64915e-5 0.5253803 0.8302386 0.1862248 0.8787549 -0.01538997 -0.4770252 0.4959772 -0.8481326 0.1862192 0.2034059 -0.00356543 0.9790881 -0.5780126 0.01012432 0.8159651 -0.5909695 -0.8066939 -1.02928e-4</float_array>
+          <technique_common>
+            <accessor source="#Scene_011-mesh-normals-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene_011-mesh-map-0">
+          <float_array id="Scene_011-mesh-map-0-array" count="48">0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#Scene_011-mesh-map-0-array" count="24" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene_011-mesh-colors-VertexColors" name="VertexColors">
+          <float_array id="Scene_011-mesh-colors-VertexColors-array" count="96">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#Scene_011-mesh-colors-VertexColors-array" count="24" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Scene_011-mesh-vertices">
+          <input semantic="POSITION" source="#Scene_011-mesh-positions"/>
+        </vertices>
+        <polylist material="Orange-material" count="6">
+          <input semantic="VERTEX" source="#Scene_011-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Scene_011-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Scene_011-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Scene_011-mesh-colors-VertexColors" offset="3" set="0"/>
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>3 0 0 0 6 1 1 1 7 2 2 2 2 3 3 3 1 4 4 4 2 3 5 5 7 2 6 6 5 5 7 7 4 6 8 8 0 7 9 9 1 4 10 10 5 5 11 11 6 1 12 12 4 6 13 13 5 5 14 14 7 2 15 15 0 7 16 16 3 0 17 17 2 3 18 18 1 4 19 19 4 6 20 20 6 1 21 21 3 0 22 22 0 7 23 23</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Scene_010-mesh" name="Scene.010">
+      <mesh>
+        <source id="Scene_010-mesh-positions">
+          <float_array id="Scene_010-mesh-positions-array" count="36">112.1857 -278.9154 198.8388 -348.877 -377.9389 198.8892 -348.5565 385.2661 198.8876 112.4207 285.8566 198.8373 112.2665 -278.9154 -155.7968 -348.9151 -377.9389 -155.748 112.5031 285.8566 -155.7983 -348.5962 385.2646 -155.748 -686.4868 -217.5247 309.9075 -686.5067 -217.5247 123.6557 -686.3205 225.1343 123.6557 -686.3007 225.1343 309.906</float_array>
+          <technique_common>
+            <accessor source="#Scene_010-mesh-positions-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene_010-mesh-normals">
+          <float_array id="Scene_010-mesh-normals-array" count="36">-0.8331687 -0.4443266 -0.3292473 -0.8327959 0.445025 -0.3292477 -0.2476478 0.6961753 -0.673803 -0.2482295 -0.6959692 -0.673802 0.6286731 0.5073882 0.5893449 0.6287361 0.5073634 -0.589299 -0.02647233 0.7952937 0.6056461 0.6282493 -0.5079112 0.5893465 -0.02713793 -0.7952695 0.6056485 0.6283121 -0.5078904 -0.5892974 -0.5589299 0.432667 0.7073873 -0.5592923 -0.4321958 0.7073889</float_array>
+          <technique_common>
+            <accessor source="#Scene_010-mesh-normals-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene_010-mesh-map-0">
+          <float_array id="Scene_010-mesh-map-0-array" count="80">0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#Scene_010-mesh-map-0-array" count="40" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene_010-mesh-colors-VertexColors" name="VertexColors">
+          <float_array id="Scene_010-mesh-colors-VertexColors-array" count="160">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#Scene_010-mesh-colors-VertexColors-array" count="40" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Scene_010-mesh-vertices">
+          <input semantic="POSITION" source="#Scene_010-mesh-positions"/>
+        </vertices>
+        <polylist material="White-material" count="10">
+          <input semantic="VERTEX" source="#Scene_010-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Scene_010-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Scene_010-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Scene_010-mesh-colors-VertexColors" offset="3" set="0"/>
+          <vcount>4 4 4 4 4 4 4 4 4 4 </vcount>
+          <p>9 0 0 0 10 1 1 1 7 2 2 2 5 3 3 3 3 4 4 4 6 5 5 5 7 2 6 6 2 6 7 7 0 7 8 8 3 4 9 9 2 6 10 10 1 8 11 11 6 5 12 12 4 9 13 13 5 3 14 14 7 2 15 15 4 9 16 16 6 5 17 17 3 4 18 18 0 7 19 19 4 9 20 20 0 7 21 21 1 8 22 22 5 3 23 23 10 1 24 24 11 10 25 25 2 6 26 26 7 2 27 27 11 10 28 28 8 11 29 29 1 8 30 30 2 6 31 31 8 11 32 32 9 0 33 33 5 3 34 34 1 8 35 35 8 11 36 36 11 10 37 37 10 1 38 38 9 0 39 39</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Scene_009-mesh" name="Scene.009">
+      <mesh>
+        <source id="Scene_009-mesh-positions">
+          <float_array id="Scene_009-mesh-positions-array" count="48">95.25299 -87.03461 24.22943 -271.1289 -90.56855 24.09363 -271.8536 5.532837 119.1086 94.5282 9.069825 119.2459 94.50074 9.069825 -70.784 -271.8811 5.532837 -70.92133 93.77442 105.1727 24.22943 -272.6074 101.6388 24.09363 -634.2865 -243.6264 22.72034 -636.1649 5.085754 268.6127 -271.6217 7.171631 268.3685 -269.7449 -241.5375 22.47467 -636.2106 1.811218 -219.9356 -271.6675 3.898621 -220.1813 -638.089 250.5234 25.9552 -273.5458 252.6108 25.71106</float_array>
+          <technique_common>
+            <accessor source="#Scene_009-mesh-positions-array" count="16" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene_009-mesh-normals">
+          <float_array id="Scene_009-mesh-normals-array" count="48">-0.5822947 0.8129778 2.75785e-4 0.5711832 0.8208227 -2.79675e-4 0.5776275 0.00372374 -0.8162921 -0.5782557 -0.003732383 -0.815847 0.5697224 0.8218372 1.04362e-4 0.5780075 0.005159914 -0.8160152 3.81218e-4 -8.78009e-4 -0.9999996 -0.009649097 0.9999535 -2.3673e-4 0.5837366 -0.8119432 1.03431e-4 0.5778554 0.005157649 0.8161229 -3.64206e-4 -8.85397e-4 0.9999997 0.009649276 -0.9999535 -2.37795e-4 -0.5776274 -0.003725469 0.8162921 0.5782552 0.003727555 0.8158474 0.5822939 -0.8129785 -2.79873e-4 -0.5711817 -0.8208237 2.78628e-4</float_array>
+          <technique_common>
+            <accessor source="#Scene_009-mesh-normals-array" count="16" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene_009-mesh-map-0">
+          <float_array id="Scene_009-mesh-map-0-array" count="88">0 1 0 0 1 0 1 1 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 1 0 0 1 0 1 1 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 1 0 0 1 0 1 1 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 1 1 1 0 0 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Scene_009-mesh-map-0-array" count="44" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene_009-mesh-colors-VertexColors" name="VertexColors">
+          <float_array id="Scene_009-mesh-colors-VertexColors-array" count="176">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#Scene_009-mesh-colors-VertexColors-array" count="44" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Scene_009-mesh-vertices">
+          <input semantic="POSITION" source="#Scene_009-mesh-positions"/>
+        </vertices>
+        <polylist material="Orange-material" count="5">
+          <input semantic="VERTEX" source="#Scene_009-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Scene_009-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Scene_009-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Scene_009-mesh-colors-VertexColors" offset="3" set="0"/>
+          <vcount>4 4 4 4 4 </vcount>
+          <p>6 4 4 4 4 5 5 5 5 6 6 6 7 7 7 7 0 8 8 8 3 9 9 9 2 10 10 10 1 11 11 11 3 9 20 20 6 4 21 21 7 7 22 22 2 10 23 23 4 5 28 28 0 8 29 29 1 11 30 30 5 6 31 31 4 5 32 32 6 4 33 33 3 9 34 34 0 8 35 35</p>
+        </polylist>
+        <polylist material="White-material" count="2">
+          <input semantic="VERTEX" source="#Scene_009-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Scene_009-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Scene_009-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Scene_009-mesh-colors-VertexColors" offset="3" set="0"/>
+          <vcount>4 4 </vcount>
+          <p>13 2 16 16 15 1 17 17 10 13 18 18 11 14 19 19 8 15 36 36 9 12 37 37 14 0 38 38 12 3 39 39</p>
+        </polylist>
+        <polylist material="Strap-material" count="2">
+          <input semantic="VERTEX" source="#Scene_009-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Scene_009-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Scene_009-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Scene_009-mesh-colors-VertexColors" offset="3" set="0"/>
+          <vcount>4 4 </vcount>
+          <p>9 12 12 12 10 13 13 13 15 1 14 14 14 0 15 15 8 15 24 24 11 14 25 25 10 13 26 26 9 12 27 27</p>
+        </polylist>
+        <polylist material="Buckle-material" count="2">
+          <input semantic="VERTEX" source="#Scene_009-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Scene_009-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Scene_009-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Scene_009-mesh-colors-VertexColors" offset="3" set="0"/>
+          <vcount>4 4 </vcount>
+          <p>14 0 0 0 15 1 1 1 13 2 2 2 12 3 3 3 12 3 40 40 13 2 41 41 11 14 42 42 8 15 43 43</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Scene_008-mesh" name="Scene.008">
+      <mesh>
+        <source id="Scene_008-mesh-positions">
+          <float_array id="Scene_008-mesh-positions-array" count="24">34.66492 -97.89276 24.18366 -549.086 -87.66632 24.28894 -547.3847 8.425904 119.3024 131.5994 -3.469849 119.1818 -65.7898 -0.01220703 -70.81299 -547.4197 8.425904 -70.72602 38.02948 94.29016 24.18366 -545.7184 104.5166 24.28742</float_array>
+          <technique_common>
+            <accessor source="#Scene_008-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene_008-mesh-normals">
+          <float_array id="Scene_008-mesh-normals-array" count="24">0.5253757 0.8302422 -0.1862212 0.2034032 -0.003564536 -0.9790887 -0.5780144 0.01012593 -0.8159638 -0.5623527 0.8268975 1.00989e-4 0.8787542 -0.01538687 0.4770266 0.495983 -0.8481293 -0.1862192 -0.5909729 -0.8066915 1.07558e-4 -0.5777175 0.01012635 0.8161741</float_array>
+          <technique_common>
+            <accessor source="#Scene_008-mesh-normals-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene_008-mesh-map-0">
+          <float_array id="Scene_008-mesh-map-0-array" count="48">0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#Scene_008-mesh-map-0-array" count="24" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene_008-mesh-colors-VertexColors" name="VertexColors">
+          <float_array id="Scene_008-mesh-colors-VertexColors-array" count="96">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#Scene_008-mesh-colors-VertexColors-array" count="24" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Scene_008-mesh-vertices">
+          <input semantic="POSITION" source="#Scene_008-mesh-positions"/>
+        </vertices>
+        <polylist material="Orange-material" count="6">
+          <input semantic="VERTEX" source="#Scene_008-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Scene_008-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Scene_008-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Scene_008-mesh-colors-VertexColors" offset="3" set="0"/>
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>6 0 0 0 4 1 1 1 5 2 2 2 7 3 3 3 4 1 4 4 6 0 5 5 3 4 6 6 0 5 7 7 4 1 8 8 0 5 9 9 1 6 10 10 5 2 11 11 0 5 12 12 3 4 13 13 2 7 14 14 1 6 15 15 3 4 16 16 6 0 17 17 7 3 18 18 2 7 19 19 1 6 20 20 2 7 21 21 7 3 22 22 5 2 23 23</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Scene_007-mesh" name="Scene.007">
+      <mesh>
+        <source id="Scene_007-mesh-positions">
+          <float_array id="Scene_007-mesh-positions-array" count="36">-1681.934 87.35352 219.6777 -455.365 -202.4734 426.8494 -455.365 -202.4734 -291.2583 -1681.934 87.35352 4.885864 380.8716 39.31274 -254.1748 83.73413 794.7022 -403.1998 -522.0581 545.781 -403.1998 380.8716 39.31274 347.6654 83.73413 794.7022 645.7916 497.8485 957.8735 112.2818 556.839 208.3435 112.2818 -522.0581 545.781 645.7916</float_array>
+          <technique_common>
+            <accessor source="#Scene_007-mesh-positions-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene_007-mesh-normals">
+          <float_array id="Scene_007-mesh-normals-array" count="36">0.5810172 -0.5940083 0.5563931 0.9793985 -0.1992043 0.03310996 0.6349017 0.7722465 0.02313721 0.1372636 0.5977492 0.7898448 5.56663e-4 -0.8140227 0.580833 -0.2980467 0.4875835 0.8206282 0.1291172 0.6514912 -0.747588 0.5784966 -0.5303971 -0.6196939 -0.9060193 -0.07254695 0.4169722 -0.9121267 -0.06944894 -0.4039825 -0.0302568 -0.7759047 -0.6301243 -0.3199369 0.5443767 -0.7754319</float_array>
+          <technique_common>
+            <accessor source="#Scene_007-mesh-normals-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene_007-mesh-map-0">
+          <float_array id="Scene_007-mesh-map-0-array" count="88">0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 0.5 0 0 0 1 1 0.5 0 0 0 1 1 0.5 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 0.5 0 0 0 1 1 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#Scene_007-mesh-map-0-array" count="44" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene_007-mesh-colors-VertexColors" name="VertexColors">
+          <float_array id="Scene_007-mesh-colors-VertexColors-array" count="176">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#Scene_007-mesh-colors-VertexColors-array" count="44" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Scene_007-mesh-vertices">
+          <input semantic="POSITION" source="#Scene_007-mesh-positions"/>
+        </vertices>
+        <polylist material="White-material" count="3">
+          <input semantic="VERTEX" source="#Scene_007-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Scene_007-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Scene_007-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Scene_007-mesh-colors-VertexColors" offset="3" set="0"/>
+          <vcount>4 3 3 </vcount>
+          <p>0 8 12 12 3 9 13 13 2 10 14 14 1 4 15 15 0 8 23 23 1 4 24 24 11 5 25 25 6 11 26 26 2 10 27 27 3 9 28 28</p>
+        </polylist>
+        <polylist material="Red-material" count="6">
+          <input semantic="VERTEX" source="#Scene_007-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Scene_007-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Scene_007-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Scene_007-mesh-colors-VertexColors" offset="3" set="0"/>
+          <vcount>4 4 4 4 3 4 </vcount>
+          <p>7 0 0 0 10 1 1 1 9 2 2 2 8 3 3 3 1 4 4 4 7 0 5 5 8 3 6 6 11 5 7 7 5 6 8 8 9 2 9 9 10 1 10 10 4 7 11 11 2 10 16 16 4 7 17 17 7 0 18 18 1 4 19 19 10 1 20 20 7 0 21 21 4 7 22 22 4 7 33 33 2 10 34 34 6 11 35 35 5 6 36 36</p>
+        </polylist>
+        <polylist material="Redsole-material" count="2">
+          <input semantic="VERTEX" source="#Scene_007-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Scene_007-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Scene_007-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Scene_007-mesh-colors-VertexColors" offset="3" set="0"/>
+          <vcount>3 4 </vcount>
+          <p>9 2 37 37 5 6 38 38 8 3 39 39 11 5 40 40 8 3 41 41 5 6 42 42 6 11 43 43</p>
+        </polylist>
+        <polylist material="Greysole-material" count="1">
+          <input semantic="VERTEX" source="#Scene_007-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Scene_007-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Scene_007-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Scene_007-mesh-colors-VertexColors" offset="3" set="0"/>
+          <vcount>4 </vcount>
+          <p>3 9 29 29 0 8 30 30 11 5 31 31 6 11 32 32</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Scene_006-mesh" name="Scene.006">
+      <mesh>
+        <source id="Scene_006-mesh-positions">
+          <float_array id="Scene_006-mesh-positions-array" count="48">-203.2486 -86.7981 -0.5767822 71.46149 -88.25836 -0.5767822 72.15729 10.33478 -105.1376 -202.5528 11.79352 -105.1376 -202.5528 11.79352 103.981 72.15729 10.33478 103.981 -201.8555 110.3867 -0.5767822 72.85309 108.9279 -0.5767822 -734.2789 16.48865 -228.83 -736.4578 -295.8206 -11.36169 -204.1763 -294.9585 -4.537964 -201.9958 14.17389 -228.83 -734.3079 11.77673 305.04 -202.0233 9.461976 305.04 -732.1289 323.3246 -16.36047 -199.8428 318.5425 -8.847046</float_array>
+          <technique_common>
+            <accessor source="#Scene_006-mesh-positions-array" count="16" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene_006-mesh-normals">
+          <float_array id="Scene_006-mesh-normals-array" count="48">-5.79736e-6 -8.14712e-4 0.9999997 -0.0053128 -0.9999859 7.30724e-6 0.5753898 -0.8178794 5.93759e-6 0.574317 -0.003392219 0.8186261 -5.7886e-6 -8.14725e-4 -0.9999997 0.005309998 0.9999859 7.29609e-6 0.5855853 0.8106109 5.9109e-6 0.5743156 -0.003392219 -0.8186271 -0.5766677 0.003207921 0.8169726 0.5756558 -0.002896487 0.8176871 0.5764508 0.8142288 -0.06881827 -0.5624752 0.8229373 -0.07997453 0.5672815 -0.8206827 -0.06834918 0.5976328 -0.004305601 -0.8017584 -0.5967386 0.002504408 -0.8024319 -0.5717924 -0.8166549 -0.07828348</float_array>
+          <technique_common>
+            <accessor source="#Scene_006-mesh-normals-array" count="16" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene_006-mesh-map-0">
+          <float_array id="Scene_006-mesh-map-0-array" count="88">0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 1 0 0 1 0 1 1 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 1 0 0 1 0 1 1 0 1 0 0 1 0 1 1 0 1 0 0 1 0 1 1 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#Scene_006-mesh-map-0-array" count="44" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene_006-mesh-colors-VertexColors" name="VertexColors">
+          <float_array id="Scene_006-mesh-colors-VertexColors-array" count="176">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#Scene_006-mesh-colors-VertexColors-array" count="44" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Scene_006-mesh-vertices">
+          <input semantic="POSITION" source="#Scene_006-mesh-positions"/>
+        </vertices>
+        <polylist material="Orange-material" count="5">
+          <input semantic="VERTEX" source="#Scene_006-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Scene_006-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Scene_006-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Scene_006-mesh-colors-VertexColors" offset="3" set="0"/>
+          <vcount>4 4 4 4 4 </vcount>
+          <p>4 0 0 0 0 1 1 1 1 2 2 2 5 3 3 3 3 4 4 4 6 5 5 5 7 6 6 6 2 7 7 7 6 5 12 12 4 0 13 13 5 3 14 14 7 6 15 15 1 2 32 32 2 7 33 33 7 6 34 34 5 3 35 35 0 1 40 40 3 4 41 41 2 7 42 42 1 2 43 43</p>
+        </polylist>
+        <polylist material="White-material" count="2">
+          <input semantic="VERTEX" source="#Scene_006-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Scene_006-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Scene_006-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Scene_006-mesh-colors-VertexColors" offset="3" set="0"/>
+          <vcount>4 4 </vcount>
+          <p>10 12 16 16 11 13 17 17 15 10 18 18 13 9 19 19 12 8 36 36 14 11 37 37 8 14 38 38 9 15 39 39</p>
+        </polylist>
+        <polylist material="Strap-material" count="4">
+          <input semantic="VERTEX" source="#Scene_006-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Scene_006-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Scene_006-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Scene_006-mesh-colors-VertexColors" offset="3" set="0"/>
+          <vcount>4 4 4 4 </vcount>
+          <p>12 8 8 8 13 9 9 9 15 10 10 10 14 11 11 11 14 11 20 20 15 10 21 21 11 13 22 22 8 14 23 23 8 14 24 24 11 13 25 25 10 12 26 26 9 15 27 27 9 15 28 28 10 12 29 29 13 9 30 30 12 8 31 31</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Scene_005-mesh" name="Scene.005">
+      <mesh>
+        <source id="Scene_005-mesh-positions">
+          <float_array id="Scene_005-mesh-positions-array" count="24">-510.1029 -89.22272 -0.5218506 23.92731 -92.83753 -0.5218506 24.72992 5.754089 -105.0812 -509.3002 9.368897 -105.0812 -509.3002 9.368897 104.0375 24.72992 5.754089 104.0375 -508.4976 107.9636 -0.5218506 25.53253 104.3488 -0.5218506</float_array>
+          <technique_common>
+            <accessor source="#Scene_005-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene_005-mesh-normals">
+          <float_array id="Scene_005-mesh-normals-array" count="24">-0.5743117 0.00414884 0.8186262 -0.5743636 0.8186004 0 -0.5743117 0.00414884 -0.8186262 -0.5866023 -0.8098751 0 4.24868e-6 6.27598e-4 -0.9999999 -0.006768703 -0.9999772 0 0.006768763 0.9999771 0 4.24825e-6 6.27598e-4 0.9999999</float_array>
+          <technique_common>
+            <accessor source="#Scene_005-mesh-normals-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene_005-mesh-map-0">
+          <float_array id="Scene_005-mesh-map-0-array" count="40">0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#Scene_005-mesh-map-0-array" count="20" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene_005-mesh-colors-VertexColors" name="VertexColors">
+          <float_array id="Scene_005-mesh-colors-VertexColors-array" count="80">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#Scene_005-mesh-colors-VertexColors-array" count="20" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Scene_005-mesh-vertices">
+          <input semantic="POSITION" source="#Scene_005-mesh-positions"/>
+        </vertices>
+        <polylist material="Orange-material" count="5">
+          <input semantic="VERTEX" source="#Scene_005-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Scene_005-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Scene_005-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Scene_005-mesh-colors-VertexColors" offset="3" set="0"/>
+          <vcount>4 4 4 4 4 </vcount>
+          <p>4 0 0 0 6 1 1 1 3 2 2 2 0 3 3 3 0 3 4 4 3 2 5 5 2 4 6 6 1 5 7 7 3 2 8 8 6 1 9 9 7 6 10 10 2 4 11 11 4 0 12 12 0 3 13 13 1 5 14 14 5 7 15 15 6 1 16 16 4 0 17 17 5 7 18 18 7 6 19 19</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Scene_004-mesh" name="Scene.004">
+      <mesh>
+        <source id="Scene_004-mesh-positions">
+          <float_array id="Scene_004-mesh-positions-array" count="36">-454.8447 -201.03 -426.8448 -1680.748 91.58783 -219.6732 -1680.748 91.58783 -4.882812 -454.8447 -201.03 291.2628 86.5326 794.8959 403.2044 381.9412 38.82751 254.1779 -519.8349 547.3816 403.2044 86.5326 794.8959 -645.7886 381.9412 38.82751 -347.6608 558.2962 207.4554 -112.2772 501.0193 957.1167 -112.2788 -519.8349 547.3816 -645.7886</float_array>
+          <technique_common>
+            <accessor source="#Scene_004-mesh-positions-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene_004-mesh-normals">
+          <float_array id="Scene_004-mesh-normals-array" count="36">0.1386436 0.5974296 -0.7898455 0.6366689 0.7707901 -0.0231378 0.9789401 -0.2014448 -0.0331093 0.5796508 -0.5953415 -0.5563933 -0.2969294 0.4882739 -0.8206228 -0.001307725 -0.8140207 -0.5808346 0.5772772 -0.5317247 0.6196934 0.1306203 0.6511907 0.7475888 -0.03203397 -0.7758315 0.6301265 -0.9122825 -0.06737548 0.403982 -0.9061821 -0.07048743 -0.416972 -0.3186882 0.545116 0.7754265</float_array>
+          <technique_common>
+            <accessor source="#Scene_004-mesh-normals-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene_004-mesh-map-0">
+          <float_array id="Scene_004-mesh-map-0-array" count="88">0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0.814453 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 0.5 0 0 0 1 1 0.5 0 0 0 1 1 0.5 0 0 0 1 1 0.5 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#Scene_004-mesh-map-0-array" count="44" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene_004-mesh-colors-VertexColors" name="VertexColors">
+          <float_array id="Scene_004-mesh-colors-VertexColors-array" count="176">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#Scene_004-mesh-colors-VertexColors-array" count="44" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Scene_004-mesh-vertices">
+          <input semantic="POSITION" source="#Scene_004-mesh-positions"/>
+        </vertices>
+        <polylist material="White-material" count="3">
+          <input semantic="VERTEX" source="#Scene_004-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Scene_004-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Scene_004-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Scene_004-mesh-colors-VertexColors" offset="3" set="0"/>
+          <vcount>4 3 3 </vcount>
+          <p>0 5 12 12 3 8 13 13 2 9 14 14 1 10 15 15 1 10 22 22 11 4 23 23 0 5 24 24 6 11 25 25 2 9 26 26 3 8 27 27</p>
+        </polylist>
+        <polylist material="Red-material" count="6">
+          <input semantic="VERTEX" source="#Scene_004-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Scene_004-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Scene_004-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Scene_004-mesh-colors-VertexColors" offset="3" set="0"/>
+          <vcount>4 4 4 3 4 4 </vcount>
+          <p>7 0 0 0 10 1 1 1 9 2 2 2 8 3 3 3 11 4 4 4 7 0 5 5 8 3 6 6 0 5 7 7 5 6 8 8 9 2 9 9 10 1 10 10 4 7 11 11 9 2 19 19 5 6 20 20 8 3 21 21 4 7 32 32 6 11 33 33 3 8 34 34 5 6 35 35 0 5 36 36 8 3 37 37 5 6 38 38 3 8 39 39</p>
+        </polylist>
+        <polylist material="Redsole-material" count="2">
+          <input semantic="VERTEX" source="#Scene_004-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Scene_004-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Scene_004-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Scene_004-mesh-colors-VertexColors" offset="3" set="0"/>
+          <vcount>3 4 </vcount>
+          <p>10 1 16 16 7 0 17 17 4 7 18 18 6 11 40 40 4 7 41 41 7 0 42 42 11 4 43 43</p>
+        </polylist>
+        <polylist material="Greysole-material" count="1">
+          <input semantic="VERTEX" source="#Scene_004-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Scene_004-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Scene_004-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Scene_004-mesh-colors-VertexColors" offset="3" set="0"/>
+          <vcount>4 </vcount>
+          <p>6 11 28 28 11 4 29 29 1 10 30 30 2 9 31 31</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Scene_003-mesh" name="Scene.003">
+      <mesh>
+        <source id="Scene_003-mesh-positions">
+          <float_array id="Scene_003-mesh-positions-array" count="48">71.43555 -88.51776 1.402283 -203.273 -86.73554 1.402283 -202.565 11.8576 105.9616 72.14356 10.07385 105.9616 72.14356 10.07385 -103.1555 -202.565 11.8576 -103.1555 72.85157 108.6685 1.402283 -201.857 110.4507 1.402283 -736.5051 -295.7977 12.18567 -734.2926 16.49017 229.6539 -202.0081 14.23798 229.6539 -204.2236 -294.8944 5.363464 -734.3216 11.77673 -304.2145 -202.037 9.524537 -304.2145 -732.1076 323.3475 17.18597 -199.8215 318.6066 9.672547</float_array>
+          <technique_common>
+            <accessor source="#Scene_003-mesh-positions-array" count="16" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene_003-mesh-normals">
+          <float_array id="Scene_003-mesh-normals-array" count="48">0.5743142 -0.003866612 -0.8186259 0.5748969 -0.8182259 -2.92873e-6 -0.00649029 -0.999979 -3.59979e-6 -2.09268e-6 -3.22454e-4 -1 -0.5624533 0.822952 0.07997745 0.576469 0.8142161 0.06881612 0.5756551 -0.002891123 -0.8176876 -0.5766677 0.003171145 -0.8169727 0.5743135 -0.003866553 0.8186264 0.5860741 0.8102574 -2.93186e-6 0.00649029 0.999979 -3.59764e-6 -2.10199e-6 -3.22456e-4 1 0.5976338 -0.004318416 0.8017577 0.5672629 -0.8206953 0.06835377 -0.5967399 0.002489328 0.8024309 -0.5718132 -0.8166405 0.07828128</float_array>
+          <technique_common>
+            <accessor source="#Scene_003-mesh-normals-array" count="16" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene_003-mesh-map-0">
+          <float_array id="Scene_003-mesh-map-0-array" count="88">0 0 0 1 1 1 1 0 0 1 0 0 1 0 1 1 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 1 0 0 1 0 1 1 0 1 0 0 1 0 1 1 0 1 0 0 1 0 1 1 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#Scene_003-mesh-map-0-array" count="44" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene_003-mesh-colors-VertexColors" name="VertexColors">
+          <float_array id="Scene_003-mesh-colors-VertexColors-array" count="176">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#Scene_003-mesh-colors-VertexColors-array" count="44" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Scene_003-mesh-vertices">
+          <input semantic="POSITION" source="#Scene_003-mesh-positions"/>
+        </vertices>
+        <polylist material="Orange-material" count="5">
+          <input semantic="VERTEX" source="#Scene_003-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Scene_003-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Scene_003-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Scene_003-mesh-colors-VertexColors" offset="3" set="0"/>
+          <vcount>4 4 4 4 4 </vcount>
+          <p>4 0 0 0 0 1 1 1 1 2 2 2 5 3 3 3 3 8 8 8 6 9 9 9 7 10 10 10 2 11 11 11 0 1 12 12 3 8 13 13 2 11 14 14 1 2 15 15 4 0 32 32 6 9 33 33 3 8 34 34 0 1 35 35 6 9 40 40 4 0 41 41 5 3 42 42 7 10 43 43</p>
+        </polylist>
+        <polylist material="White-material" count="2">
+          <input semantic="VERTEX" source="#Scene_003-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Scene_003-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Scene_003-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Scene_003-mesh-colors-VertexColors" offset="3" set="0"/>
+          <vcount>4 4 </vcount>
+          <p>13 6 16 16 15 5 17 17 10 12 18 18 11 13 19 19 8 15 36 36 9 14 37 37 14 4 38 38 12 7 39 39</p>
+        </polylist>
+        <polylist material="Strap-material" count="4">
+          <input semantic="VERTEX" source="#Scene_003-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Scene_003-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Scene_003-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Scene_003-mesh-colors-VertexColors" offset="3" set="0"/>
+          <vcount>4 4 4 4 </vcount>
+          <p>14 4 4 4 15 5 5 5 13 6 6 6 12 7 7 7 9 14 20 20 10 12 21 21 15 5 22 22 14 4 23 23 8 15 24 24 11 13 25 25 10 12 26 26 9 14 27 27 12 7 28 28 13 6 29 29 11 13 30 30 8 15 31 31</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Scene_002-mesh" name="Scene.002">
+      <mesh>
+        <source id="Scene_002-mesh-positions">
+          <float_array id="Scene_002-mesh-positions-array" count="24">24.15772 -92.95349 0.8529663 -509.8709 -89.7934 0.8529663 -509.0286 8.799744 105.4138 24.99847 5.639648 105.4138 24.99847 5.639648 -103.7048 -509.0286 8.799744 -103.7048 25.83771 104.2328 0.8529663 -508.1894 107.3929 0.8529663</float_array>
+          <technique_common>
+            <accessor source="#Scene_002-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene_002-mesh-normals">
+          <float_array id="Scene_002-mesh-normals-array" count="24">7.13706e-6 0.001205265 -0.9999994 -0.00591737 -0.9999825 -7.24133e-6 -0.5864595 -0.8099786 -5.91485e-6 -0.5743114 0.003907799 -0.8186277 -0.57431 0.00390774 0.8186287 -0.5745134 0.8184952 -5.93375e-6 7.13652e-6 0.001205205 0.9999994 0.00591737 0.9999826 -7.31003e-6</float_array>
+          <technique_common>
+            <accessor source="#Scene_002-mesh-normals-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene_002-mesh-map-0">
+          <float_array id="Scene_002-mesh-map-0-array" count="40">0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#Scene_002-mesh-map-0-array" count="20" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene_002-mesh-colors-VertexColors" name="VertexColors">
+          <float_array id="Scene_002-mesh-colors-VertexColors-array" count="80">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#Scene_002-mesh-colors-VertexColors-array" count="20" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Scene_002-mesh-vertices">
+          <input semantic="POSITION" source="#Scene_002-mesh-positions"/>
+        </vertices>
+        <polylist material="Orange-material" count="5">
+          <input semantic="VERTEX" source="#Scene_002-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Scene_002-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Scene_002-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Scene_002-mesh-colors-VertexColors" offset="3" set="0"/>
+          <vcount>4 4 4 4 4 </vcount>
+          <p>4 0 0 0 0 1 1 1 1 2 2 2 5 3 3 3 1 2 4 4 2 4 5 5 7 5 6 6 5 3 7 7 0 1 8 8 3 6 9 9 2 4 10 10 1 2 11 11 6 7 12 12 4 0 13 13 5 3 14 14 7 5 15 15 3 6 16 16 6 7 17 17 7 5 18 18 2 4 19 19</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Scene_001-mesh" name="Scene.001">
+      <mesh>
+        <source id="Scene_001-mesh-positions">
+          <float_array id="Scene_001-mesh-positions-array" count="261">168.2495 -70.52918 1076.221 168.1747 96.63849 0.001525878 600.65 -70.33386 868.1076 826.5656 -507.8888 760.08 168.4479 -508.1864 1074.915 971.4401 -1622.069 890.3488 168.9499 -1622.429 1259.142 725.824 -2252.626 550.2655 956.3706 -2252.522 0.001525878 169.342 -2493.686 0.001525878 169.342 -2494.589 261.7249 953.1296 -70.17517 0.001525878 1188.445 -507.7255 0.001525878 1344.473 -1621.901 0.001525878 600.65 -70.33386 -868.1046 826.5656 -507.8888 -760.0769 971.4401 -1622.069 -890.3458 725.824 -2252.626 -550.2625 169.3436 -2495.493 -277.7969 168.2495 -70.52918 -1076.218 168.4479 -508.1864 -1074.911 168.9499 -1622.429 -1259.138 -479.686 -70.82062 -823.909 -705.2048 -508.58 -760.0769 -731.63 -1622.835 -890.3458 -377.3789 -3083.862 -1309.322 -387.3535 -2253.126 -550.2625 -617.9016 -2253.232 0.001525878 -866.2232 1.35498 0.001525878 -1324.646 -293.57 -459.845 -1482.669 -461.6547 -156.3446 -1368.025 -535.6476 -91.73889 -1630.956 -606.1615 0.001525878 -1290.923 -605.9937 0.001525878 -1104.663 -1623.003 0.001525878 -479.686 -70.82062 823.9121 -1484.167 -232.4615 0.001525878 -1324.646 -293.57 459.8496 -1482.669 -461.6547 156.3492 -1557.417 -399.3317 0.001525878 -1067.017 -656.0486 0.001525878 -705.2048 -508.58 760.08 -731.63 -1622.835 890.3488 -387.3535 -2253.126 550.2655 -387.41 -3080.548 1321.036 -1368.025 -535.6476 91.74195 -617.3889 -2252.838 0.001525878 -1063.205 -2539.426 0.001525878 -1099.927 -2453 0.001525878 -678.4409 -2174.048 0.001525878 -1372.533 -2437.842 0.001525878 -1667.92 -2308.826 0.001525878 -1099.895 -2453.113 0.001525878 -678.3447 -2174.025 0.001525878 -1085.808 -2320.283 0.001525878 -1087.981 -2226.771 0.001525878 -742.3569 -2091.473 0.001525878 -1085.808 -2320.282 0.001525878 -1300.237 -2177.17 0.001525878 -1575.237 -1993.375 0.001525878 -1087.985 -2226.887 0.001525878 -494.5297 -2290.089 0.001525878 -864.177 -2745.814 0.001525878 -932.0572 -2671.735 0.001525878 -616.9357 -2252.869 0.001525878 -864.1754 -2745.813 0.001525878 -1210.001 -2752.656 0.001525878 -1556.465 -2728.978 0.001525878 -931.9855 -2671.837 0.001525878 164.7568 -217.421 1072.87 164.6912 -72.61963 1072.87 684.5245 26.72424 1432.87 164.8224 -362.6206 1072.87 164.7568 -217.8207 1072.87 852.4094 -289.9109 1432.87 164.8865 -507.8217 1072.87 164.8224 -363.0219 1072.87 788.4735 -614.1907 1432.87 164.7568 -217.421 -1072.867 684.5245 26.72424 -1432.867 164.6912 -72.61963 -1072.867 164.8224 -362.6206 -1072.867 852.4094 -289.9109 -1432.867 164.7568 -217.8207 -1072.867 164.8865 -507.8217 -1072.867 788.4735 -614.1907 -1432.867 164.8224 -363.0219 -1072.867</float_array>
+          <technique_common>
+            <accessor source="#Scene_001-mesh-positions-array" count="87" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene_001-mesh-normals">
+          <float_array id="Scene_001-mesh-normals-array" count="204">0.03522348 0.5830404 0.8116794 0.493305 0.6381993 0.59106 0.04500764 0.9989867 0 0.6786243 0.7344857 0 0.7290744 0.2171432 0.6490758 0.9584548 0.2852448 0 0.04056167 0.08513134 -0.9955438 0.7290744 0.2171432 -0.6490759 0.6974992 -0.1932566 -0.690034 0.04508697 -0.08404314 -0.9954416 0.6974992 -0.1932565 0.690034 0.04573464 -0.08255302 0.9955368 0.6234994 -0.6890109 0.369476 0.04056173 0.0851314 0.9955438 0.493305 0.6381993 -0.59106 0.03522348 0.5830404 -0.8116794 0.04789155 -0.9919261 0.1174272 0.6238708 -0.6887892 -0.3692624 0.6701719 -0.7422058 4.9006e-4 4.5e-4 -0.9999993 0.001147866 -0.6682114 -0.2511428 0.7003006 -0.9617406 -0.2739617 0 -0.6249538 -0.7806617 4.74193e-4 -0.7736912 -0.6038731 0.1916744 0.9835076 -0.1808676 0 0.04597252 -0.9932061 -0.1069034 -0.317656 0.6646618 -0.676254 -0.5532686 -0.03646248 0.8322046 -0.7699532 -0.6075632 -0.1950367 -0.3896529 -0.7605141 -0.5194122 -0.2575663 0.9662607 -1.2919e-7 -0.7077743 0.1922052 0.6797887 -0.7141335 -0.2755876 0.6434788 -0.2146157 -0.8116846 0.5432388 -0.8007279 -0.5990283 -1.3744e-6 -0.2146173 -0.8116833 -0.54324 -0.2076347 -0.9782065 0 -0.3176558 0.6646618 0.676254 -0.7077745 0.192206 -0.6797884 -0.7141325 -0.2755852 -0.6434809 -0.9525473 0.3043908 -1.3401e-6 -0.7571427 0.6532496 -5.2368e-7 -0.6682113 -0.2511428 -0.7003006 -0.5532691 -0.03646188 -0.8322043 -0.784336 -0.6203362 0 -0.3948101 -0.7531101 0.5262606 0 0 1 0 0 -1 -0.5693004 -2.58011e-4 0.8221297 -0.5693004 -2.58011e-4 0.8221296 -0.4638237 -2.1021e-4 0.8859275 -0.4638237 -2.1021e-4 0.8859276 -0.4638237 -2.1021e-4 0.8859276 0.4999996 2.2151e-4 -0.8660258 0.4999997 2.2151e-4 -0.8660256 0.4999996 2.2151e-4 -0.8660256 -0.5693005 -2.58011e-4 -0.8221296 -0.5693005 -2.58011e-4 -0.8221295 -0.5693004 -2.58011e-4 -0.8221296 0.4638238 2.1021e-4 0.8859276 0.4638237 2.1021e-4 0.8859275 0.4638238 2.1021e-4 0.8859276 -0.5000001 -2.2151e-4 -0.8660253 -0.5000001 -2.2151e-4 -0.8660253 -0.5000001 -2.2151e-4 -0.8660253 0 0 1 0 0 1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Scene_001-mesh-normals-array" count="68" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene_001-mesh-map-0">
+          <float_array id="Scene_001-mesh-map-0-array" count="492">0 0 0 1 1 0.5 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 0.5 0 0 0 1 1 1 1 0 0 0 0 1 1 0.5 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 0.5 1 1 0 1 0 0 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 0.5 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 0.5 0 0 0 1 1 0.5 0 0 0 1 1 1 1 0 0 0 0 1 1 0.5 0 0 0 1 1 1 1 0 0.548828 0 0 1 1 0.5 0 0 0 1 1 1 1 0 0 0 0 1 1 0.5 0 0 0 1 1 1 1 0 0 0 0 1 1 0.5 0 0 0 1 1 1 1 0 1 1 1 0 0 0 0 1 0 0 0 1 1 1 1 0 0 0 0 1 1 0.5 0 0 0 1 1 1 1 0 0 1 0 0 1 0 1 1 0 0 0 1 1 0.5 0 0 0 1 1 0.5 0 0 0 1 1 0.5 0 0 0 1 1 0.5 0 0 0 1 1 0.5 0 1 1 1 1 0 0 0 0 0 0 1 1 0.5 0 0 0 1 1 1 1 0 0 0 0 1 1 0.5 0 0 0 1 1 1 1 0 0 0 0 1 1 0.5 0 0 0 1 1 0.5 0 0 0 1 1 0.5 0 0 0 1 1 0.5 0 0 0 1 1 0.5 0 0 0 1 1 0.5 0 0 0 1 1 0.5 0 0 0 1 1 1 1 0 0 0 0 1 1 0.5 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 0.5 0 0 0 1 1 1 1 0 0 0 1 0 1 1 0 1 0 0 1 0 1 1 0 1 0 0 0 1 1 0.5 0 0 0 1 1 0.5 0 0 1 0.5 0 1 0 0 0 1 1 0.5 0 0 1 0.5 0 1 0 0 0 1 1 0.5 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 1 1 0 1 0 0 1 0 0 0 1 0 1 1 0 1 0 0 0 1 1 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#Scene_001-mesh-map-0-array" count="246" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene_001-mesh-colors-VertexColors" name="VertexColors">
+          <float_array id="Scene_001-mesh-colors-VertexColors-array" count="984">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#Scene_001-mesh-colors-VertexColors-array" count="246" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Scene_001-mesh-vertices">
+          <input semantic="POSITION" source="#Scene_001-mesh-positions"/>
+        </vertices>
+        <polylist material="Orange-material" count="36">
+          <input semantic="VERTEX" source="#Scene_001-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Scene_001-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Scene_001-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Scene_001-mesh-colors-VertexColors" offset="3" set="0"/>
+          <vcount>3 4 4 3 4 3 4 4 4 3 4 4 4 3 4 4 3 4 3 4 4 4 3 3 3 3 3 3 3 4 4 4 4 4 4 4 </vcount>
+          <p>0 0 0 0 2 1 1 1 1 2 2 2 11 3 3 3 2 1 4 4 3 4 5 5 12 5 6 6 20 6 7 7 15 7 8 8 16 8 9 9 21 9 10 10 5 10 11 11 6 11 12 12 7 12 13 13 3 4 14 14 4 13 15 15 6 11 16 16 5 10 17 17 2 1 18 18 11 3 19 19 1 2 20 20 14 14 21 21 11 3 22 22 12 5 23 23 15 7 24 24 14 14 25 25 15 7 26 26 20 6 27 27 19 15 28 28 18 16 29 29 17 17 30 30 8 18 31 31 9 19 32 32 11 3 33 33 14 14 34 34 1 2 35 35 12 5 40 40 3 4 41 41 5 10 42 42 13 24 43 43 13 24 44 44 5 10 45 45 7 12 46 46 8 18 47 47 8 18 48 48 7 12 49 49 10 25 50 50 9 19 51 51 14 14 52 52 19 15 53 53 1 2 54 54 2 1 55 55 0 0 56 56 4 13 57 57 3 4 58 58 15 7 59 59 12 5 60 60 13 24 61 61 16 8 62 62 16 8 63 63 17 17 64 64 21 9 65 65 4 13 69 69 41 27 70 70 42 20 71 71 6 11 72 72 18 16 73 73 26 28 74 74 25 29 75 75 9 19 76 76 10 25 77 77 43 23 78 78 27 22 79 79 27 22 90 90 26 28 91 91 18 16 92 92 9 19 93 93 16 8 105 105 13 24 106 106 8 18 107 107 17 17 108 108 42 20 120 120 43 23 121 121 6 11 122 122 10 25 123 123 7 12 124 124 44 45 125 125 10 25 126 126 44 45 127 127 43 23 128 128 24 42 129 129 21 9 130 130 26 28 131 131 18 16 159 159 25 29 160 160 17 17 161 161 44 45 165 165 7 12 166 166 6 11 167 167 25 29 171 171 21 9 172 172 17 17 173 173 65 46 196 196 68 46 197 197 67 46 198 198 66 46 199 199 47 47 200 200 50 47 201 201 51 47 202 202 52 47 203 203 53 47 204 204 54 47 205 205 55 47 206 206 56 47 207 207 61 65 230 230 64 66 231 231 63 67 232 232 62 66 233 233 48 47 234 234 49 47 235 235 46 47 236 236 47 47 237 237 57 47 238 238 58 47 239 239 59 47 240 240 60 47 241 241 23 43 242 242 20 6 243 243 21 9 244 244 24 42 245 245</p>
+        </polylist>
+        <polylist material="White-material" count="24">
+          <input semantic="VERTEX" source="#Scene_001-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Scene_001-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Scene_001-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Scene_001-mesh-colors-VertexColors" offset="3" set="0"/>
+          <vcount>3 3 4 3 4 3 4 3 4 4 3 3 3 4 4 4 4 3 3 3 3 3 3 4 </vcount>
+          <p>19 15 66 66 22 26 67 67 1 2 68 68 22 26 80 80 28 30 81 81 1 2 82 82 37 31 83 83 38 32 84 84 45 33 85 85 41 27 86 86 28 30 94 94 35 37 95 95 1 2 96 96 29 38 97 97 30 39 98 98 39 40 99 99 36 41 100 100 35 37 109 109 0 0 110 110 1 2 111 111 23 43 112 112 22 26 113 113 19 15 114 114 20 6 115 115 35 37 139 139 37 31 140 140 41 27 141 141 35 37 142 142 28 30 143 143 36 41 144 144 37 31 145 145 41 27 149 149 4 13 150 150 0 0 151 151 35 37 152 152 29 38 153 153 22 26 154 154 23 43 155 155 44 45 162 162 6 11 163 163 43 23 164 164 25 29 168 168 26 28 169 169 21 9 170 170 22 26 174 174 29 38 175 175 36 41 176 176 28 30 177 177 36 41 181 181 39 40 182 182 38 32 183 183 37 31 184 184 23 43 185 185 31 35 186 186 30 39 187 187 29 38 188 188 41 27 189 189 45 33 190 190 33 36 191 191 40 44 192 192 69 48 208 208 71 49 209 209 70 48 210 210 72 50 211 211 74 51 212 212 73 52 213 213 75 53 214 214 76 54 215 215 77 55 216 216 78 56 217 217 80 57 218 218 79 58 219 219 81 59 220 220 82 60 221 221 83 61 222 222 84 62 223 223 86 63 224 224 85 64 225 225 40 44 226 226 33 36 227 227 31 35 228 228 23 43 229 229</p>
+        </polylist>
+        <triangles material="Black-material" count="6">
+          <input semantic="VERTEX" source="#Scene_001-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Scene_001-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Scene_001-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Scene_001-mesh-colors-VertexColors" offset="3" set="0"/>
+          <p>32 34 87 87 31 35 88 88 33 36 89 89 32 34 132 132 33 36 133 133 45 33 134 134 32 34 146 146 45 33 147 147 38 32 148 148 32 34 156 156 39 40 157 157 30 39 158 158 32 34 178 178 38 32 179 179 39 40 180 180 32 34 193 193 30 39 194 194 31 35 195 195</p>
+        </triangles>
+        <polylist material="Eye1-material" count="2">
+          <input semantic="VERTEX" source="#Scene_001-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Scene_001-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Scene_001-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Scene_001-mesh-colors-VertexColors" offset="3" set="0"/>
+          <vcount>4 4 </vcount>
+          <p>42 20 36 36 34 21 37 37 27 22 38 38 43 23 39 39 24 42 101 101 26 28 102 102 27 22 103 103 34 21 104 104</p>
+        </polylist>
+        <polylist material="Eye2-material" count="2">
+          <input semantic="VERTEX" source="#Scene_001-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Scene_001-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Scene_001-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Scene_001-mesh-colors-VertexColors" offset="3" set="0"/>
+          <vcount>4 4 </vcount>
+          <p>40 44 116 116 34 21 117 117 42 20 118 118 41 27 119 119 40 44 135 135 23 43 136 136 24 42 137 137 34 21 138 138</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Scene-mesh" name="Scene">
+      <mesh>
+        <source id="Scene-mesh-positions">
+          <float_array id="Scene-mesh-positions-array" count="66">-459.6069 -677.5238 0 0 -837.4649 0 -142.0258 -677.5238 -540.181 -186.8088 -258.7906 -710.5118 -604.5303 -258.7906 0 -156.9885 129.126 -597.0902 -508.0277 129.126 0 -107.8049 459.8786 -410.025 -348.8648 459.8786 0 0 605.3955 0 426.2741 -677.5238 -333.8501 566.8533 -258.7906 -439.1205 465.448 129.126 -369.0216 282.2373 459.8786 -253.4088 426.2741 -677.5238 333.8501 566.8533 -258.7906 439.1205 465.448 129.126 369.0216 282.2373 459.8786 253.4088 -142.0258 -677.5238 540.181 -186.8088 -258.7906 710.5118 -156.9885 129.126 597.0902 -107.8049 459.8786 410.025</float_array>
+          <technique_common>
+            <accessor source="#Scene-mesh-positions-array" count="22" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene-mesh-normals">
+          <float_array id="Scene-mesh-normals-array" count="66">-0.7668831 -0.6417869 0 -0.2613865 -0.6667256 -0.6979643 -0.01941716 -0.9998115 0 -0.2613865 -0.6667256 0.6979643 -0.3294177 -0.04525738 0.9430991 -0.9991568 -0.04105836 0 -0.3127408 0.3880436 0.8669576 -0.9442727 0.3291645 0 -0.2452145 0.7087498 0.6614707 -0.7409188 0.6715946 0 -0.2452146 0.7087498 -0.6614707 7.37511e-4 0.9999998 0 0.6072956 -0.6719019 -0.4239577 0.6072956 -0.6719019 0.4239576 0.817076 -0.04073667 0.5750891 0.7505937 0.4057169 0.5215389 0.5638241 0.7217466 0.4014775 0.5638241 0.7217466 -0.4014775 -0.3127408 0.3880436 -0.8669576 0.817076 -0.04073667 -0.5750891 -0.3294177 -0.04525738 -0.9430991 0.7505937 0.4057169 -0.5215389</float_array>
+          <technique_common>
+            <accessor source="#Scene-mesh-normals-array" count="22" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene-mesh-map-0">
+          <float_array id="Scene-mesh-map-0-array" count="180">0.5 0 0 1 1 1 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0.404297 0 0 1 1 0.5 0 0.04882794 0 1 1 0.5 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 0.5 0 0 0 1 1 0.5 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 0.5 0 0 0 1 1 0.5 0 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 1 0.5 0 0 0 1 1 0.5 0 0 0 1 1 1 1 0 0 1 0 0 1 0 1 1 0 1 0 0 1 0 1 1 0 0 0 1 1 0.5 0 0 0 1 1 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#Scene-mesh-map-0-array" count="90" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Scene-mesh-colors-VertexColors" name="VertexColors">
+          <float_array id="Scene-mesh-colors-VertexColors-array" count="360">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#Scene-mesh-colors-VertexColors-array" count="90" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Scene-mesh-vertices">
+          <input semantic="POSITION" source="#Scene-mesh-positions"/>
+        </vertices>
+        <polylist material="Orange-material" count="23">
+          <input semantic="VERTEX" source="#Scene-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Scene-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Scene-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Scene-mesh-colors-VertexColors" offset="3" set="0"/>
+          <vcount>3 4 4 4 3 3 4 4 4 3 3 4 4 4 3 3 4 4 3 3 4 3 4 </vcount>
+          <p>0 0 0 0 2 1 1 1 1 2 2 2 0 0 3 3 18 3 4 4 19 4 5 5 4 5 6 6 4 5 7 7 19 4 8 8 20 6 9 9 6 7 10 10 6 7 11 11 20 6 12 12 21 8 13 13 8 9 14 14 7 10 15 15 8 9 16 16 9 11 17 17 2 1 18 18 10 12 19 19 1 2 20 20 18 3 21 21 14 13 22 22 15 14 23 23 19 4 24 24 19 4 25 25 15 14 26 26 16 15 27 27 20 6 28 28 20 6 29 29 16 15 30 30 17 16 31 31 21 8 32 32 13 17 33 33 7 10 34 34 9 11 35 35 10 12 36 36 14 13 37 37 1 2 38 38 5 18 39 39 6 7 40 40 8 9 41 41 7 10 42 42 11 19 43 43 3 20 44 44 5 18 45 45 12 21 46 46 12 21 47 47 5 18 48 48 7 10 49 49 13 17 50 50 17 16 51 51 13 17 52 52 9 11 53 53 14 13 54 54 18 3 55 55 1 2 56 56 2 1 57 57 0 0 58 58 4 5 59 59 3 20 60 60 10 12 61 61 2 1 62 62 3 20 63 63 11 19 64 64 21 8 65 65 17 16 66 66 9 11 67 67 18 3 68 68 0 0 69 69 1 2 70 70 14 13 71 71 10 12 72 72 11 19 73 73 15 14 74 74 8 9 83 83 21 8 84 84 9 11 85 85 3 20 86 86 4 5 87 87 6 7 88 88 5 18 89 89</p>
+        </polylist>
+        <polylist material="Tummy-material" count="2">
+          <input semantic="VERTEX" source="#Scene-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Scene-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Scene-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Scene-mesh-colors-VertexColors" offset="3" set="0"/>
+          <vcount>4 4 </vcount>
+          <p>16 15 75 75 15 14 76 76 11 19 77 77 12 21 78 78 12 21 79 79 13 17 80 80 17 16 81 81 16 15 82 82</p>
+        </polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="_" name="_" type="NODE">
+        <matrix sid="transform">-0.001 0 0 0 0 4.37114e-11 -0.001 0 0 0.001 4.37114e-11 0 0 0 0 1</matrix>
+        <node id="root" name="root" type="NODE">
+          <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+          <node id="pivot69" name="pivot69" type="NODE">
+            <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+            <node id="part69" name="part69" type="NODE">
+              <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+              <instance_geometry url="#Scene-mesh" name="part69">
+                <bind_material>
+                  <technique_common>
+                    <instance_material symbol="Orange-material" target="#Orange-material">
+                      <bind_vertex_input semantic="UVSet0" input_semantic="TEXCOORD" input_set="0"/>
+                    </instance_material>
+                    <instance_material symbol="Tummy-material" target="#Tummy-material">
+                      <bind_vertex_input semantic="UVSet0" input_semantic="TEXCOORD" input_set="0"/>
+                    </instance_material>
+                  </technique_common>
+                </bind_material>
+              </instance_geometry>
+            </node>
+            <node id="pivot70" name="pivot70" type="NODE">
+              <matrix sid="transform">-1 8.74228e-8 0 -15.33508 -8.74228e-8 -1 0 531.4636 0 0 1 -3.63798e-12 0 0 0 1</matrix>
+              <node id="part70" name="part70" type="NODE">
+                <matrix sid="transform">1 0 0 0 0 1 0 -1.34064e-6 0 0 1 -1.81899e-12 0 0 0 1</matrix>
+                <instance_geometry url="#Scene_001-mesh" name="part70">
+                  <bind_material>
+                    <technique_common>
+                      <instance_material symbol="Orange-material" target="#Orange-material">
+                        <bind_vertex_input semantic="UVSet0" input_semantic="TEXCOORD" input_set="0"/>
+                      </instance_material>
+                      <instance_material symbol="White-material" target="#White-material">
+                        <bind_vertex_input semantic="UVSet0" input_semantic="TEXCOORD" input_set="0"/>
+                      </instance_material>
+                      <instance_material symbol="Black-material" target="#Black-material">
+                        <bind_vertex_input semantic="UVSet0" input_semantic="TEXCOORD" input_set="0"/>
+                      </instance_material>
+                      <instance_material symbol="Eye1-material" target="#Eye1-material">
+                        <bind_vertex_input semantic="UVSet0" input_semantic="TEXCOORD" input_set="0"/>
+                      </instance_material>
+                      <instance_material symbol="Eye2-material" target="#Eye2-material">
+                        <bind_vertex_input semantic="UVSet0" input_semantic="TEXCOORD" input_set="0"/>
+                      </instance_material>
+                    </technique_common>
+                  </bind_material>
+                </instance_geometry>
+              </node>
+            </node>
+            <node id="pivot71" name="pivot71" type="NODE">
+              <matrix sid="transform">-4.37114e-8 -1 0 4.968263 1 -4.37114e-8 0 -615.0223 0 0 1 -241.0507 0 0 0 1</matrix>
+              <node id="part71" name="part71" type="NODE">
+                <matrix sid="transform">1 0 0 1.03195e-5 0 1 0 -9.53674e-7 0 0 1 0 0 0 0 1</matrix>
+                <instance_geometry url="#Scene_002-mesh" name="part71">
+                  <bind_material>
+                    <technique_common>
+                      <instance_material symbol="Orange-material" target="#Orange-material">
+                        <bind_vertex_input semantic="UVSet0" input_semantic="TEXCOORD" input_set="0"/>
+                      </instance_material>
+                    </technique_common>
+                  </bind_material>
+                </instance_geometry>
+              </node>
+              <node id="pivot72" name="pivot72" type="NODE">
+                <matrix sid="transform">1 0 0 -580.7618 0 1 0 -4.76837e-7 0 0 1 1.52588e-5 0 0 0 1</matrix>
+                <node id="part72" name="part72" type="NODE">
+                  <matrix sid="transform">1 0 0 -1.11751e-4 0 1 0 0 0 0 1 1.52588e-5 0 0 0 1</matrix>
+                  <instance_geometry url="#Scene_003-mesh" name="part72">
+                    <bind_material>
+                      <technique_common>
+                        <instance_material symbol="Orange-material" target="#Orange-material">
+                          <bind_vertex_input semantic="UVSet0" input_semantic="TEXCOORD" input_set="0"/>
+                        </instance_material>
+                        <instance_material symbol="White-material" target="#White-material">
+                          <bind_vertex_input semantic="UVSet0" input_semantic="TEXCOORD" input_set="0"/>
+                        </instance_material>
+                        <instance_material symbol="Strap-material" target="#Strap-material">
+                          <bind_vertex_input semantic="UVSet0" input_semantic="TEXCOORD" input_set="0"/>
+                        </instance_material>
+                      </technique_common>
+                    </bind_material>
+                  </instance_geometry>
+                </node>
+                <node id="pivot73" name="pivot73" type="NODE">
+                  <matrix sid="transform">1 0 0 -692.9048 0 1 0 -4.76837e-7 0 0 1 1.52588e-5 0 0 0 1</matrix>
+                  <node id="part73" name="part73" type="NODE">
+                    <matrix sid="transform">0.3420202 -0.9396926 0 -1.11751e-4 0.9396926 0.3420202 0 -4.76837e-7 -1.77636e-15 0 1 1.52588e-5 0 0 0 1</matrix>
+                    <instance_geometry url="#Scene_004-mesh" name="part73">
+                      <bind_material>
+                        <technique_common>
+                          <instance_material symbol="White-material" target="#White-material">
+                            <bind_vertex_input semantic="UVSet0" input_semantic="TEXCOORD" input_set="0"/>
+                          </instance_material>
+                          <instance_material symbol="Red-material" target="#Red-material">
+                            <bind_vertex_input semantic="UVSet0" input_semantic="TEXCOORD" input_set="0"/>
+                          </instance_material>
+                          <instance_material symbol="Redsole-material" target="#Redsole-material">
+                            <bind_vertex_input semantic="UVSet0" input_semantic="TEXCOORD" input_set="0"/>
+                          </instance_material>
+                          <instance_material symbol="Greysole-material" target="#Greysole-material">
+                            <bind_vertex_input semantic="UVSet0" input_semantic="TEXCOORD" input_set="0"/>
+                          </instance_material>
+                        </technique_common>
+                      </bind_material>
+                    </instance_geometry>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node id="pivot74" name="pivot74" type="NODE">
+              <matrix sid="transform">-4.37114e-8 -1 0 4.968263 1 -4.37114e-8 0 -615.0223 0 0 1 241.0507 0 0 0 1</matrix>
+              <node id="part74" name="part74" type="NODE">
+                <matrix sid="transform">1 0 0 -1.07538e-5 0 1 0 -9.53674e-7 0 0 1 0 0 0 0 1</matrix>
+                <instance_geometry url="#Scene_005-mesh" name="part74">
+                  <bind_material>
+                    <technique_common>
+                      <instance_material symbol="Orange-material" target="#Orange-material">
+                        <bind_vertex_input semantic="UVSet0" input_semantic="TEXCOORD" input_set="0"/>
+                      </instance_material>
+                    </technique_common>
+                  </bind_material>
+                </instance_geometry>
+              </node>
+              <node id="pivot75" name="pivot75" type="NODE">
+                <matrix sid="transform">1 0 0 -580.7618 0 1 0 -4.76837e-7 0 0 1 1.52588e-5 0 0 0 1</matrix>
+                <node id="part75" name="part75" type="NODE">
+                  <matrix sid="transform">1 0 0 -1.32824e-4 0 1 0 0 0 0 1 1.52588e-5 0 0 0 1</matrix>
+                  <instance_geometry url="#Scene_006-mesh" name="part75">
+                    <bind_material>
+                      <technique_common>
+                        <instance_material symbol="Orange-material" target="#Orange-material">
+                          <bind_vertex_input semantic="UVSet0" input_semantic="TEXCOORD" input_set="0"/>
+                        </instance_material>
+                        <instance_material symbol="White-material" target="#White-material">
+                          <bind_vertex_input semantic="UVSet0" input_semantic="TEXCOORD" input_set="0"/>
+                        </instance_material>
+                        <instance_material symbol="Strap-material" target="#Strap-material">
+                          <bind_vertex_input semantic="UVSet0" input_semantic="TEXCOORD" input_set="0"/>
+                        </instance_material>
+                      </technique_common>
+                    </bind_material>
+                  </instance_geometry>
+                </node>
+                <node id="pivot76" name="pivot76" type="NODE">
+                  <matrix sid="transform">1 0 0 -692.9031 0 1 0 -4.76837e-7 0 0 1 1.52588e-5 0 0 0 1</matrix>
+                  <node id="part76" name="part76" type="NODE">
+                    <matrix sid="transform">0.3420202 -0.9396926 0 -1.07538e-5 0.9396926 0.3420202 0 -4.76837e-7 -1.77636e-15 0 1 1.52588e-5 0 0 0 1</matrix>
+                    <instance_geometry url="#Scene_007-mesh" name="part76">
+                      <bind_material>
+                        <technique_common>
+                          <instance_material symbol="White-material" target="#White-material">
+                            <bind_vertex_input semantic="UVSet0" input_semantic="TEXCOORD" input_set="0"/>
+                          </instance_material>
+                          <instance_material symbol="Red-material" target="#Red-material">
+                            <bind_vertex_input semantic="UVSet0" input_semantic="TEXCOORD" input_set="0"/>
+                          </instance_material>
+                          <instance_material symbol="Redsole-material" target="#Redsole-material">
+                            <bind_vertex_input semantic="UVSet0" input_semantic="TEXCOORD" input_set="0"/>
+                          </instance_material>
+                          <instance_material symbol="Greysole-material" target="#Greysole-material">
+                            <bind_vertex_input semantic="UVSet0" input_semantic="TEXCOORD" input_set="0"/>
+                          </instance_material>
+                        </technique_common>
+                      </bind_material>
+                    </instance_geometry>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node id="pivot77" name="pivot77" type="NODE">
+              <matrix sid="transform">-4.37114e-8 -1 0 -3.266907 1 -4.37114e-8 0 370.3537 0 0 1 -733.5846 0 0 0 1</matrix>
+              <node id="part77" name="part77" type="NODE">
+                <matrix sid="transform">1 0 0 1.69122e-6 0 1 0 2.38419e-7 0 0 1 0 0 0 0 1</matrix>
+                <instance_geometry url="#Scene_008-mesh" name="part77">
+                  <bind_material>
+                    <technique_common>
+                      <instance_material symbol="Orange-material" target="#Orange-material">
+                        <bind_vertex_input semantic="UVSet0" input_semantic="TEXCOORD" input_set="0"/>
+                      </instance_material>
+                    </technique_common>
+                  </bind_material>
+                </instance_geometry>
+              </node>
+              <node id="pivot78" name="pivot78" type="NODE">
+                <matrix sid="transform">1 0 0 -641.951 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+                <node id="part78" name="part78" type="NODE">
+                  <matrix sid="transform">1 0 0 -2.88264e-5 0 1 0 2.38419e-7 0 0 1 0 0 0 0 1</matrix>
+                  <instance_geometry url="#Scene_009-mesh" name="part78">
+                    <bind_material>
+                      <technique_common>
+                        <instance_material symbol="Orange-material" target="#Orange-material">
+                          <bind_vertex_input semantic="UVSet0" input_semantic="TEXCOORD" input_set="0"/>
+                        </instance_material>
+                        <instance_material symbol="White-material" target="#White-material">
+                          <bind_vertex_input semantic="UVSet0" input_semantic="TEXCOORD" input_set="0"/>
+                        </instance_material>
+                        <instance_material symbol="Strap-material" target="#Strap-material">
+                          <bind_vertex_input semantic="UVSet0" input_semantic="TEXCOORD" input_set="0"/>
+                        </instance_material>
+                        <instance_material symbol="Buckle-material" target="#Buckle-material">
+                          <bind_vertex_input semantic="UVSet0" input_semantic="TEXCOORD" input_set="0"/>
+                        </instance_material>
+                      </technique_common>
+                    </bind_material>
+                  </instance_geometry>
+                </node>
+                <node id="pivot79" name="pivot79" type="NODE">
+                  <matrix sid="transform">1 0 0 -663.6382 0 1 0 0 0 0 1 -6.10352e-5 0 0 0 1</matrix>
+                  <node id="part79" name="part79" type="NODE">
+                    <matrix sid="transform">1 0 0 -8.98615e-5 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+                    <instance_geometry url="#Scene_010-mesh" name="part79">
+                      <bind_material>
+                        <technique_common>
+                          <instance_material symbol="White-material" target="#White-material">
+                            <bind_vertex_input semantic="UVSet0" input_semantic="TEXCOORD" input_set="0"/>
+                          </instance_material>
+                        </technique_common>
+                      </bind_material>
+                    </instance_geometry>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node id="pivot80" name="pivot80" type="NODE">
+              <matrix sid="transform">-4.37114e-8 -1 0 -3.266907 1 -4.37114e-8 0 370.3537 0 0 1 733.5846 0 0 0 1</matrix>
+              <node id="part80" name="part80" type="NODE">
+                <matrix sid="transform">1 0 0 -1.40562e-6 0 1 0 2.38419e-7 0 0 1 0 0 0 0 1</matrix>
+                <instance_geometry url="#Scene_011-mesh" name="part80">
+                  <bind_material>
+                    <technique_common>
+                      <instance_material symbol="Orange-material" target="#Orange-material">
+                        <bind_vertex_input semantic="UVSet0" input_semantic="TEXCOORD" input_set="0"/>
+                      </instance_material>
+                    </technique_common>
+                  </bind_material>
+                </instance_geometry>
+              </node>
+              <node id="pivot81" name="pivot81" type="NODE">
+                <matrix sid="transform">1 0 0 -641.951 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+                <node id="part81" name="part81" type="NODE">
+                  <matrix sid="transform">1 0 0 -3.19232e-5 0 1 0 2.38419e-7 0 0 1 0 0 0 0 1</matrix>
+                  <instance_geometry url="#Scene_012-mesh" name="part81">
+                    <bind_material>
+                      <technique_common>
+                        <instance_material symbol="Orange-material" target="#Orange-material">
+                          <bind_vertex_input semantic="UVSet0" input_semantic="TEXCOORD" input_set="0"/>
+                        </instance_material>
+                        <instance_material symbol="White-material" target="#White-material">
+                          <bind_vertex_input semantic="UVSet0" input_semantic="TEXCOORD" input_set="0"/>
+                        </instance_material>
+                        <instance_material symbol="Strap-material" target="#Strap-material">
+                          <bind_vertex_input semantic="UVSet0" input_semantic="TEXCOORD" input_set="0"/>
+                        </instance_material>
+                        <instance_material symbol="Buckle-material" target="#Buckle-material">
+                          <bind_vertex_input semantic="UVSet0" input_semantic="TEXCOORD" input_set="0"/>
+                        </instance_material>
+                      </technique_common>
+                    </bind_material>
+                  </instance_geometry>
+                </node>
+                <node id="pivot82" name="pivot82" type="NODE">
+                  <matrix sid="transform">1 0 0 -663.6384 0 1 0 0 0 0 1 -6.10352e-5 0 0 0 1</matrix>
+                  <node id="part82" name="part82" type="NODE">
+                    <matrix sid="transform">1 0 0 -3.19232e-5 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+                    <instance_geometry url="#Scene_013-mesh" name="part82">
+                      <bind_material>
+                        <technique_common>
+                          <instance_material symbol="White-material" target="#White-material">
+                            <bind_vertex_input semantic="UVSet0" input_semantic="TEXCOORD" input_set="0"/>
+                          </instance_material>
+                        </technique_common>
+                      </bind_material>
+                    </instance_geometry>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node id="pivot83" name="pivot83" type="NODE">
+              <matrix sid="transform">1 0 0 16.78619 0 1 0 -703.6652 0 0 1 3.63798e-12 0 0 0 1</matrix>
+              <node id="part83" name="part83" type="NODE">
+                <matrix sid="transform">1 0 0 0 0 1 0 -1.34448e-12 0 0 1 3.63798e-12 0 0 0 1</matrix>
+                <instance_geometry url="#Scene_014-mesh" name="part83">
+                  <bind_material>
+                    <technique_common>
+                      <instance_material symbol="Orange-material" target="#Orange-material">
+                        <bind_vertex_input semantic="UVSet0" input_semantic="TEXCOORD" input_set="0"/>
+                      </instance_material>
+                      <instance_material symbol="White-material" target="#White-material">
+                        <bind_vertex_input semantic="UVSet0" input_semantic="TEXCOORD" input_set="0"/>
+                      </instance_material>
+                      <instance_material symbol="Tail-material" target="#Tail-material">
+                        <bind_vertex_input semantic="UVSet0" input_semantic="TEXCOORD" input_set="0"/>
+                      </instance_material>
+                    </technique_common>
+                  </bind_material>
+                </instance_geometry>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

@@ -1,0 +1,189 @@
+fileFormatVersion: 2
+guid: 6c1a03f84de0367489e6fee6810b78db
+timeCreated: 1763996539
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: V7_U3_P20_N1002
+    100004: V7_U3_P20_N1012
+    100006: V7_U3_P20_N102
+    100008: V7_U3_P20_N103
+    100010: V7_U3_P20_N104
+    100012: V7_U3_P20_N1052
+    100014: V7_U3_P20_N106
+    100016: V7_U3_P20_N107
+    100018: V7_U3_P20_N108
+    100020: V7_U3_P20_N109
+    100022: V7_U3_P20_N110
+    100024: V7_U3_P20_N111
+    100026: V7_U3_P20_N112
+    100028: V7_U3_P20_N113
+    100030: V7_U3_P20_N114
+    100032: V7_U3_P20_N115
+    100034: V7_U3_P20_N116
+    100036: V7_U3_P20_N117
+    100038: V7_U3_P20_N118
+    100040: V7_U3_P20_N119
+    100042: V7_U3_P20_N120
+    400000: //RootNode
+    400002: V7_U3_P20_N1002
+    400004: V7_U3_P20_N1012
+    400006: V7_U3_P20_N102
+    400008: V7_U3_P20_N103
+    400010: V7_U3_P20_N104
+    400012: V7_U3_P20_N1052
+    400014: V7_U3_P20_N106
+    400016: V7_U3_P20_N107
+    400018: V7_U3_P20_N108
+    400020: V7_U3_P20_N109
+    400022: V7_U3_P20_N110
+    400024: V7_U3_P20_N111
+    400026: V7_U3_P20_N112
+    400028: V7_U3_P20_N113
+    400030: V7_U3_P20_N114
+    400032: V7_U3_P20_N115
+    400034: V7_U3_P20_N116
+    400036: V7_U3_P20_N117
+    400038: V7_U3_P20_N118
+    400040: V7_U3_P20_N119
+    400042: V7_U3_P20_N120
+    2300000: V7_U3_P20_N1002
+    2300002: V7_U3_P20_N1012
+    2300004: V7_U3_P20_N102
+    2300006: V7_U3_P20_N103
+    2300008: V7_U3_P20_N104
+    2300010: V7_U3_P20_N1052
+    2300012: V7_U3_P20_N106
+    2300014: V7_U3_P20_N107
+    2300016: V7_U3_P20_N108
+    2300018: V7_U3_P20_N109
+    2300020: V7_U3_P20_N110
+    2300022: V7_U3_P20_N111
+    2300024: V7_U3_P20_N112
+    2300026: V7_U3_P20_N113
+    2300028: V7_U3_P20_N114
+    2300030: V7_U3_P20_N115
+    2300032: V7_U3_P20_N116
+    2300034: V7_U3_P20_N117
+    2300036: V7_U3_P20_N118
+    2300038: V7_U3_P20_N119
+    2300040: V7_U3_P20_N120
+    3300000: V7_U3_P20_N1002
+    3300002: V7_U3_P20_N1012
+    3300004: V7_U3_P20_N102
+    3300006: V7_U3_P20_N103
+    3300008: V7_U3_P20_N104
+    3300010: V7_U3_P20_N1052
+    3300012: V7_U3_P20_N106
+    3300014: V7_U3_P20_N107
+    3300016: V7_U3_P20_N108
+    3300018: V7_U3_P20_N109
+    3300020: V7_U3_P20_N110
+    3300022: V7_U3_P20_N111
+    3300024: V7_U3_P20_N112
+    3300026: V7_U3_P20_N113
+    3300028: V7_U3_P20_N114
+    3300030: V7_U3_P20_N115
+    3300032: V7_U3_P20_N116
+    3300034: V7_U3_P20_N117
+    3300036: V7_U3_P20_N118
+    3300038: V7_U3_P20_N119
+    3300040: V7_U3_P20_N120
+    4300000: V7_U3_P20_N1002
+    4300002: V7_U3_P20_N1012
+    4300004: V7_U3_P20_N102
+    4300006: V7_U3_P20_N103
+    4300008: V7_U3_P20_N104
+    4300010: V7_U3_P20_N1052
+    4300012: V7_U3_P20_N106
+    4300014: V7_U3_P20_N107
+    4300016: V7_U3_P20_N108
+    4300018: V7_U3_P20_N109
+    4300020: V7_U3_P20_N110
+    4300022: V7_U3_P20_N111
+    4300024: V7_U3_P20_N112
+    4300026: V7_U3_P20_N113
+    4300028: V7_U3_P20_N114
+    4300030: V7_U3_P20_N115
+    4300032: V7_U3_P20_N116
+    4300034: V7_U3_P20_N117
+    4300036: V7_U3_P20_N118
+    4300038: V7_U3_P20_N119
+    4300040: V7_U3_P20_N120
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

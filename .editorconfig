@@ -1,0 +1,39 @@
+# EditorConfig for Unity C# project
+# Root
+root = true
+
+# General
+[*]
+charset = utf-8
+end_of_line = crlf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# C# files
+[*.cs]
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = true
+insert_final_newline = true
+charset = utf-8
+
+# Naming & style conventions (compatible with older C# / .NET targets)
+dotnet_naming_rule.private_fields_underscore.severity = suggestion
+dotnet_naming_rule.private_fields_underscore.symbols = private_fields
+dotnet_naming_rule.private_fields_underscore.style = underscore_prefix
+
+dotnet_naming_symbols.private_fields.applicable_kinds = field
+dotnet_naming_symbols.private_fields.applicable_accessibilities = private
+dotnet_naming_symbols.private_fields.required_modifiers =
+
+dotnet_naming_style.underscore_prefix.capitalization = camel_case
+dotnet_naming_style.underscore_prefix.required_prefix = _
+
+# Project-specific runtime performance preferences (informational):
+# - Avoid using Quaternion.Slerp for camera smoothing on PowerPC targets; prefer simple float interpolation with Mathf.LerpAngle.
+# - Minimize per-frame creation of Quaternions (avoid repeated Quaternion.Euler if possible). Create exactly one Quaternion for rotation application when necessary.
+# - Avoid unnecessary trigonometric operations (atan2, sin, cos) unless required for look computations.
+# - Avoid reading Transform.eulerAngles every frame; cache angle values and update only when needed.
+# - Minimize Transform position/rotation writes: compute values and write once per Transform per frame.
+
+# These preferences are documented here to guide reviewers and automated checks. They are NOT enforced by the EditorConfig format but should be followed in code and CI/documentation.

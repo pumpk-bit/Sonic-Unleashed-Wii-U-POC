@@ -33,20 +33,25 @@ public class Newcam : MonoBehaviour
     [SerializeField] bool IsXInverted;
     [SerializeField] bool IsYInverted;
 
-    // current/applied rotation angles (degrees)
-    private float _currentYaw;
-    private float _currentPitch;
-
-    // desired rotation angles (degrees)
-    private float _targetYaw;
-    private float _targetPitch;
-
+    private float _rotationY;
+    private float _rotationX;
     private Vector2 _rotationXMinMax = new Vector2(-40, 40);
 
     private Vector3 nextRotation;
 
     float mouseX;
     float mouseY;
+
+    [Header("3D")]
+    [SerializeField] public bool ifIs3d;
+    [SerializeField] public float CamDistance = 0.5f;
+    [SerializeField] public Slider ApartSlider;
+    [SerializeField] public Text Slidertext;
+
+    [SerializeField] GameObject RightCam;
+    [SerializeField] GameObject LeftCam;
+
+
 
     WiiU.GamePad gp = WiiU.GamePad.access;
 
@@ -55,70 +60,66 @@ public class Newcam : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         TargetLookTowards = Target;
 
-        // sample initial rotation once
-        Vector3 e = transform.rotation.eulerAngles;
-        _currentYaw = _targetYaw = e.y;
-        _currentPitch = _targetPitch = e.x;
-    }
 
+        CalcRamS(); //Debug
+    }
     void Update()
     {
+        float start = Time.realtimeSinceStartup; //Debug
+
+
         if (!IsMovable) { VictoryCam(); return; }
+        PlayerInput();
+        DampeningAndRotation();
+        // don't set transform position here; do it in LateUpdate
 
-        ReadInputAndSetTargets();
+        CamUpdate = (Time.realtimeSinceStartup - start) * 1000f;
+
     }
-
     void LateUpdate()
     {
-        if (Mathf.Abs(_currentYaw - _targetYaw) < 0.001f &&
-            Mathf.Abs(_currentPitch - _targetPitch) < 0.001f)
-            return;
+        float start = Time.realtimeSinceStartup; //Debug
 
-        // simple float lerp for yaw/pitch (no Quaternion.Slerp)
+        if (ifIs3d) Cam3D();
+        else NormalCamera();
 
-        float t = SmoothingTime * Time.deltaTime;
-        _currentYaw = Mathf.LerpAngle(_currentYaw, _targetYaw, t);
-        _currentPitch = Mathf.Lerp(_currentPitch, _targetPitch, t);
+        lateUpdateTime = (Time.realtimeSinceStartup - start) * 1000f;
 
-        // compute final rotation quaternion once from cached angles
-        Quaternion rot = Quaternion.Euler(_currentPitch, _currentYaw, 0f);
-
-        // compute position using rot without reading transform.eulerAngles
-        Vector3 forward = Target.forward;
-        Vector3 up =  Target.up;
-        Vector3 camPos = Target.position - forward * DistanceFromTarget + up * DistanceFromTargetUp;
-
-        // apply rotation and position (two writes, unavoidable)
-        transform.rotation = rot;
-        transform.position = camPos;
     }
-
     private void VictoryCam()
     {
-        // simple fixed offset behind current forward (use existing transform.forward once)
-        // compute desired rot from current cached angles to keep behavior consistent
-        Quaternion rot = Quaternion.Euler(_currentPitch, _currentYaw, 0f);
-        Vector3 forward = rot * Vector3.forward;
+        transform.position = Target.position - transform.forward;
 
-       // Vector3 camPos = Target.position - forward;
-       // transform.rotation = rot;
-       // transform.position = camPos;
+        if (ifIs3d)
+        {
+            CamDistance = ApartSlider.value;
+            Slidertext.text = CamDistance.ToString();
+
+            RightCam.transform.position = new Vector3(transform.position.x + CamDistance, transform.position.y, transform.position.z);
+
+            LeftCam.transform.position = new Vector3(transform.position.x - CamDistance, transform.position.y, transform.position.z);
+
+        }
+    }
 
 
-        transform.rotation = rot;
+    private Quaternion nexRotation;
+    private Quaternion targetRotation;
+    private void NormalCamera()
+    {
+        float start = Time.realtimeSinceStartup; //Debug
 
-        Vector3 camPos =
-            Target.position
-            - transform.forward * DistanceFromTarget
-            + transform.up * DistanceFromTargetUp;
+        //Positioning behind the target
+        transform.position = Target.position - transform.forward * DistanceFromTarget + transform.up * DistanceFromTargetUp;
 
-        transform.position = camPos;
+        CamFollowTime = (Time.realtimeSinceStartup - start) * 1000f;
 
     }
 
-    private void ReadInputAndSetTargets()
+    private void PlayerInput()
     {
-        // Read controller / mouse input
+        float start = Time.realtimeSinceStartup; //Debug
+
         WiiU.GamePadState state = gp.state;
 
         if (state.gamePadErr == WiiU.GamePadError.None)
@@ -133,6 +134,8 @@ public class Newcam : MonoBehaviour
             {
                 Sensitivity--;
             }
+
+
         }
 
 #if UNITY_EDITOR
@@ -140,58 +143,83 @@ public class Newcam : MonoBehaviour
         mouseY = Input.GetAxis("Mouse Y") * Sensitivity * Time.deltaTime;
 #endif
 
-        if (CanPlayerMove)
+        _rotationY += mouseX;
+        _rotationX += mouseY;
+
+        //clamping x rotation 
+        _rotationX = Mathf.Clamp(_rotationX, _rotationXMinMax.x, _rotationXMinMax.y);
+        if (IsXInverted)
         {
-            // update target yaw/pitch using simple float math; avoid reading eulerAngles
-            float xSign = IsXInverted ? -1f : 1f;
-            float ySign = IsYInverted ? -1f : 1f;
-
-            _targetYaw += mouseX * 1f * xSign;
-            _targetPitch += mouseY * 1f * ySign;
-
-            // clamp pitch
-            _targetPitch = Mathf.Clamp(_targetPitch, _rotationXMinMax.x, _rotationXMinMax.y);
+            nextRotation = new Vector3(_rotationX, -_rotationY, Target.rotation.eulerAngles.z);
+        }
+        if (IsYInverted)
+        {
+            nextRotation = new Vector3(-_rotationX, _rotationY, Target.rotation.eulerAngles.z);
         }
         else
         {
-            // when camera is controlled by other targets, derive the target angles once per update,
-            // using Quaternion.LookRotation (no manual trig).
+            nextRotation = new Vector3(_rotationX, _rotationY, Target.rotation.eulerAngles.z);
+        }
+
+        InputTime = (Time.realtimeSinceStartup - start) * 1000f;
+
+    }
+
+    private void DampeningAndRotation()
+    {
+        float start = Time.realtimeSinceStartup; //Debug
+
+        //Dampening and the rotation
+        if (CanPlayerMove == true)
+        {
+            nexRotation = Quaternion.Euler(nextRotation);
+            transform.rotation = Quaternion.Slerp(transform.rotation, nexRotation, SmoothingTime * Time.deltaTime);
+        }
+        else
+        {
+
+            _rotationY = transform.rotation.eulerAngles.y;
+            _rotationX = transform.rotation.eulerAngles.x;
+
             if (TargetLookTowards == Target)
             {
-                // follow target rotation directly
-                Quaternion tRot = TargetLookTowards.rotation;
-                Vector3 te = tRot.eulerAngles; // single euler read when needed
-                _targetYaw = te.y;
-                _targetPitch = te.x;
+                Quaternion targetRotation = TargetLookTowards.rotation;
+                transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, SmoothingTime * Time.deltaTime);
             }
             else
             {
-                if (WhenReverseFlip) CheckAndFlipCamera();
 
-                Vector3 forward = LookTowardReverse ? TargetLookTowards.forward : -TargetLookTowards.forward;
-                // construct quaternion facing that direction and sample angles once
-                Quaternion look = Quaternion.LookRotation(forward, TargetLookTowards.up);
-                Vector3 le = look.eulerAngles;
-                _targetYaw = le.y;
-                _targetPitch = Mathf.Clamp(le.x, _rotationXMinMax.x, _rotationXMinMax.y);
+                if (LookTowardReverse == true) targetRotation = Quaternion.LookRotation(TargetLookTowards.forward, TargetLookTowards.up);
+                else targetRotation = Quaternion.LookRotation(-TargetLookTowards.forward, TargetLookTowards.up);
+
+                if (WhenReverseFlip) CheckAndFlipCamera();
+                transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, SmoothingTime * Time.deltaTime);
             }
+
         }
+
+        CamSmootheTime = (Time.realtimeSinceStartup - start) * 1000f;
+
     }
 
+    private void Cam3D()
+    {
+        //Positioning behind the target
+        transform.position = Target.position - transform.forward * DistanceFromTarget + transform.up * DistanceFromTargetUp;
+
+        CamDistance = ApartSlider.value;
+        Slidertext.text = CamDistance.ToString();
+
+        RightCam.transform.position = new Vector3(transform.position.x + CamDistance, transform.position.y, transform.position.z);
+        LeftCam.transform.position = new Vector3(transform.position.x - CamDistance, transform.position.y, transform.position.z);
+
+    }
 
     private void CheckAndFlipCamera()
     {
-
-        return;
-
-
-
         if (PlayerMoving.currentSpeed < SpeedUntilFlipCam) return;
-
-        Vector3 playerDir = Target.forward;
-        Vector3 lookDir = TargetLookTowards.forward;
-
-        //float dot = Vector3.Dot(playerDir.normalized, lookDir.normalized);
+        Vector3 playerDir = Target.forward.normalized;
+        Vector3 lookDir = TargetLookTowards.forward.normalized;
 
         float dot = Vector3.Dot(playerDir, lookDir);
         LookTowardReverse = dot > 0f;
@@ -200,34 +228,176 @@ public class Newcam : MonoBehaviour
     //Switch modes from other scripts
     public void SetCamToFollow(bool Follow)
     {
-
-        return;
-
-
-
-
-        // sample current applied rotation once
-        Vector3 e = transform.rotation.eulerAngles;
-        _currentYaw = _targetYaw = e.y;
-        _currentPitch = _targetPitch = e.x;
-
+        _rotationY = transform.rotation.eulerAngles.y;
+        _rotationX = transform.rotation.eulerAngles.x;
         CanPlayerMove = Follow;
         TargetLookTowards = Target;
+
     }
     public void SetCamToTowards(Transform Targetlook)
     {
-        return;
-
-
-
-
-        // sample target rotation once and store as targets
-        Vector3 te = Target.rotation.eulerAngles;
-        _targetYaw = te.y;
-        _targetPitch = te.x;
+        nexRotation = Target.rotation;
+        nextRotation = Target.rotation.eulerAngles;
         CanPlayerMove = false;
 
         TargetLookTowards = Targetlook;
     }
-}
 
+    float lateUpdateTime;
+    float CamFollowTime;
+    float CamSmootheTime;
+    float InputTime;
+    float CamUpdate;
+
+
+    private float _uiTimerAcc;
+    private const float UI_UPDATE_INTERVAL = 0.05f;
+
+    private string _cachedLateUpdateLabel;
+    private string _cachedUpdateLabel;
+    private string _cachedInputTime;
+    private string _cachedFollowTime;
+    private string _cachedSmoothTime;
+    private string _cachedRenderTime;
+
+    void OnGUI()
+    {
+        _uiTimerAcc += Time.deltaTime;
+        if (_uiTimerAcc >= UI_UPDATE_INTERVAL)
+        {
+            _cachedLateUpdateLabel = string.Format("NewCam:LateUpdate: {0:F2} ms", lateUpdateTime);
+            _cachedRenderTime = string.Format("NewCamCamRenderTime: {0:F2} ms", renderTime);
+            _cachedUpdateLabel = string.Format("NewCam: Update: {0:F2} ms", CamUpdate);
+            _cachedInputTime = string.Format("NewCam: Input: {0:F2} ms", InputTime);
+            _cachedFollowTime = string.Format("NewCam: Following: {0:F2} ms", CamFollowTime);
+            _cachedSmoothTime = string.Format("NewCam: Smooth: {0:F2} ms", CamSmootheTime);
+
+            _uiTimerAcc = 0f;
+        }
+
+        GUI.Label(new Rect(10, 200, 300, 20), _cachedLateUpdateLabel);
+        GUI.Label(new Rect(10, 230, 300, 20), _cachedRenderTime);
+        GUI.Label(new Rect(10, 260, 300, 20), _cachedUpdateLabel);
+        GUI.Label(new Rect(10, 290, 300, 20), _cachedInputTime);
+        GUI.Label(new Rect(10, 320, 300, 20), _cachedFollowTime);
+        GUI.Label(new Rect(10, 350, 300, 20), _cachedSmoothTime);
+
+
+        //        GUI.Label(new Rect(10, 170, 300, 20), _Renderes);
+
+        GUI.Label(new Rect(10, 400, 300, 20), ("Estimated texture memory: " + (totalBytesT / 1024f / 1024f) + " MB. Static")); // Expensive to calculate, so only do it once and display the cached value
+        GUI.Label(new Rect(10, 430, 300, 20), ("Estimated mesh memory: " + (totalBytesM / 1024f / 1024f) + " MB. Static"));
+
+    }
+
+    float renderStart;
+    float renderTime;
+
+    void OnPreRender()
+    {
+        renderStart = Time.realtimeSinceStartup;
+    }
+
+    void OnPostRender()
+    {
+        renderTime = (Time.realtimeSinceStartup - renderStart) * 1000f;
+    }
+
+    void CalcRamS()
+    {
+        TextureCalc();
+        MeshCalc();
+    }
+    long totalBytesT = 0;
+    long totalBytesM = 0;
+    private void TextureCalc()
+    {
+        Texture[] textures = Resources.FindObjectsOfTypeAll<Texture>();
+         totalBytesT = 0;
+
+        foreach (var tex in textures)
+        {
+            if (tex == null) continue;
+
+            int width = tex.width;
+            int height = tex.height;
+
+            // Very rough fallback estimate: assume 4 bytes per pixel
+            long bytes = (long)width * height * 4;
+
+            totalBytesT += bytes;
+
+            //Debug.Log(tex.name + " ~ " + (bytes / 1024f / 1024f) + " MB");
+        }
+
+        Debug.Log("Estimated texture memory: " + (totalBytesT / 1024f / 1024f) + " MB");
+    }
+
+
+    private void MeshCalc()
+    {
+        MeshFilter[] meshFilters = FindObjectsOfType<MeshFilter>();
+        SkinnedMeshRenderer[] skinned = FindObjectsOfType<SkinnedMeshRenderer>();
+
+        HashSet<Mesh> countedMeshes = new HashSet<Mesh>();
+
+        foreach (var mf in meshFilters)
+        {
+            Mesh mesh = mf.sharedMesh;
+            if (mesh == null) continue;
+            if (!countedMeshes.Add(mesh)) continue;
+
+            long meshBytes = EstimateMesh(mesh);
+            totalBytesM += meshBytes;
+
+            //Debug.Log(mesh.name + " ~ " + (meshBytes / 1024f / 1024f) + " MB");
+        }
+
+        foreach (var smr in skinned)
+        {
+            Mesh mesh = smr.sharedMesh;
+            if (mesh == null) continue;
+            if (!countedMeshes.Add(mesh)) continue;
+
+            long meshBytes = EstimateMesh(mesh);
+            totalBytesM += meshBytes;
+
+            // Debug.Log(mesh.name + " ~ " + (meshBytes / 1024f / 1024f) + " MB");
+        }
+
+        Debug.Log("Estimated UNIQUE mesh memory: " + (totalBytesM / 1024f / 1024f) + " MB");
+        Debug.Log("Unique meshes counted: " + countedMeshes.Count);
+    }
+
+    private long EstimateMesh(Mesh mesh)
+    {
+        long vertexCount = mesh.vertexCount;
+
+        // Lower and safer rough estimate for static meshes
+        long vertexBytes = vertexCount * 32;
+
+        long indexBytes;
+
+        if (mesh.isReadable)
+        {
+            try
+            {
+                long indexCount = 0;
+                for (int i = 0; i < mesh.subMeshCount; i++)
+                    indexCount += mesh.GetIndices(i).Length;
+
+                indexBytes = indexCount * 2;
+            }
+            catch
+            {
+                indexBytes = vertexCount * 3;
+            }
+        }
+        else
+        {
+            indexBytes = vertexCount * 3;
+        }
+
+        return vertexBytes + indexBytes;
+    }
+}

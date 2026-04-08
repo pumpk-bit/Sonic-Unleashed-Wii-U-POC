@@ -25,7 +25,7 @@ RenderSettings:
   m_AmbientEquatorColor: {r: 0.6156863, g: 0.5764706, b: 0.60784316, a: 1}
   m_AmbientGroundColor: {r: 0.47843137, g: 0.54509807, b: 0.64705884, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 1
+  m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
@@ -38,8 +38,8 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 8900000, guid: 9681d3bee99a00044b71fbbd0d18594b, type: 3}
-  m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.445593, g: 0.48975664, b: 0.54443175, a: 1}
+  m_Sun: {fileID: 1566050250}
+  m_IndirectSpecularColor: {r: 0.17923602, g: 0.21888915, b: 0.27420187, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -60,12 +60,12 @@ LightmapSettings:
     m_BakeResolution: 5
     m_TextureWidth: 512
     m_TextureHeight: 1024
-    m_AO: 0
-    m_AOMaxDistance: 5
-    m_CompAOExponent: 4
-    m_CompAOExponentDirect: 4
+    m_AO: 1
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0.3
     m_Padding: 3
-    m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000,
+    m_LightmapParameters: {fileID: 15204, guid: 0000000000000000f000000000000000,
       type: 0}
     m_LightmapsBakeMode: 0
     m_TextureCompression: 1
@@ -44554,49 +44554,46 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4545344606418972, guid: 421985c2c8ac5334cbb0e5bb87368804, type: 2}
+    - target: {fileID: 4247966696087870, guid: 4803ceef247ab6e4a89a0a1afb5773da, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4545344606418972, guid: 421985c2c8ac5334cbb0e5bb87368804, type: 2}
+    - target: {fileID: 4247966696087870, guid: 4803ceef247ab6e4a89a0a1afb5773da, type: 2}
       propertyPath: m_LocalPosition.y
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 4545344606418972, guid: 421985c2c8ac5334cbb0e5bb87368804, type: 2}
+    - target: {fileID: 4247966696087870, guid: 4803ceef247ab6e4a89a0a1afb5773da, type: 2}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4545344606418972, guid: 421985c2c8ac5334cbb0e5bb87368804, type: 2}
+    - target: {fileID: 4247966696087870, guid: 4803ceef247ab6e4a89a0a1afb5773da, type: 2}
       propertyPath: m_LocalRotation.x
       value: 0.14268097
       objectReference: {fileID: 0}
-    - target: {fileID: 4545344606418972, guid: 421985c2c8ac5334cbb0e5bb87368804, type: 2}
+    - target: {fileID: 4247966696087870, guid: 4803ceef247ab6e4a89a0a1afb5773da, type: 2}
       propertyPath: m_LocalRotation.y
       value: 0.46325982
       objectReference: {fileID: 0}
-    - target: {fileID: 4545344606418972, guid: 421985c2c8ac5334cbb0e5bb87368804, type: 2}
+    - target: {fileID: 4247966696087870, guid: 4803ceef247ab6e4a89a0a1afb5773da, type: 2}
       propertyPath: m_LocalRotation.z
       value: -0.013602634
       objectReference: {fileID: 0}
-    - target: {fileID: 4545344606418972, guid: 421985c2c8ac5334cbb0e5bb87368804, type: 2}
+    - target: {fileID: 4247966696087870, guid: 4803ceef247ab6e4a89a0a1afb5773da, type: 2}
       propertyPath: m_LocalRotation.w
       value: 0.8745556
       objectReference: {fileID: 0}
-    - target: {fileID: 4545344606418972, guid: 421985c2c8ac5334cbb0e5bb87368804, type: 2}
+    - target: {fileID: 4247966696087870, guid: 4803ceef247ab6e4a89a0a1afb5773da, type: 2}
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 1687214517516662, guid: 421985c2c8ac5334cbb0e5bb87368804, type: 2}
-      propertyPath: m_Name
-      value: Directional Light 1 (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1687214517516662, guid: 421985c2c8ac5334cbb0e5bb87368804, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 421985c2c8ac5334cbb0e5bb87368804, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: 4803ceef247ab6e4a89a0a1afb5773da, type: 2}
   m_IsPrefabParent: 0
+--- !u!108 &1566050250 stripped
+Light:
+  m_PrefabParentObject: {fileID: 108716636359397636, guid: 4803ceef247ab6e4a89a0a1afb5773da,
+    type: 2}
+  m_PrefabInternal: {fileID: 1566050249}
 --- !u!1 &1571199282
 GameObject:
   m_ObjectHideFlags: 0

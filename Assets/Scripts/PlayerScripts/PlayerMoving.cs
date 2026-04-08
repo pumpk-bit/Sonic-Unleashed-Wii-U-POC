@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
@@ -124,6 +125,14 @@ public class PlayerMoving : MonoBehaviour
     private const float UI_UPDATE_INTERVAL = 0.05f;
 
     private Transform cam;
+
+
+
+    // BugDe
+    float UpdateTime;
+    float lateUpdateTime;
+    float laterUpdateTime;
+
     void Start()
     {
         CheckIfAllIsAssigned();
@@ -178,6 +187,8 @@ public class PlayerMoving : MonoBehaviour
 
     void Update()
     {
+        float start = Time.realtimeSinceStartup;
+
         if (CanScriptRun == false)
         {
             return;
@@ -186,10 +197,15 @@ public class PlayerMoving : MonoBehaviour
         InputManager.ControllsManager();
 
         AnimatorManager();
+
+        UpdateTime = (Time.realtimeSinceStartup - start) * 1000f;
+
     }
 
     void FixedUpdate()
     {
+        float start = Time.realtimeSinceStartup;
+
         if (CanScriptRun == false)
         {
             return;
@@ -208,6 +224,9 @@ public class PlayerMoving : MonoBehaviour
         {
             Rigidbody.velocity = Vector3.ProjectOnPlane(Rigidbody.velocity, Rigidbody.transform.up);
         }
+
+        lateUpdateTime = (Time.realtimeSinceStartup - start) * 1000f;
+
     }
 
     // Single coroutine running once per physics frame for late physics processing.
@@ -222,11 +241,15 @@ public class PlayerMoving : MonoBehaviour
 
     void LateFixedUpdate()
     {
+        float start = Time.realtimeSinceStartup;
+
         GroundChecker();
         if (grounded)
         {
             Rigidbody.velocity = Vector3.ProjectOnPlane(Rigidbody.velocity, Rigidbody.transform.up);
         }
+
+        laterUpdateTime = (Time.realtimeSinceStartup - start) * 1000f;
     }
 
     // verticallSpeed Vector3.Dot(Rigidbody.velocity, Rigidbody.transform.up);
@@ -428,17 +451,17 @@ public class PlayerMoving : MonoBehaviour
 
     private void DeaccelCalc()
     {
-        currentSpeed = Mathf.Lerp(currentSpeed, 0, Deacceleration * Time.deltaTime);
+        currentSpeed = Mathf.Lerp(currentSpeed, 0, Deacceleration * Time.fixedDeltaTime);
     }
     private void AccelCalc()
     {
         if (Mathf.Abs(moveX) <= deadzoneforwalk && Mathf.Abs(moveY) <= deadzoneforwalk)
         {
-            currentSpeed = Mathf.Lerp(currentSpeed, WalkSpeed, Acceleration * Time.deltaTime);
+            currentSpeed = Mathf.Lerp(currentSpeed, WalkSpeed, Acceleration * Time.fixedDeltaTime);
         }
         else
         {
-            currentSpeed = Mathf.Lerp(currentSpeed, MaxSpeed, Acceleration * Time.deltaTime);
+            currentSpeed = Mathf.Lerp(currentSpeed, MaxSpeed, Acceleration * Time.fixedDeltaTime);
         }
     }
 
@@ -640,6 +663,57 @@ public class PlayerMoving : MonoBehaviour
      //           //Gizmos.DrawRay (hit.normal);
      //       }
     //    }
+
+
     } //Debug
+
+
+    //Making lag to make game worser. Don't remove. Makes game run worse.
+
+    private string _cachedUpdateLabel;
+    private string _cachedLateUpdateLabel;
+    private string _cachedLaterUpdateLabel;
+    private string _cachedRamEst;
+    private string _cachedGBEst;
+    private string _Renderes;
+    void OnGUI()
+    {
+        _uiTimerAcc += Time.deltaTime;
+        if (_uiTimerAcc >= UI_UPDATE_INTERVAL)
+        {
+            var renderers = FindObjectsOfType<Renderer>();
+            int count = renderers.Length;
+
+            long mem = System.GC.GetTotalMemory(false);
+            float mb = mem / (1024f * 1024f);
+
+            long GCColl = System.GC.CollectionCount(0);
+            //float GarbMB = GCColl / (1024f * 1024f);
+
+            _cachedUpdateLabel = string.Format("PlayerM:Update: {0:F2} ms", UpdateTime);
+            _cachedLateUpdateLabel = string.Format("PlayerM:LateUpdate: {0:F2} ms", lateUpdateTime);
+            _cachedLaterUpdateLabel = string.Format("PlayerM:LaterUpdate: {0:F2} ms", laterUpdateTime);
+            _Renderes = string.Format("MaxRenderes: {0:F2} Nbr", count);
+            _cachedRamEst = string.Format("RamEST: {0:N0}", mem);
+
+            _cachedRamEst = string.Format("RamEST~: {0:F2}", mb + "~MB");
+            _cachedGBEst = string.Format("GarbageEST~: {0:N0}", GCColl);
+
+            _uiTimerAcc = 0f;
+        }
+
+        GUI.Label(new Rect(10, 10, 300, 20), _cachedUpdateLabel);
+        GUI.Label(new Rect(10, 30, 300, 20), _cachedLateUpdateLabel);
+        GUI.Label(new Rect(10, 50, 300, 20), _cachedLaterUpdateLabel);
+        GUI.Label(new Rect(10, 130, 300, 20), _cachedRamEst);
+        GUI.Label(new Rect(10, 150, 300, 20), _cachedGBEst);
+        GUI.Label(new Rect(10, 170, 300, 20), _Renderes);
+    }
+
+    float renderStart;
+    float renderTime;
+    [SerializeField] private Camera _mainCamera;
+
 }
+
 

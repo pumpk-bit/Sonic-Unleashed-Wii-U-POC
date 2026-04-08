@@ -4,7 +4,7 @@
 QualitySettings:
   m_ObjectHideFlags: 0
   serializedVersion: 5
-  m_CurrentQuality: 9
+  m_CurrentQuality: 8
   m_QualitySettings:
   - serializedVersion: 2
     name: Very Low
@@ -176,28 +176,28 @@ QualitySettings:
     excludedTargetPlatforms: []
   - serializedVersion: 2
     name: Wii U
-    pixelLightCount: 1
-    shadows: 2
-    shadowResolution: 1
+    pixelLightCount: 0
+    shadows: 1
+    shadowResolution: 0
     shadowProjection: 1
-    shadowCascades: 2
-    shadowDistance: 120
+    shadowCascades: 1
+    shadowDistance: 100
     shadowNearPlaneOffset: 1
-    shadowCascade2Split: 0.09474402
+    shadowCascade2Split: 0.07122549
     shadowCascade4Split: {x: 0.06666667, y: 0.2, z: 0.46666667}
-    shadowmaskMode: 1
-    blendWeights: 4
-    textureQuality: 1
+    shadowmaskMode: 0
+    blendWeights: 1
+    textureQuality: 0
     anisotropicTextures: 1
     antiAliasing: 0
     softParticles: 0
     softVegetation: 1
     realtimeReflectionProbes: 0
     billboardsFaceCameraPosition: 1
-    vSyncCount: 1
-    lodBias: 1.5
+    vSyncCount: 0
+    lodBias: 1
     maximumLODLevel: 0
-    particleRaycastBudget: 4096
+    particleRaycastBudget: 2048
     asyncUploadTimeSlice: 2
     asyncUploadBufferSize: 4
     resolutionScalingFixedDPIFactor: 1
@@ -216,7 +216,7 @@ QualitySettings:
     shadowmaskMode: 0
     blendWeights: 1
     textureQuality: 0
-    anisotropicTextures: 0
+    anisotropicTextures: 1
     antiAliasing: 0
     softParticles: 0
     softVegetation: 1
@@ -350,11 +350,11 @@ QualitySettings:
     PSM: 5
     PSP2: 2
     Samsung TV: 2
-    Standalone: 9
+    Standalone: 6
     Tizen: 2
     Web: 5
     WebGL: 3
-    WiiU: 9
+    WiiU: 6
     Windows Store Apps: 5
     XboxOne: 5
     iPhone: 2

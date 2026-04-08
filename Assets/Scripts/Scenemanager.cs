@@ -12,6 +12,8 @@ public class Scenemanager : MonoBehaviour {
 
     public static Scenemanager instance;
 
+
+    public int FrameRate = 60;
     [Header("Scenes")]
     [SerializeField] private string SceneFirst;
     [SerializeField] private Scene Second;
@@ -67,7 +69,7 @@ public class Scenemanager : MonoBehaviour {
 
         Time.timeScale = 1f;
         QualitySettings.vSyncCount = 0;
-        Application.targetFrameRate = 60;
+        Application.targetFrameRate = FrameRate;
 
         LoadingScreen.SetActive(false);
 

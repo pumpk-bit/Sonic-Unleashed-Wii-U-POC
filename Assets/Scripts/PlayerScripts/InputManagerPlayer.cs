@@ -17,6 +17,12 @@ public class InputManagerPlayer : MonoBehaviour {
     [SerializeField] private bool isWiiUWiiMote;
     [SerializeField] private bool isWiiUGamepad;
 
+
+
+    [SerializeField] Camera CameraD;
+    [SerializeField] GameObject MusicManager;
+    [SerializeField] GameObject SkinnedMesh;
+
     void Start()
     {
         CheckIfAllIsAssigned();
@@ -141,21 +147,35 @@ public class InputManagerPlayer : MonoBehaviour {
                 //Core.homeMenuEnabled = true;
                 //cachedGameManager.EndPlayer(true);
             }
+
+
             if (state.IsTriggered(WiiU.GamePadButton.ZR))
             {
-                Scene current = SceneManager.GetActiveScene();
-                int nextScene = current.buildIndex + 1;
-                SceneManager.LoadScene(nextScene);
+
             }
             if (state.IsTriggered(WiiU.GamePadButton.ZL))
             {
-                Scene current = SceneManager.GetActiveScene();
-                int nextScene = current.buildIndex - 1;
-                SceneManager.LoadScene(nextScene);
+
             }
+
+
             if (state.IsTriggered(WiiU.GamePadButton.Plus))
             {
-                cachedGameManager.RestartLevel();
+
+
+            }
+            if (state.IsTriggered(WiiU.GamePadButton.Minus))
+            {
+
+            }
+
+            if (state.IsTriggered(WiiU.GamePadButton.Up))
+            {
+
+            }
+            if (state.IsTriggered(WiiU.GamePadButton.Down))
+            {
+
             }
 
             UpdateTheOtherSide();
@@ -186,9 +206,21 @@ public class InputManagerPlayer : MonoBehaviour {
             {
                 playerMovingScript.BoostingCurrently = false;
             }
+
+
             if (remote.IsPressed(WiiU.RemoteButton.Plus))
             {
-                cachedGameManager.RestartLevel();
+                //cachedGameManager.RestartLevel();
+                CameraD.enabled = true;
+
+            }
+            if (remote.IsPressed(WiiU.RemoteButton.Minus))
+            {
+                CameraD.enabled = false;
+            }
+            if (remote.IsPressed(WiiU.RemoteButton.Down))
+            {
+                MusicManager.SetActive(false);
             }
 
 

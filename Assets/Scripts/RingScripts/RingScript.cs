@@ -51,7 +51,7 @@ public class RingScript : MonoBehaviour
     private void CheckIfAllIsAssigned()
     {
         if (AudioManager == null)
-          // Debug.LogError("AudioManager not assigned in RingScript. Fixing for now. IF you're using loading diffrent map type then ignore this.");
+          //Debug.LogError("AudioManager not assigned in RingScript. Fixing for now. IF you're using loading diffrent map type then ignore this.");
           AudioManager = FindObjectOfType<AudioManager>();
        // if (Scenemanager == null && IsEndRing)
           //  Debug.LogError("Scenemanager not assigned in RingScript. Fixing for now. IF you're using loading diffrent map type then ignore this."); Scenemanager = FindObjectOfType<Scenemanager>();

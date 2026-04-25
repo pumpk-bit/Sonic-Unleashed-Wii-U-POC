@@ -51,9 +51,10 @@ public class RingManager : MonoBehaviour
         {
             PrivateRingAmmount = 0f;
             AudioManager.Play(OneUpSFX);
+            PlayerMoving.Lives += 1;
         }
 
-        RingText.text = "Ring: " + DisplayRingAmmount.ToString("0");
+      //  RingText.text = "Ring: " + DisplayRingAmmount.ToString("0");
     }
 
     public void AddRedRing()

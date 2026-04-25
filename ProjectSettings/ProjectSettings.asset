@@ -4,14 +4,14 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 12
-  productGUID: 3dd90de7ffa798447b3b5d13cc72036a
+  productGUID: ba60a12c21e282b4e8843fefbb06373c
   AndroidProfiler: 0
   defaultScreenOrientation: 4
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: AgGo
-  productName: Sonic Unleashed Wii U
+  companyName: Ag
+  productName: Sonic_Unleashed_Wii_U
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -108,13 +108,13 @@ PlayerSettings:
   videoMemoryForVertexBuffers: 0
   psp2PowerMode: 0
   psp2AcquireBGM: 1
-  wiiUTVResolution: 1
+  wiiUTVResolution: 0
   wiiUGamePadMSAA: 1
   wiiUSupportsNunchuk: 1
-  wiiUSupportsClassicController: 1
-  wiiUSupportsBalanceBoard: 1
+  wiiUSupportsClassicController: 0
+  wiiUSupportsBalanceBoard: 0
   wiiUSupportsMotionPlus: 1
-  wiiUSupportsProController: 1
+  wiiUSupportsProController: 0
   wiiUAllowScreenCapture: 1
   wiiUControllerCount: 4
   m_SupportedAspectRatios:
@@ -140,7 +140,7 @@ PlayerSettings:
       depthFormat: 1
   protectGraphicsMemory: 0
   useHDRDisplay: 0
-  targetPixelDensity: 0
+  targetPixelDensity: 30
   resolutionScalingMode: 0
   applicationIdentifier: {}
   buildNumber: {}
@@ -160,12 +160,12 @@ PlayerSettings:
   StripUnusedMeshComponents: 1
   VertexChannelCompressionMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 238
   iPhoneSdkVersion: 988
-  iOSTargetOSVersionString: 
+  iOSTargetOSVersionString: 7.0
   tvOSSdkVersion: 0
   tvOSRequireExtendedGameController: 0
-  tvOSTargetOSVersionString: 
+  tvOSTargetOSVersionString: 9.0
   uIPrerenderedIcon: 0
   uIRequiresPersistentWiFi: 0
   uIRequiresFullScreen: 1
@@ -236,25 +236,15 @@ PlayerSettings:
     banner: {fileID: 0}
   androidGamepadSupportLevel: 0
   resolutionDialogBanner: {fileID: 0}
-  m_BuildTargetIcons:
-  - m_BuildTarget: 
-    m_Icons:
-    - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 07d93bbb318fea64794c796fe7f716f6, type: 3}
-      m_Width: 128
-      m_Height: 128
-      m_Kind: 0
-  m_BuildTargetBatching:
-  - m_BuildTarget: WiiU
-    m_StaticBatching: 1
-    m_DynamicBatching: 1
+  m_BuildTargetIcons: []
+  m_BuildTargetBatching: []
   m_BuildTargetGraphicsAPIs: []
   m_BuildTargetVRSettings: []
   openGLRequireES31: 0
   openGLRequireES31AEP: 0
   webPlayerTemplate: APPLICATION:Default
   m_TemplateCustomTags: {}
-  wiiUTitleID: 000500021A6DDD00
+  wiiUTitleID: 0005000011000000
   wiiUGroupID: 00010000
   wiiUCommonSaveSize: 4096
   wiiUAccountSaveSize: 2048
@@ -268,8 +258,8 @@ PlayerSettings:
   wiiUMainThreadStackSize: 3072
   wiiULoaderThreadStackSize: 1024
   wiiUSystemHeapSize: 128
-  wiiUTVStartupScreen: {fileID: 2800000, guid: 07d93bbb318fea64794c796fe7f716f6, type: 3}
-  wiiUGamePadStartupScreen: {fileID: 2800000, guid: 7513b032a3ddbba4687b5e34f6431f86,
+  wiiUTVStartupScreen: {fileID: 2800000, guid: 6c13f23fbf997f948a2bec9337352e37, type: 3}
+  wiiUGamePadStartupScreen: {fileID: 2800000, guid: a15050c6003b5fb4e98ef278b9a57762,
     type: 3}
   wiiUDrcBufferDisabled: 0
   wiiUProfilerLibPath: 
@@ -404,7 +394,7 @@ PlayerSettings:
   ps4VideoOutPixelFormat: 0
   ps4VideoOutInitialWidth: 1920
   ps4VideoOutBaseModeInitialWidth: 1920
-  ps4VideoOutReprojectionRate: 120
+  ps4VideoOutReprojectionRate: 60
   ps4PronunciationXMLPath: 
   ps4PronunciationSIGPath: 
   ps4BackgroundImagePath: 
@@ -519,22 +509,7 @@ PlayerSettings:
   webGLUseEmbeddedResources: 0
   webGLUseWasm: 0
   webGLCompressionFormat: 1
-  scriptingDefineSymbols:
-    1: UNITY_POST_PROCESSING_STACK_V2
-    4: UNITY_POST_PROCESSING_STACK_V2
-    7: UNITY_POST_PROCESSING_STACK_V2
-    13: UNITY_POST_PROCESSING_STACK_V2
-    17: UNITY_POST_PROCESSING_STACK_V2
-    18: UNITY_POST_PROCESSING_STACK_V2
-    19: UNITY_POST_PROCESSING_STACK_V2
-    20: UNITY_POST_PROCESSING_STACK_V2
-    21: UNITY_POST_PROCESSING_STACK_V2
-    22: UNITY_POST_PROCESSING_STACK_V2
-    23: UNITY_POST_PROCESSING_STACK_V2
-    24: UNITY_POST_PROCESSING_STACK_V2
-    25: UNITY_POST_PROCESSING_STACK_V2
-    26: UNITY_POST_PROCESSING_STACK_V2
-    27: UNITY_POST_PROCESSING_STACK_V2
+  scriptingDefineSymbols: {}
   platformArchitecture: {}
   scriptingBackend: {}
   incrementalIl2cppBuild: {}
@@ -543,14 +518,14 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: SonicGame
+  metroPackageName: UnityMidiLibrary
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: SonicGame
+  metroApplicationDescription: UnityMidiLibrary
   wsaImages: {}
   metroTileShortName: 
   metroCommandLineArgsFile: 

@@ -5,12 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/MultiWindmill 1/Debug.unity
-    guid: 0618cd02a6601e241bb1547148a46f4d
   - enabled: 1
-    path: Assets/Scenes/MultiWindmill 1/MultiBase.unity
+    path: Assets/Scenes/IntoScene.unity
+    guid: 41d36d069b91f3d40b1f65f90fdd745c
+  - enabled: 1
+    path: Assets/Scenes/Windmill1/Main Windmill.unity
     guid: 297c77d03c4a8df4bb8de6979ed0fca5
   - enabled: 1
-    path: Assets/Scenes/MultiWindmill 1/MultiPart1.unity
+    path: Assets/Scenes/Windmill1/Windmill1 P1.unity
     guid: a5a1b2bed1001a845ac4a7b97fd6dd83

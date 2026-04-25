@@ -4,8 +4,6 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Ring
-  - Monitor
   - CanBeHomed
   layers:
   - Default
@@ -16,8 +14,8 @@ TagManager:
   - UI
   - 
   - 
-  - PostProcessing
   - Ground
+  - 
   - 
   - 
   - 

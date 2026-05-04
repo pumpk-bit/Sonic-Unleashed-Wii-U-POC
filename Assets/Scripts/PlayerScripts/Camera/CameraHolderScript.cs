@@ -1,6 +1,4 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class CameraHolderScript : MonoBehaviour {
@@ -22,10 +20,8 @@ public class CameraHolderScript : MonoBehaviour {
     }
 
 
-    float updateTime;
     void Update()
     {
-        float start = Time.realtimeSinceStartup;
 
         if (CanMove == true)
         {
@@ -35,26 +31,6 @@ public class CameraHolderScript : MonoBehaviour {
         }
 
 
-        // LateUpdate logic
-
-        lateUpdateTime = (Time.realtimeSinceStartup - start) * 1000f;
     }
-
-    private float _uiTimerAcc;
-    private const float UI_UPDATE_INTERVAL = 0.05f;
-
-    private string _cachedLateUpdateLabel;
-    void OnGUI()
-    {
-        _uiTimerAcc += Time.deltaTime;
-        if (_uiTimerAcc >= UI_UPDATE_INTERVAL)
-        {
-            _cachedLateUpdateLabel = string.Format("CamHolder:LateUpdate: {0:F2} ms", lateUpdateTime);
-            _uiTimerAcc = 0f;
-        }
-
-        GUI.Label(new Rect(10, 70, 300, 20), _cachedLateUpdateLabel);
-    }
-
 
 }

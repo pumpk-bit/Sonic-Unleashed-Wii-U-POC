@@ -10,6 +10,8 @@ public class CheckPointScript : MonoBehaviour {
 
     [SerializeField] GameObject Arm1;
     [SerializeField] GameObject Arm2;
+    [SerializeField] Scenemanager _scenemanager;
+    [SerializeField] AudioManager _audiomanager;
 
     void Start()
     {
@@ -30,6 +32,12 @@ public class CheckPointScript : MonoBehaviour {
             Debug.LogError("Arm2 not assigned in CheckPointScript. Cannot fix.");
         if (Ribbon == null)
             Debug.LogError("Ribbon not assigned in CheckPointScript. Cannot fix.");
+        if (_scenemanager == null)
+            Debug.LogError("_scenemanager not assigned in CheckPointScript. Fixing."); _scenemanager = FindObjectOfType<Scenemanager>();
+        if (_audiomanager == null)
+            Debug.LogError("_audiomanager not assigned in CheckPointScript. Fixing."); _audiomanager = FindObjectOfType<AudioManager>();
+
+
     }
 
 
@@ -39,10 +47,10 @@ public class CheckPointScript : MonoBehaviour {
         {
 			if (HasBeenUsed == true) return;
             SetCheckPointToUsed();
-            FindObjectOfType<PlayerRespawnManager>().SetNewRespawnPosition(transform);
-			FindObjectOfType<AudioManager>().Play(CheckPointSfx);
+            _audiomanager.Play(CheckPointSfx);
+            _scenemanager.SetNewRespawnPosition(gameObject.transform);
 
-
+            Debug.LogError("add Speed saver");
         }
 
     }

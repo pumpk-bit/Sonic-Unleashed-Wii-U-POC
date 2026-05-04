@@ -87,7 +87,7 @@ public class RingScript : MonoBehaviour
     {
         if (NeedToBeBallToBreak)
         {
-            if (PlayerMovingScript.BallorNot == "Ball")
+            if (PlayerMovingScript.isPlayerABall == true)
             {
                 MonitorBreakOpen();
             }

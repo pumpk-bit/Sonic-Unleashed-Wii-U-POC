@@ -109,7 +109,7 @@ PlayerSettings:
   psp2PowerMode: 0
   psp2AcquireBGM: 1
   wiiUTVResolution: 0
-  wiiUGamePadMSAA: 1
+  wiiUGamePadMSAA: 2
   wiiUSupportsNunchuk: 1
   wiiUSupportsClassicController: 0
   wiiUSupportsBalanceBoard: 0
@@ -160,7 +160,7 @@ PlayerSettings:
   StripUnusedMeshComponents: 1
   VertexChannelCompressionMask:
     serializedVersion: 2
-    m_Bits: 238
+    m_Bits: 4294967295
   iPhoneSdkVersion: 988
   iOSTargetOSVersionString: 7.0
   tvOSSdkVersion: 0
@@ -236,7 +236,14 @@ PlayerSettings:
     banner: {fileID: 0}
   androidGamepadSupportLevel: 0
   resolutionDialogBanner: {fileID: 0}
-  m_BuildTargetIcons: []
+  m_BuildTargetIcons:
+  - m_BuildTarget: 
+    m_Icons:
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: c0fa58091049bd24394fa15b0b6d4c5a, type: 3}
+      m_Width: 128
+      m_Height: 128
+      m_Kind: 0
   m_BuildTargetBatching: []
   m_BuildTargetGraphicsAPIs: []
   m_BuildTargetVRSettings: []
@@ -258,8 +265,8 @@ PlayerSettings:
   wiiUMainThreadStackSize: 3072
   wiiULoaderThreadStackSize: 1024
   wiiUSystemHeapSize: 128
-  wiiUTVStartupScreen: {fileID: 2800000, guid: 6c13f23fbf997f948a2bec9337352e37, type: 3}
-  wiiUGamePadStartupScreen: {fileID: 2800000, guid: a15050c6003b5fb4e98ef278b9a57762,
+  wiiUTVStartupScreen: {fileID: 2800000, guid: 47ecc1fa1e8049e4f99a06176f0b2c38, type: 3}
+  wiiUGamePadStartupScreen: {fileID: 2800000, guid: 7ece6b319a3d7804da24f715a3a5b795,
     type: 3}
   wiiUDrcBufferDisabled: 0
   wiiUProfilerLibPath: 

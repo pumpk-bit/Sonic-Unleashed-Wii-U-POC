@@ -8,7 +8,7 @@ public class InputManagerPlayer : MonoBehaviour {
 
     WiiU.GamePad gp = WiiU.GamePad.access;
 
-    [SerializeField] PlayerMoving playerMovingScript;
+    [SerializeField] PlayerMoving PlayerMoving;
     [SerializeField] Scenemanager cachedGameManager;
 
     [SerializeField] private bool ControllsPC;
@@ -26,8 +26,8 @@ public class InputManagerPlayer : MonoBehaviour {
     }
     private void CheckIfAllIsAssigned()
     {
-        if (playerMovingScript == null)
-            Debug.LogError("playerMovingScript not assigned in InputManagerPlayer. Fixing for now."); playerMovingScript = GetComponent<PlayerMoving>();
+        if (PlayerMoving == null)
+            Debug.LogError("playerMovingScript not assigned in InputManagerPlayer. Fixing for now."); PlayerMoving = GetComponent<PlayerMoving>();
         if (cachedGameManager == null)
             Debug.LogError("cachedGameManager not assigned in InputManagerPlayer. Fixing for now."); cachedGameManager = FindObjectOfType<Scenemanager>();
 
@@ -46,16 +46,16 @@ public class InputManagerPlayer : MonoBehaviour {
         //Pc
         if ((Input.GetKeyDown("space")))
         {
-            playerMovingScript.Jump();
+            PlayerMoving.Jump();
         }
 
         if (Input.GetKey("f"))
         {
-            playerMovingScript.Boost();
+            PlayerMoving.Boost();
         }
         if (Input.GetKeyUp("f"))
         {
-            playerMovingScript.BoostingCurrently = false;
+           PlayerMoving.isBoosting = false;
         }
 
         if (Input.GetKey("x"))
@@ -76,9 +76,6 @@ public class InputManagerPlayer : MonoBehaviour {
 
         if (Input.GetKeyDown("r"))
         {
-            //cachedGameManager.EndPlayer(true);
-            cachedGameManager.RestartLevel();
-
 
         }
 
@@ -127,17 +124,17 @@ public class InputManagerPlayer : MonoBehaviour {
 
             if (state.IsTriggered(WiiU.GamePadButton.A))
             {
-                playerMovingScript.Jump();
+                PlayerMoving.Jump();
             }
 
             if (state.IsPressed(WiiU.GamePadButton.X))
             {
                 //Core.homeMenuEnabled = false;
-                playerMovingScript.Boost();
+                PlayerMoving.Boost();
             }
             if (state.IsReleased(WiiU.GamePadButton.X))
             {
-                playerMovingScript.BoostingCurrently = false;
+                PlayerMoving.isBoosting = false;
             }
 
             if (state.IsTriggered(WiiU.GamePadButton.Y))
@@ -192,17 +189,17 @@ public class InputManagerPlayer : MonoBehaviour {
 
             if (remote.IsTriggered(WiiU.RemoteButton.A))
             {
-                playerMovingScript.Jump();
+                PlayerMoving.Jump();
             }
 
 
             if (remote.IsTriggered(WiiU.RemoteButton.B))
             {
-                playerMovingScript.Boost();
+                PlayerMoving.Boost();
             }
             if (remote.IsReleased(WiiU.RemoteButton.B))
             {
-                playerMovingScript.BoostingCurrently = false;
+                PlayerMoving.isBoosting = false;
             }
 
 
@@ -215,8 +212,8 @@ public class InputManagerPlayer : MonoBehaviour {
 
     private void UpdateTheOtherSide()
     {
-        playerMovingScript.moveX = moveX;
-        playerMovingScript.moveY = moveY;
+        PlayerMoving.moveX = moveX;
+        PlayerMoving.moveY = moveY;
     }
 
 

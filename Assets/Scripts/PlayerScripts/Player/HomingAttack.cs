@@ -31,9 +31,9 @@ public class HomingAttack : MonoBehaviour
     [SerializeField] private bool BoostIfNone;
 
 
-    private  Transform TempTransform;
-    private  Transform TempTransform2;
-    public  Coroutine homingCoroutine;
+    private Transform TempTransform;
+    private Transform TempTransform2;
+    public Coroutine homingCoroutine;
     public void Start()
     {
         CheckIfAllIsAssigned();
@@ -101,7 +101,7 @@ public class HomingAttack : MonoBehaviour
         {
             TempTransform2 = null;
             SetSphereNonActive();
-            
+
             return;
         }
         SetSphereActive();
@@ -121,7 +121,7 @@ public class HomingAttack : MonoBehaviour
         float maxHomingTime = 2.0f;
         if (HomeingMakesPlayerUnableToMove == true)
         {
-            PlayerMovingScript.CanMove = false;
+            PlayerMovingScript.canMove = false;
         }
         IsHoming = true;
         while (Time.time - startTime < maxHomingTime)
@@ -143,7 +143,7 @@ public class HomingAttack : MonoBehaviour
 
         if (HomeingMakesPlayerUnableToMove == true)
         {
-            PlayerMovingScript.CanMove = true;
+            PlayerMovingScript.canMove = true;
         }
     }
 
@@ -192,6 +192,6 @@ public class HomingAttack : MonoBehaviour
     public void StopHomingCoroutine()
     {
         StopCoroutine(homingCoroutine);
-        PlayerMovingScript.CanMove = true;
+        PlayerMovingScript.canMove = true;
     }
 }

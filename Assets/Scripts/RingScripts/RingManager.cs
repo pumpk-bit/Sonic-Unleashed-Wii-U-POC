@@ -8,6 +8,7 @@ public class RingManager : MonoBehaviour
 
     [Header("Scripts")]
     [SerializeField] public Scenemanager SceneManager;
+    [SerializeField] public GameManager GameManager;
     [SerializeField] public PlayerMoving PlayerMoving;
     [SerializeField] public AudioManager AudioManager;
 
@@ -51,7 +52,7 @@ public class RingManager : MonoBehaviour
         {
             PrivateRingAmmount = 0f;
             AudioManager.Play(OneUpSFX);
-            PlayerMoving.Lives += 1;
+            GameManager.PlayerLives += 1;
         }
 
       //  RingText.text = "Ring: " + DisplayRingAmmount.ToString("0");

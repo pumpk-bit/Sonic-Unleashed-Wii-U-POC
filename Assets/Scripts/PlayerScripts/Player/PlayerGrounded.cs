@@ -2,49 +2,78 @@ using UnityEngine;
 
 public class PlayerGrounded : MonoBehaviour
 {
-    [Header("Main")]
+    public enum GroundType
+    {
+        OldGrounded,
+        NewGrounded
+    }
+
+    [Header("Mode")]
+    [SerializeField] private GroundType groundType = GroundType.NewGrounded;
+
+    [Header("References")]
     [SerializeField] private Rigidbody rb;
     [SerializeField] private PlayerMoving playerMoving;
 
-    [Header("Performance")]
-    [SerializeField] private float groundCheckDelay = 0.2f;
-
-    [Header("State")]
-    [SerializeField] private Vector3 normal = Vector3.up;
-    [SerializeField] private bool canCheckIfGrounded = true;
-    [SerializeField] private bool grounded;
-
-    [Header("Tuning")]
-    [SerializeField] private float airGravity = 35f;
-    [SerializeField] private float groundedGravity = 40f;
-    [SerializeField] private float downhillSlopeAngle = 30f;
-    [SerializeField] private float uphillSlopeAngle = 40f;
-    [SerializeField] private float groundDistance = 0.9f;
+    [Header("Ground Check")]
     [SerializeField] private LayerMask groundMask;
 
+    [SerializeField] private float groundProbeRadius = 0.35f;
+    [SerializeField] private float groundProbeDistance = 1.2f;
+    [SerializeField] private float velocityProbeMultiplier = 0.05f;
+    [SerializeField] private float maxGroundAngle = 50f;
+
+    [Header("Gravity")]
+    [SerializeField] private float groundedGravity = 40f;
+    [SerializeField] private float airGravity = 35f;
+
+    [Header("Ground Stick")]
+    [SerializeField] private float minimumStickForce = 10f;
+    [SerializeField] private float snapThreshold = 0.001f;
+
+    [Header("Jump Protection")]
+    [SerializeField] private float groundCheckDelay = 0.2f;
+
+    [Header("Debug")]
+    [SerializeField] private bool grounded;
+    [SerializeField] private Vector3 normal = Vector3.up;
+
+    private bool canCheckIfGrounded = true;
     private float lastJumpTime;
-    private Vector3 desiredForward = Vector3.forward;
 
     private void Start()
     {
-        if (rb == null) rb = GetComponent<Rigidbody>();
-        if (playerMoving == null) playerMoving = FindObjectOfType<PlayerMoving>();
+        if (rb == null)
+            rb = GetComponent<Rigidbody>();
+
+        if (playerMoving == null)
+            playerMoving = GetComponent<PlayerMoving>();
     }
 
     public void GroundedAndGravityManager()
     {
         ReadPlayerState();
-        CheckGround();
+
+        switch (groundType)
+        {
+            case GroundType.OldGrounded:
+                OldGroundCheck();
+                break;
+
+            case GroundType.NewGrounded:
+                NewGroundCheck();
+                break;
+        }
+
         ApplyGravity();
+
         WriteBackToPlayer();
     }
 
     private void ReadPlayerState()
     {
         canCheckIfGrounded = playerMoving.canCheckIfGrounded;
-        grounded = playerMoving.grounded;
         lastJumpTime = playerMoving.lastJumpTime;
-        desiredForward = playerMoving.desiredForward;
     }
 
     private void WriteBackToPlayer()
@@ -53,66 +82,139 @@ public class PlayerGrounded : MonoBehaviour
         playerMoving.normal = normal;
     }
 
-    private void CheckGround()
+    // OLD GROUNDING
+
+    private void OldGroundCheck()
     {
         if (!canCheckIfGrounded)
+        {
+            grounded = false;
+            normal = Vector3.up;
             return;
+        }
 
         if (Time.time - lastJumpTime < groundCheckDelay)
+        {
+            grounded = false;
+            normal = Vector3.up;
             return;
+        }
 
         RaycastHit hit;
+
         float speed = rb.velocity.magnitude;
-        float extraDistance = speed * Time.fixedDeltaTime;
-        float castDistance = groundDistance + 0.05f;
 
-        AdjustCastDistanceForSlope(ref castDistance, extraDistance);
+        float extraDistance =speed * Time.fixedDeltaTime;
 
-        //bool hitGround = Physics.SphereCast(rb.worldCenterOfMass,groundDistance,Vector3.down,out hit,castDistance,groundMask,QueryTriggerInteraction.Ignore);
-        bool hitGround = Physics.SphereCast(rb.worldCenterOfMass,groundDistance,-rb.transform.up,out hit, castDistance,groundMask,QueryTriggerInteraction.Ignore);
+        float castDistance =groundProbeDistance + 0.05f;
+
+        castDistance += extraDistance;
+
+        bool hitGround = Physics.SphereCast(rb.worldCenterOfMass,groundProbeRadius,-rb.transform.up,out hit,castDistance,groundMask,QueryTriggerInteraction.Ignore);
 
         grounded = hitGround;
-        normal = grounded ? hit.normal.normalized : Vector3.up;
+
+        normal = grounded ?hit.normal.normalized :Vector3.up;
 
         if (!grounded)
             return;
 
         float distanceToGround = hit.distance;
+
         SnapToGround(distanceToGround);
+
         CancelVelocityIntoGround();
 
-        float stickForce = Mathf.Max(10f, speed);
-        rb.AddForce(-normal * stickForce, ForceMode.Acceleration);
+        float stickForce =Mathf.Max(minimumStickForce, speed);
+
+        rb.AddForce(-normal * stickForce,ForceMode.Acceleration);
     }
 
-    private void AdjustCastDistanceForSlope(ref float castDistance, float extraDistance)
+    // NEW GROUNDING
+
+    private void NewGroundCheck()
     {
-        if (desiredForward.sqrMagnitude <= 0.001f)
+        if (!canCheckIfGrounded)
+        {
+            grounded = false;
+            normal = Vector3.up;
             return;
-
-        Vector3 moveOnSlope = Vector3.ProjectOnPlane(desiredForward, normal);
-        float slopeAngle = Vector3.Angle(normal, Vector3.up);
-        float uphillDot = Vector3.Dot(moveOnSlope, Vector3.up);
-
-        bool goingUphill = uphillDot > 0.01f;
-        bool goingDownhill = uphillDot < -0.01f;
-
-        if (goingDownhill && slopeAngle >= downhillSlopeAngle)
-        {
-            castDistance += extraDistance;
         }
 
-        if (goingUphill && slopeAngle >= uphillSlopeAngle)
+        if (Time.time - lastJumpTime < groundCheckDelay)
         {
-            castDistance -= 0.02f;
+            grounded = false;
+            normal = Vector3.up;
+            return;
         }
+
+        float speed = rb.velocity.magnitude;
+
+        float probeDistance =groundProbeDistance +(speed * velocityProbeMultiplier);
+
+        RaycastHit[] hits = Physics.SphereCastAll(rb.worldCenterOfMass,groundProbeRadius,Vector3.down,probeDistance,groundMask,QueryTriggerInteraction.Ignore);
+
+        if (hits.Length == 0)
+        {
+            grounded = false;
+            normal = Vector3.up;
+            return;
+        }
+
+        bool foundGround = false;
+
+        RaycastHit bestHit =default(RaycastHit);
+
+        float bestDistance =float.MaxValue;
+
+        for (int i = 0; i < hits.Length; i++)
+        {
+            RaycastHit hit = hits[i];
+
+            if (hit.collider.attachedRigidbody == rb)
+                continue;
+
+            float slopeAngle =Vector3.Angle(hit.normal, Vector3.up);
+
+
+            if (slopeAngle > maxGroundAngle)
+                continue;
+
+            if (hit.distance < bestDistance)
+            {
+                bestDistance = hit.distance;
+                bestHit = hit;
+                foundGround = true;
+            }
+        }
+
+        if (!foundGround)
+        {
+            grounded = false;
+            normal = Vector3.up;
+            return;
+        }
+
+        grounded = true;
+
+        normal =bestHit.normal.normalized;
+
+        SnapToGround(bestHit.distance);
+
+        CancelVelocityIntoGround();
+
+        ApplyGroundStickForce(speed);
     }
+
+ // SHARED FUNCTIONS
 
     private void SnapToGround(float distanceToGround)
     {
-        float snapAmount = distanceToGround - groundDistance;
+        float desiredDistance =groundProbeRadius;
 
-        if (snapAmount > 0.001f)
+        float snapAmount =distanceToGround - desiredDistance;
+
+        if (snapAmount > snapThreshold)
         {
             rb.position -= normal * snapAmount;
         }
@@ -120,23 +222,56 @@ public class PlayerGrounded : MonoBehaviour
 
     private void CancelVelocityIntoGround()
     {
-        float velAlongNormal = Vector3.Dot(rb.velocity, normal);
+        float velocityAlongNormal =Vector3.Dot(rb.velocity, normal);
 
-        if (velAlongNormal > 0f)
+        if (velocityAlongNormal > 0f)
         {
-            rb.velocity -= normal * velAlongNormal;
+            rb.velocity -= normal * velocityAlongNormal;
         }
+    }
+
+    private void ApplyGroundStickForce(float speed)
+    {
+        float stickForce =Mathf.Max(minimumStickForce, speed);
+
+        rb.AddForce(-normal * stickForce,ForceMode.Acceleration);
     }
 
     private void ApplyGravity()
     {
-        if (!grounded)
+        if (grounded)
         {
-            rb.velocity -= Vector3.up * airGravity * Time.fixedDeltaTime;
+            rb.velocity -=normal * groundedGravity *Time.fixedDeltaTime;
         }
         else
         {
-            rb.velocity -= normal * groundedGravity * Time.fixedDeltaTime;
+            rb.velocity -=Vector3.up *airGravity *Time.fixedDeltaTime;
         }
     }
+
+#if UNITY_EDITOR
+
+    private void OnDrawGizmosSelected()
+    {
+        if (rb == null)
+            return;
+
+        Gizmos.color =grounded ?Color.green :Color.red;
+
+        Vector3 origin =rb.worldCenterOfMass;
+
+        Vector3 end =origin +Vector3.down *groundProbeDistance;
+
+        Gizmos.DrawWireSphere(origin,groundProbeRadius);
+
+        Gizmos.DrawWireSphere( end,groundProbeRadius);
+
+        Gizmos.DrawLine(origin, end);
+
+        Gizmos.color = Color.cyan;
+
+        Gizmos.DrawLine(rb.worldCenterOfMass,rb.worldCenterOfMass +normal * 2f);
+    }
+
+#endif
 }

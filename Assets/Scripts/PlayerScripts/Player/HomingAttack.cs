@@ -42,10 +42,10 @@ public class HomingAttack : MonoBehaviour
     private void CheckIfAllIsAssigned()
     {
         if (PlayerMovingScript == null)
-            Debug.LogError("PlayerMovingScript not assigned in HomingAttack. Fixing for now."); PlayerMovingScript = GetComponent<PlayerMoving>();
+            Debug.LogError("PlayerMovingScript not assigned in HomingAttack. Fixing for now."); PlayerMovingScript = FindObjectOfType<PlayerMoving>();
 
         if (Rigidbody == null)
-            Debug.LogError("Rigidbody not assigned in HomingAttack. Fixing for now."); Rigidbody = GetComponent<Rigidbody>();
+            Debug.LogError("Rigidbody not assigned in HomingAttack. Fixing for now."); Rigidbody = FindObjectOfType<Rigidbody>();
 
         if (AudioManager == null)
             Debug.LogError("AudioManager not assigned in HomingAttack. Fixing for now."); AudioManager = FindObjectOfType<AudioManager>();
@@ -77,6 +77,12 @@ public class HomingAttack : MonoBehaviour
 
 
     }
+
+    public bool IsHomingAttackTargetInRange()
+    {
+        return CheckForHomingAttackNear() != null;
+    }
+
     float TempTimeHM;
     public void HomingAttackManagerSphere()
     {

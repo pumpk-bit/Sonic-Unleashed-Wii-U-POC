@@ -8,10 +8,8 @@ public class PlayerRotation : MonoBehaviour
     [SerializeField] private Transform cam;
 
     [Header("Rotation")]
-    [SerializeField] private float rotationSpeed = 15f;
-
-    [Header("Slopes")]
-    [SerializeField] private float maxGroundChangeAngle = 360f;
+    [SerializeField] private float snapSpeed = 25f;
+    [SerializeField] private float turnSpeed = 8f;
 
     private Vector3 normal;
     private float moveX;
@@ -20,31 +18,55 @@ public class PlayerRotation : MonoBehaviour
     private Vector3 moveDirection;
     private Vector3 desiredForward = Vector3.forward;
 
-    private Quaternion snapRotation;
-    private Quaternion turnRotation;
-    private Quaternion smoothRotation;
-
-    private Vector3 lastNormal = Vector3.up;
-
     private void Start()
     {
         if (rb == null) rb = GetComponent<Rigidbody>();
         if (playerMoving == null) playerMoving = GetComponent<PlayerMoving>();
-
-        smoothRotation = rb.rotation;
-        snapRotation = rb.rotation;
-        turnRotation = rb.rotation;
     }
 
     public void RotationManager()
     {
         ReadPlayerData();
         CalculateMoveDirectionFromCamera();
-        HandleRotation();
-        WriteBackToPlayer();
 
-        if (!playerMoving.grounded)
-            ResetRotationInAir();
+        Vector3 groundNormal = GetGroundNormal();
+
+        //
+        // SURFACE SNAP
+        //
+
+        Quaternion snappedRotation =
+            Quaternion.FromToRotation(rb.transform.up, groundNormal) * rb.rotation;
+
+        float snapT = 1f - Mathf.Exp(-snapSpeed * Time.fixedDeltaTime);
+
+        Quaternion groundAlignedRotation =
+            Quaternion.Slerp(rb.rotation, snappedRotation, snapT);
+
+        //
+        // MOVEMENT TURN
+        //
+
+        Quaternion finalRotation = groundAlignedRotation;
+
+        if (moveDirection.sqrMagnitude > 0.001f)
+        {
+            desiredForward =
+                Vector3.ProjectOnPlane(moveDirection, groundNormal).normalized;
+
+            Quaternion moveRotation =
+                Quaternion.LookRotation(desiredForward, groundNormal);
+
+            float turnT = 1f - Mathf.Exp(-turnSpeed * Time.fixedDeltaTime);
+
+            finalRotation =
+                Quaternion.Slerp(groundAlignedRotation, moveRotation, turnT);
+        }
+
+        rb.MoveRotation(finalRotation);
+
+        playerMoving.moveDirection = moveDirection;
+        playerMoving.desiredForward = desiredForward;
     }
 
     private void ReadPlayerData()
@@ -54,15 +76,14 @@ public class PlayerRotation : MonoBehaviour
         moveY = playerMoving.moveY;
     }
 
-    private void WriteBackToPlayer()
+    private Vector3 GetGroundNormal()
     {
-        playerMoving.moveDirection = moveDirection;
-        playerMoving.desiredForward = desiredForward;
+        return normal.sqrMagnitude > 0.001f ? normal : Vector3.up;
     }
 
     private void CalculateMoveDirectionFromCamera()
     {
-        Vector3 groundNormal = normal.sqrMagnitude > 0.001f ? normal : Vector3.up;
+        Vector3 groundNormal = GetGroundNormal();
 
         Vector3 forward = Vector3.ProjectOnPlane(cam.forward, groundNormal);
         Vector3 right = Vector3.ProjectOnPlane(cam.right, groundNormal);
@@ -78,69 +99,5 @@ public class PlayerRotation : MonoBehaviour
 
         Vector3 input = forward * moveY + right * moveX;
         moveDirection = input.sqrMagnitude > 0.001f ? input.normalized : Vector3.zero;
-    }
-
-    private void HandleRotation()
-    {
-        if (moveDirection.sqrMagnitude <= 0.001f)
-            return;
-
-        desiredForward = Vector3.ProjectOnPlane(moveDirection, normal);
-
-        if (desiredForward.sqrMagnitude <= 0.001f)
-            return;
-
-        AlignToGround();
-        RotateTowardsMovement();
-        ApplySmoothRotation();
-
-        rb.MoveRotation(smoothRotation);
-    }
-
-    private void AlignToGround()
-    {
-        float angle = Vector3.Angle(lastNormal, normal);
-
-        if (angle <= maxGroundChangeAngle)
-        {
-            lastNormal = normal;
-        }
-        else
-        {
-            normal = lastNormal;
-        }
-
-        snapRotation = Quaternion.FromToRotation(rb.transform.up, normal) * rb.rotation;
-    }
-
-    private void RotateTowardsMovement()
-    {
-        turnRotation = Quaternion.LookRotation(desiredForward.normalized, normal);
-    }
-
-    private void ApplySmoothRotation()
-    {
-        float t = 1f - Mathf.Exp(-rotationSpeed * Time.fixedDeltaTime);
-
-        Quaternion target = Quaternion.Slerp(snapRotation, turnRotation, 1f);
-        smoothRotation = Quaternion.Slerp(smoothRotation, target, t);
-    }
-
-    private void ResetRotationInAir()
-    {
-        smoothRotation = rb.rotation;
-        snapRotation = rb.rotation;
-        turnRotation = rb.rotation;
-
-        lastNormal = Vector3.up;
-        normal = Vector3.up;
-
-        desiredForward = Vector3.ProjectOnPlane(transform.forward, normal);
-
-        AlignToGround();
-        RotateTowardsMovement();
-        ApplySmoothRotation();
-
-        rb.MoveRotation(smoothRotation);
     }
 }

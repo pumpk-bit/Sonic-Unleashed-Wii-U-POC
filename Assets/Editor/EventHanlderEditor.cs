@@ -32,6 +32,12 @@ public class EventHanlderEditor : Editor
             case EventHanlder.ActionTypeEventHanlder.Music:
                 ShowMusicOptions();
                 break;
+            case EventHanlder.ActionTypeEventHanlder.SwitchGroundType:
+                SwitchGroundTypeOptions();
+                break;
+            case EventHanlder.ActionTypeEventHanlder.SwitchTo2Dor3D:
+                Handle3dOr2d();
+                    ;break;
         }
 
         if (GUI.changed)
@@ -95,6 +101,19 @@ public class EventHanlderEditor : Editor
 
     }
 
+    private void SwitchGroundTypeOptions()
+    {
+        script.PlayerAnimatorScript = (PlayerAnimatorScript)EditorGUILayout.ObjectField("Player Animator Script", script.PlayerAnimatorScript, typeof(PlayerAnimatorScript), true);
+        script.Choosetype = (PlayerAnimatorScript.GroundType)EditorGUILayout.EnumPopup("Ground Type to switch to", script.Choosetype);
+    }
+
+
+    private void Handle3dOr2d()
+    {
+        script.Is3dor2d = (EventHanlder.SwitchType2d)EditorGUILayout.EnumPopup("Action Type", script.Is3dor2d);
+
+        script.LookTowardsTransfom = (Transform)EditorGUILayout.ObjectField("Object that the camera looks towards.", script.LookTowardsTransfom, typeof(Transform), true);
+    }
     #region Text
     private void AddATextBubble(string text)
     {

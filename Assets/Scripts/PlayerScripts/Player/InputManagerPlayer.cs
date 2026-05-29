@@ -1,7 +1,5 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using WiiU = UnityEngine.WiiU;
 
 public class InputManagerPlayer : MonoBehaviour {
@@ -9,15 +7,19 @@ public class InputManagerPlayer : MonoBehaviour {
     WiiU.GamePad gp = WiiU.GamePad.access;
 
     [SerializeField] PlayerMoving PlayerMoving;
-    [SerializeField] Scenemanager cachedGameManager;
-
     [SerializeField] private bool ControllsPC;
-    [SerializeField] private bool ControllsWiiU;
 
+    //WiiU - main
+    [SerializeField] private bool ControllsWiiU;
+    //Sub
     [SerializeField] private bool isWiiUWiiMote;
     [SerializeField] private bool isWiiUGamepad;
 
+    //Networking
     [SerializeField] private bool isaprefab;
+
+    //Debug
+    [SerializeField] private bool debugXboxOneController;
 
 
     void Start()
@@ -27,17 +29,18 @@ public class InputManagerPlayer : MonoBehaviour {
     private void CheckIfAllIsAssigned()
     {
         if (PlayerMoving == null)
-            Debug.LogError("playerMovingScript not assigned in InputManagerPlayer. Fixing for now."); PlayerMoving = GetComponent<PlayerMoving>();
-        if (cachedGameManager == null)
-            Debug.LogError("cachedGameManager not assigned in InputManagerPlayer. Fixing for now."); cachedGameManager = FindObjectOfType<Scenemanager>();
-
+            Debug.LogError("playerMovingScript not assigned in InputManagerPlayer. Fixing for now."); PlayerMoving = FindObjectOfType<PlayerMoving>();
     }
     public void ControllsManager()
     {
         if (isaprefab) return;
         if (ControllsPC) PlayerControllsPC();
         if (ControllsWiiU) PlayerControllsWiiU();
+        if (debugXboxOneController) DebugXboxOneController();
     }
+
+
+   
 
     private float moveX;
     private float moveY;
@@ -46,7 +49,7 @@ public class InputManagerPlayer : MonoBehaviour {
         //Pc
         if ((Input.GetKeyDown("space")))
         {
-            PlayerMoving.Jump();
+            JumpAction();
         }
 
         if (Input.GetKey("f"))
@@ -105,13 +108,11 @@ public class InputManagerPlayer : MonoBehaviour {
     }
 
 
-
     public void PlayerControllsWiiU()
     {
         if (isWiiUGamepad) WiiUGamepad();
         if (isWiiUWiiMote) WiiUWiiRemote();
     }
-
 
     private void WiiUGamepad()
     {
@@ -122,16 +123,10 @@ public class InputManagerPlayer : MonoBehaviour {
             moveX = state.lStick.x;
             moveY = state.lStick.y;
 
-            if (state.IsTriggered(WiiU.GamePadButton.A))
-            {
-                PlayerMoving.Jump();
-            }
+            if (state.IsTriggered(WiiU.GamePadButton.B)) JumpAction();
 
-            if (state.IsPressed(WiiU.GamePadButton.X))
-            {
-                //Core.homeMenuEnabled = false;
-                PlayerMoving.Boost();
-            }
+            if (state.IsPressed(WiiU.GamePadButton.Y)) BoostAction();
+
             if (state.IsReleased(WiiU.GamePadButton.X))
             {
                 PlayerMoving.isBoosting = false;
@@ -208,8 +203,30 @@ public class InputManagerPlayer : MonoBehaviour {
         }
     }
 
+    private void DebugXboxOneController()
+    {
+         moveX = Input.GetAxis("Horizontal");
+         moveY = Input.GetAxis("Vertical");
+        //0 = A, 1 = B, 2 = X, 3 = 4 JoystickButton4 --  LB JoystickButton5 -- RB
+        if (Input.GetKeyDown(KeyCode.JoystickButton0)) JumpAction();
+        if (Input.GetKeyDown(KeyCode.JoystickButton2)) BoostAction(); //
 
 
+        UpdateTheOtherSide();
+    }
+
+
+
+    private void JumpAction()
+    {
+        PlayerMoving.Jump();
+
+    }
+    private void BoostAction()
+    {
+        PlayerMoving.Boost();
+
+    }
     private void UpdateTheOtherSide()
     {
         PlayerMoving.moveX = moveX;

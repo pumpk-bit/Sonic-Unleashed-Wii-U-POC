@@ -72,7 +72,7 @@ public class Scenemanager : MonoBehaviour {
             PlayerMoving = FindObjectOfType<PlayerMoving>();
         PlayerMoving.canMove = false; // Make sure the player can't move until we set the starting type. Undo is in playerside
 
-        AnimatorScriptS ScriptAnim = FindObjectOfType<AnimatorScriptS>();
+        PlayerAnimatorScript ScriptAnim = FindObjectOfType<PlayerAnimatorScript>();
 
         if (LevelStartingType == StartingType.Dashing)
         {
@@ -117,8 +117,10 @@ public class Scenemanager : MonoBehaviour {
         PlayerMoving[] players = FindObjectsOfType<PlayerMoving>();
 
         foreach (PlayerMoving p in players)
-        {        
-            RespawnAtPosition(p.gameObject);
+        {
+            Transform parent = p.transform.parent;
+
+            RespawnAtPosition(parent.gameObject);
         }
 
     }

@@ -7,16 +7,18 @@ public class PlayerMoving : MonoBehaviour
     [Header("Main")]
     [SerializeField] private Transform orientation;
     [SerializeField] private Transform playerTransform;
-    [SerializeField] private Rigidbody playerRigidbody;
+    [SerializeField] public Rigidbody playerRigidbody;
     [SerializeField] public GameObject Camera;
+    [SerializeField] public Newcam CameraScriptForPlayer;//Keep
 
     [Header("Scripts")]
     [SerializeField] private InputManagerPlayer inputManager;
     [SerializeField] private HomingAttack homingAttackManager;
-    [SerializeField] private AnimatorScriptS animatorScript;
+    [SerializeField] private PlayerAnimatorScript animatorScript;
     [SerializeField] private PlayerRotation playerRotation;
     [SerializeField] private PlayerAbilities playerAbilities;
     [SerializeField] private PlayerGrounded playerGrounded;
+    [SerializeField] public PlayerRailGrinding playerRailGrinding;
 
     [Header("Health and Others")]
     [SerializeField] public int lives;
@@ -28,7 +30,6 @@ public class PlayerMoving : MonoBehaviour
     [SerializeField] public float deadZoneForWalk;
 
     [SerializeField] public float airSpeed;
-    [SerializeField] public float rotationSpeed;
     [SerializeField] public float acceleration;
     [SerializeField] private float walkDeceleration;
     [SerializeField] private float runDeceleration;
@@ -39,6 +40,9 @@ public class PlayerMoving : MonoBehaviour
 
     [Header("States")]
     [SerializeField] public bool canMove = true;
+    [SerializeField] public bool grinding = false;
+    [SerializeField] public bool cangrind = false;
+    public bool AnimatorBoolJumping;
 
     public float moveX;
     public float moveY;
@@ -61,6 +65,8 @@ public class PlayerMoving : MonoBehaviour
         CheckIfAllIsAssigned();
 
         canCheckIfGrounded = true;
+        cangrind = true;
+        playerRailGrinding.cangrind = cangrind;
         gp.StopMotor();
 
         if (lateFixedLoopCoroutine == null)
@@ -144,6 +150,8 @@ public class PlayerMoving : MonoBehaviour
         {
             homingAttackManager.SetSphereNonActive();
             isPlayerABall = false;
+            AnimatorBoolJumping = false;
+
         }
         else
         {
@@ -158,29 +166,34 @@ public class PlayerMoving : MonoBehaviour
 
     private void MovePlayer()
     {
+        if (isBoosting) return;
+        if (grinding) return;
         UpdateSpeed();
+        WallSliding();
 
         if (grounded)
         {
             playerRigidbody.drag = groundDrag;
 
+            Vector3 direction;
+
             if (moveDirection.sqrMagnitude > 0.001f)
             {
-                Vector3 direction = moveDirection.normalized;
-                Vector3 targetVelocity = direction * currentSpeed;
-
-                float dot = Vector3.Dot(targetVelocity, normal);
-                playerRigidbody.velocity = targetVelocity - normal * dot;
+                direction = finalDirection.normalized;
             }
             else
             {
-                //playerRigidbody.velocity = Vector3.ProjectOnPlane(playerRigidbody.velocity, normal);
-                Vector3 direction = transform.forward.normalized;
-                Vector3 targetVelocity = direction * currentSpeed;
+                // Preserve momentum direction
+                Vector3 flatVelocity =Vector3.ProjectOnPlane(playerRigidbody.velocity, normal);
 
-                float dot = Vector3.Dot(targetVelocity, normal);
-                playerRigidbody.velocity = targetVelocity - normal * dot;
+                direction = flatVelocity.sqrMagnitude > 0.001f? flatVelocity.normalized: transform.forward;
             }
+
+            Vector3 targetVelocity = direction * currentSpeed;
+
+            float dot = Vector3.Dot(targetVelocity, normal);
+
+            playerRigidbody.velocity = targetVelocity - normal * dot;
         }
         else
         {
@@ -192,6 +205,8 @@ public class PlayerMoving : MonoBehaviour
             }
         }
     }
+
+
 
     private bool isWalkingInput;
     private bool isAccell;
@@ -220,26 +235,63 @@ public class PlayerMoving : MonoBehaviour
 
     private void Decelerate()
     {
-        float threshold = walkSpeed + 0.1f;
+        if (grounded)
+        {
+            float threshold = walkSpeed + 0.1f;
 
-        float decel = currentSpeed <= threshold
-            ? walkDeceleration
-            : runDeceleration;
+            float decel = currentSpeed <= threshold
+                ? walkDeceleration
+                : runDeceleration;
 
-        currentSpeed = Mathf.Lerp(currentSpeed, 0f, decel * Time.fixedDeltaTime);
+            currentSpeed = Mathf.Lerp(currentSpeed, 0f, decel * Time.fixedDeltaTime);
+        }
+        if (!grounded)
+        {
+            Vector3 flatVelocity = new Vector3(playerRigidbody.velocity.x,0,playerRigidbody.velocity.z);
+            currentSpeed = flatVelocity.magnitude;
+        }
     }
 
     private void Accelerate()
     {
-
-
         float targetSpeed = isWalkingInput ? walkSpeed : maxSpeed;
         currentSpeed = Mathf.Lerp(currentSpeed, targetSpeed, acceleration * Time.fixedDeltaTime);
     }
 
+    Vector3 finalDirection;
+    [SerializeField]float wallCheckDistance = 2.5f;
+     bool LastBool;
+
+    private void WallSliding()
+    {
+        finalDirection = moveDirection;
+
+        RaycastHit hit;
+
+        //Debug
+        Debug.DrawRay(playerRigidbody.centerOfMass, moveDirection * wallCheckDistance,Color.red);
+
+        bool isTouchingAwall = false;
+
+        if (Physics.Raycast(playerRigidbody.centerOfMass, moveDirection,out hit,wallCheckDistance))
+        {
+            if (Vector3.Angle(hit.normal, Vector3.up) > 5f)
+            {
+                finalDirection = Vector3.ProjectOnPlane(moveDirection, hit.normal).normalized;
+                isTouchingAwall = true;
+
+            }
+        }
+        if (LastBool != isTouchingAwall)
+        {
+           Debug.Log(isTouchingAwall);
+           LastBool = isTouchingAwall;
+
+        }
+    }
     private void UpdateAnimator()
     {
-        animatorScript.AnimatorManager(grounded, currentSpeed, isBoosting, moveX, moveY, isAccell);
+        animatorScript.AnimatorManager(grounded, currentSpeed, isBoosting, moveX, moveY, isAccell, grinding);
     }
 
     public void StartScenAnimEnd(bool isBoost)
@@ -265,8 +317,29 @@ public class PlayerMoving : MonoBehaviour
     {
         playerAbilities.AbilitiesManager();
     }
+
+    public void GrindingManager(bool isgrinding, bool cangrinds = true)
+    {
+
+        grinding = isgrinding;
+        playerRailGrinding.grinding = isgrinding;
+
+        if (cangrind != cangrinds)
+        {
+            cangrind = cangrinds;
+            playerRailGrinding.cangrind = cangrind;
+
+            if (cangrind == false)
+            {
+                playerRailGrinding.StopGrinding();
+                StartCoroutine(WaitAmmountTimeUnitlGrind(1f));
+            }
+        }
+
+    }
     public void Jump()
     {
+        AnimatorBoolJumping = true;
         playerAbilities.Jump();
     }
 
@@ -284,5 +357,13 @@ public class PlayerMoving : MonoBehaviour
     {
         playerRigidbody.velocity = Vector3.zero;
         playerRigidbody.angularVelocity = Vector3.zero;
+    }
+
+    private IEnumerator WaitAmmountTimeUnitlGrind(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        cangrind = true;
+        playerRailGrinding.cangrind = cangrind;
+
     }
 }

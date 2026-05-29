@@ -1,0 +1,224 @@
+fileFormatVersion: 2
+guid: ebf1cfcc2eff2304fa9fdfafd0222ba9
+timeCreated: 1779016478
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: myk01A_col_yr_grindrail_@03_hkRB_mat1
+    100002: myk01B_col_kt_noCam_10_hkRB_mat1
+    100004: myk01B_col_kt_SoniCam_04_hkRB_mat1
+    100006: myk01B_col_kt_SoniCam_64_hkRB_mat6
+    100008: myk01B_col_kt_SoniCam_79_hkRB_mat1
+    100010: myk01B_ter_No_ym_treeA_109_hkRB_mat6
+    100012: myk04_col_ha_greengroud3_11_hkRB_mat6
+    100014: myk05_col_08_hkRB_mat6
+    100016: myk05_col_156_hkRB_mat1
+    100018: myk05_col_159_hkRB_mat12
+    100020: myk05_col_160_hkRB_mat1
+    100022: myk05_col_67_hkRB_mat1
+    100024: myk_02_col_55_hkRB_mat3
+    100026: myk_02_col_67_hkRB_mat1
+    100028: myk_0B_col_water01_hkRB_mat2
+    100030: myk_1A_col_death_hkRB_mat12_hkRB_mat12
+    100032: myk_A_col_06_hkRB_mat1
+    100034: myk_A_col_15_hkRB_mat1
+    100036: myk_A_col_21_hkRB_mat5
+    100038: myk_A_col_22_hkRB_mat1
+    100040: myk_A_col_33_hkRB_mat1
+    100042: myk_A_col_44_hkRB_mat1
+    100044: myk_A_col_45_hkRB_mat1
+    100046: myk_A_col_48_hkRB_mat1
+    100048: myk_A_col_65_hkRB_mat1
+    100050: myk_A_col_71_hkRB_mat1
+    100052: myk_A_col_72_hkRB_mat1
+    100054: myk_A_col_73_hkRB_mat5
+    100056: //RootNode
+    400000: myk01A_col_yr_grindrail_@03_hkRB_mat1
+    400002: myk01B_col_kt_noCam_10_hkRB_mat1
+    400004: myk01B_col_kt_SoniCam_04_hkRB_mat1
+    400006: myk01B_col_kt_SoniCam_64_hkRB_mat6
+    400008: myk01B_col_kt_SoniCam_79_hkRB_mat1
+    400010: myk01B_ter_No_ym_treeA_109_hkRB_mat6
+    400012: myk04_col_ha_greengroud3_11_hkRB_mat6
+    400014: myk05_col_08_hkRB_mat6
+    400016: myk05_col_156_hkRB_mat1
+    400018: myk05_col_159_hkRB_mat12
+    400020: myk05_col_160_hkRB_mat1
+    400022: myk05_col_67_hkRB_mat1
+    400024: myk_02_col_55_hkRB_mat3
+    400026: myk_02_col_67_hkRB_mat1
+    400028: myk_0B_col_water01_hkRB_mat2
+    400030: myk_1A_col_death_hkRB_mat12_hkRB_mat12
+    400032: myk_A_col_06_hkRB_mat1
+    400034: myk_A_col_15_hkRB_mat1
+    400036: myk_A_col_21_hkRB_mat5
+    400038: myk_A_col_22_hkRB_mat1
+    400040: myk_A_col_33_hkRB_mat1
+    400042: myk_A_col_44_hkRB_mat1
+    400044: myk_A_col_45_hkRB_mat1
+    400046: myk_A_col_48_hkRB_mat1
+    400048: myk_A_col_65_hkRB_mat1
+    400050: myk_A_col_71_hkRB_mat1
+    400052: myk_A_col_72_hkRB_mat1
+    400054: myk_A_col_73_hkRB_mat5
+    400056: //RootNode
+    2300000: myk01A_col_yr_grindrail_@03_hkRB_mat1
+    2300002: myk01B_col_kt_noCam_10_hkRB_mat1
+    2300004: myk01B_col_kt_SoniCam_04_hkRB_mat1
+    2300006: myk01B_col_kt_SoniCam_64_hkRB_mat6
+    2300008: myk01B_col_kt_SoniCam_79_hkRB_mat1
+    2300010: myk01B_ter_No_ym_treeA_109_hkRB_mat6
+    2300012: myk04_col_ha_greengroud3_11_hkRB_mat6
+    2300014: myk05_col_08_hkRB_mat6
+    2300016: myk05_col_156_hkRB_mat1
+    2300018: myk05_col_159_hkRB_mat12
+    2300020: myk05_col_160_hkRB_mat1
+    2300022: myk05_col_67_hkRB_mat1
+    2300024: myk_02_col_55_hkRB_mat3
+    2300026: myk_02_col_67_hkRB_mat1
+    2300028: myk_0B_col_water01_hkRB_mat2
+    2300030: myk_1A_col_death_hkRB_mat12_hkRB_mat12
+    2300032: myk_A_col_06_hkRB_mat1
+    2300034: myk_A_col_15_hkRB_mat1
+    2300036: myk_A_col_21_hkRB_mat5
+    2300038: myk_A_col_22_hkRB_mat1
+    2300040: myk_A_col_33_hkRB_mat1
+    2300042: myk_A_col_44_hkRB_mat1
+    2300044: myk_A_col_45_hkRB_mat1
+    2300046: myk_A_col_48_hkRB_mat1
+    2300048: myk_A_col_65_hkRB_mat1
+    2300050: myk_A_col_71_hkRB_mat1
+    2300052: myk_A_col_72_hkRB_mat1
+    2300054: myk_A_col_73_hkRB_mat5
+    3300000: myk01A_col_yr_grindrail_@03_hkRB_mat1
+    3300002: myk01B_col_kt_noCam_10_hkRB_mat1
+    3300004: myk01B_col_kt_SoniCam_04_hkRB_mat1
+    3300006: myk01B_col_kt_SoniCam_64_hkRB_mat6
+    3300008: myk01B_col_kt_SoniCam_79_hkRB_mat1
+    3300010: myk01B_ter_No_ym_treeA_109_hkRB_mat6
+    3300012: myk04_col_ha_greengroud3_11_hkRB_mat6
+    3300014: myk05_col_08_hkRB_mat6
+    3300016: myk05_col_156_hkRB_mat1
+    3300018: myk05_col_159_hkRB_mat12
+    3300020: myk05_col_160_hkRB_mat1
+    3300022: myk05_col_67_hkRB_mat1
+    3300024: myk_02_col_55_hkRB_mat3
+    3300026: myk_02_col_67_hkRB_mat1
+    3300028: myk_0B_col_water01_hkRB_mat2
+    3300030: myk_1A_col_death_hkRB_mat12_hkRB_mat12
+    3300032: myk_A_col_06_hkRB_mat1
+    3300034: myk_A_col_15_hkRB_mat1
+    3300036: myk_A_col_21_hkRB_mat5
+    3300038: myk_A_col_22_hkRB_mat1
+    3300040: myk_A_col_33_hkRB_mat1
+    3300042: myk_A_col_44_hkRB_mat1
+    3300044: myk_A_col_45_hkRB_mat1
+    3300046: myk_A_col_48_hkRB_mat1
+    3300048: myk_A_col_65_hkRB_mat1
+    3300050: myk_A_col_71_hkRB_mat1
+    3300052: myk_A_col_72_hkRB_mat1
+    3300054: myk_A_col_73_hkRB_mat5
+    4300000: myk01A_col_yr_grindrail_@03_hkRB_mat1
+    4300002: myk01B_col_kt_noCam_10_hkRB_mat1
+    4300004: myk01B_col_kt_SoniCam_04_hkRB_mat1
+    4300006: myk01B_col_kt_SoniCam_64_hkRB_mat6
+    4300008: myk01B_col_kt_SoniCam_79_hkRB_mat1
+    4300010: myk01B_ter_No_ym_treeA_109_hkRB_mat6
+    4300012: myk04_col_ha_greengroud3_11_hkRB_mat6
+    4300014: myk05_col_08_hkRB_mat6
+    4300016: myk05_col_156_hkRB_mat1
+    4300018: myk05_col_159_hkRB_mat12
+    4300020: myk05_col_160_hkRB_mat1
+    4300022: myk05_col_67_hkRB_mat1
+    4300024: myk_02_col_55_hkRB_mat3
+    4300026: myk_02_col_67_hkRB_mat1
+    4300028: myk_0B_col_water01_hkRB_mat2
+    4300030: myk_1A_col_death_hkRB_mat12_hkRB_mat12
+    4300032: myk_A_col_06_hkRB_mat1
+    4300034: myk_A_col_15_hkRB_mat1
+    4300036: myk_A_col_21_hkRB_mat5
+    4300038: myk_A_col_22_hkRB_mat1
+    4300040: myk_A_col_33_hkRB_mat1
+    4300042: myk_A_col_44_hkRB_mat1
+    4300044: myk_A_col_45_hkRB_mat1
+    4300046: myk_A_col_48_hkRB_mat1
+    4300048: myk_A_col_65_hkRB_mat1
+    4300050: myk_A_col_71_hkRB_mat1
+    4300052: myk_A_col_72_hkRB_mat1
+    4300054: myk_A_col_73_hkRB_mat5
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

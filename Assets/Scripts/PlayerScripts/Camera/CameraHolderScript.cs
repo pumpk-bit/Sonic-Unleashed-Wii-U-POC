@@ -26,8 +26,6 @@ public class CameraHolderScript : MonoBehaviour {
         if (CanMove == true)
         {
             transform.position = cameraPosition.position;
-
-
         }
 
 

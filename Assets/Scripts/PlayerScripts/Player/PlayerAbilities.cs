@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerAbilities : MonoBehaviour
 {
@@ -32,6 +33,7 @@ public class PlayerAbilities : MonoBehaviour
     private bool canCheckGround;
     private bool grounded;
     private bool canMove = true;
+    private bool grinding = false;
 
     private float lastJumpTime;
     private float currentSpeed;
@@ -52,6 +54,7 @@ public class PlayerAbilities : MonoBehaviour
         currentSpeed = playerMoving.currentSpeed;
         normal = playerMoving.normal;
         isBoosting = playerMoving.isBoosting;
+        grinding = playerMoving.grinding;
 
         if (boostReturnsOnGround && grounded)
             canBoost = true;
@@ -68,16 +71,20 @@ public class PlayerAbilities : MonoBehaviour
 
     public void Jump()
     {
-        if (!canMove)
-            return;
-
-        if (!grounded)
+        if (playerMoving.grinding == true)
         {
-            homingAttackManager.HomingAttackManagerJump();
+            playerMoving.GrindingManager(false, false);
+            Jumping();
             return;
         }
+        if (!canMove) return;
+        if (!grounded) return;
 
+        Jumping();
+    }
 
+    private void Jumping()
+    {
         EnterBallState();
         playerMoving.canCheckIfGrounded = false;
         grounded = false;
@@ -106,19 +113,34 @@ public class PlayerAbilities : MonoBehaviour
         if (!canMove || !canBoost)
             return;
 
+        if (!grounded)
+        {
+            bool Canhome = homingAttackManager.IsHomingAttackTargetInRange();
+            if (Canhome)
+            {
+                homingAttackManager.HomingAttackManagerJump();
+                return;
+            }
+        }
+
         Vector3 direction = playerTransform.forward.normalized;
 
         if (grounded)
         {
+
             rb.AddForce(direction * boostSpeed, ForceMode.Impulse);
-            isBoosting = true;
+            rb.velocity = direction * (boostSpeed);
+            playerMoving.currentSpeed = boostSpeed;
             PlaySound(boostSFX);
+            isBoosting = true;
+
         }
         else
         {
             rb.AddForce(direction * boostSpeedAir, ForceMode.Impulse);
             PlaySound(boostAirSFX);
             canBoost = false;
+            playerMoving.canBoost = canBoost;
         }
 
         LimitBoostSpeed(direction);
@@ -137,6 +159,7 @@ public class PlayerAbilities : MonoBehaviour
 
     public void Spring(float force, string sound, Vector3 direction, bool resetVelocity)
     {
+        playerMoving.canCheckIfGrounded = false;
         canCheckGround = false;
 
         if (homingAttackManager.IsHoming)
@@ -171,6 +194,7 @@ public class PlayerAbilities : MonoBehaviour
     {
         rb.velocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
+        playerMoving.currentSpeed = 0f;
     }
 
     private void PlaySound(string sound)

@@ -66,9 +66,15 @@ public class RingScript : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            player = other.gameObject;
-            PlayerMovingScript = player.gameObject.GetComponentInParent<PlayerMoving>();
-            RingManagerScript = player.gameObject.GetComponentInParent<RingManager>();
+            var rb = other.GetComponentInParent<Rigidbody>();
+            if (rb == null) return;
+
+            var player = rb.GetComponentInChildren<PlayerMoving>();
+            var playerRing = rb.GetComponentInChildren<RingManager>();
+            if (player == null) return;
+
+            RingManagerScript = playerRing;
+            PlayerMovingScript = player;
 
 
             if (IsNormalRing) NormalRingDealer(RingManagerScript);

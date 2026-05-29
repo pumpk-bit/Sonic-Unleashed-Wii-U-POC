@@ -6,11 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/IntoScene.unity
-    guid: 41d36d069b91f3d40b1f65f90fdd745c
+    path: Assets/DebugIntro.unity
+    guid: ba6bd3453aa153e4c9c65c8604004b3b
   - enabled: 1
-    path: Assets/Scenes/Windmill1/Main Windmill.unity
-    guid: 297c77d03c4a8df4bb8de6979ed0fca5
-  - enabled: 1
-    path: Assets/Scenes/Windmill1/Windmill1 P1.unity
-    guid: a5a1b2bed1001a845ac4a7b97fd6dd83
+    path: Assets/Scenes/TestStages/RailGrind/TestRail.unity
+    guid: 8172e2d76c876404c895671498a6eb94

@@ -1,6 +1,6 @@
-# Sonic Unleashed Wii U POC
+# Sonic Unleashed Wii U POC Umity
 
-This is a demo/POC for a Unleashed game for the Wii U.
+This is a demo/POC for a Unleashed game for the Wii U with Unity.
 
 Please note that the code isn't perfect and this is just a hobby. 
 
